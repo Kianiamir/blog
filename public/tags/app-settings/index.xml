@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>App Settings on Amir Kiani&#39;s Blog</title>
+    <link>http://localhost:1313/tags/app-settings/</link>
+    <description>Recent content in App Settings on Amir Kiani&#39;s Blog</description>
+    <image>
+      <title>Amir Kiani&#39;s Blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.139.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/app-settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimizing Shadowrocket - Bypass Proxy for Specific Domains and Apps</title>
+      <link>http://localhost:1313/posts/optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</guid>
+      <description>&lt;h3 id=&#34;how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps&#34;&gt;How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps&lt;/h3&gt;
+&lt;p&gt;Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&amp;rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h3 id="how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps">How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps</h3>
+<p>Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.</p>
+<h4 id="understanding-shadowrocket-rules">Understanding Shadowrocket Rules</h4>
+<p>Shadowrocket uses rules to determine how traffic is routed. These rules can be configured to handle different types of traffic in various ways. Understanding the different rule types and how to use them effectively is crucial for managing your network traffic:</p>
+<ul>
+<li>
+<p><strong>DOMAIN</strong>: Matches an exact domain name. Use this rule when you want to target a specific domain without affecting its subdomains. For instance, setting a rule for <code>example.com</code> will not apply to <code>sub.example.com</code>.</p>
+</li>
+<li>
+<p><strong>DOMAIN-SUFFIX</strong>: Matches any domain that ends with the specified suffix. This is useful for applying rules to an entire domain and all its subdomains. For example, <code>DOMAIN-SUFFIX,example.com</code> will match <code>example.com</code>, <code>sub.example.com</code>, and any other subdomains.</p>
+</li>
+<li>
+<p><strong>DOMAIN-KEYWORD</strong>: Matches any domain that contains the specified keyword. This is a more flexible rule that can capture multiple domains containing the keyword, regardless of their exact structure.</p>
+</li>
+<li>
+<p><strong>GEOIP</strong>: Matches traffic based on geographic location. This rule can be used to route traffic from specific countries through the proxy.</p>
+</li>
+</ul>
+<h4 id="practical-examples">Practical Examples</h4>
+<ol>
+<li>
+<p><strong>DOMAIN</strong>:</p>
+<ul>
+<li><strong>Rule</strong>: <code>DOMAIN,openai.com,DIRECT</code></li>
+<li><strong>Applies to</strong>: <code>openai.com</code></li>
+<li><strong>Does not apply to</strong>: <code>api.openai.com</code>, <code>sub.openai.com</code></li>
+</ul>
+</li>
+<li>
+<p><strong>DOMAIN-SUFFIX</strong>:</p>
+<ul>
+<li><strong>Rule</strong>: <code>DOMAIN-SUFFIX,openai.com,PROXY</code></li>
+<li><strong>Applies to</strong>: <code>openai.com</code>, <code>api.openai.com</code>, <code>sub.openai.com</code></li>
+<li><strong>Does not apply to</strong>: <code>openai.com.au</code>, <code>openai.org</code></li>
+</ul>
+</li>
+<li>
+<p><strong>DOMAIN-KEYWORD</strong>:</p>
+<ul>
+<li><strong>Rule</strong>: <code>DOMAIN-KEYWORD,openai,DIRECT</code></li>
+<li><strong>Applies to</strong>: <code>openai.com</code>, <code>api.openai.com</code>, <code>openai.org</code>, <code>anotheropenai.net</code></li>
+<li><strong>Does not apply to</strong>: <code>open-ai.com</code>, <code>example.com</code></li>
+</ul>
+</li>
+</ol>
+<p>Understanding and utilizing these rules effectively allows you to optimize your network performance, enhance security, and ensure that specific types of traffic are handled according to your requirements.</p>
+<h3 id="option-1-setting-rules-for-specific-apps-chatgpt-launcher-in-my-case">Option 1: Setting Rules for Specific Apps (ChatGPT Launcher in My Case)</h3>
+<p>To set a rule for an app and not a website in Shadowrocket on macOS, you’ll need to use the application’s bundle identifier or process name to target the specific app traffic. Shadowrocket allows you to configure rules that apply to specific apps, bypassing or directing their traffic through the proxy as desired. Here’s how you can do it:</p>
+<h4 id="step-by-step-guide">Step-by-Step Guide</h4>
+<ol>
+<li>
+<p><strong>Find the App’s Bundle Identifier</strong>:</p>
+<ul>
+<li>Open the Terminal app on your Mac.</li>
+<li>Use the following command to find the bundle identifier of the app (replace <code>AppName</code> with the actual name of the app):
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">osascript -e <span class="s1">&#39;id of app &#34;AppName&#34;&#39;</span>
+</span></span></code></pre></div></li>
+<li>For example, to find the bundle identifier of the ChatGPT app, you would use:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">osascript -e <span class="s1">&#39;id of app &#34;ChatGPT&#34;&#39;</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Configure Rules for the App</strong>:</p>
+<ul>
+<li>
+<p>Go to the rules section in Shadowrocket. This might be under a tab labeled &ldquo;Rules&rdquo; or &ldquo;Configuration.&rdquo;</p>
+</li>
+<li>
+<p>Add a new rule to apply the custom proxy settings to the app using its bundle identifier.</p>
+<p>Since the bundle identifier for the ChatGPT app includes the keyword <code>openai</code> (e.g., <code>com.openai.chat</code>), the <code>DOMAIN-KEYWORD</code> rule for <code>openai</code> will route the traffic for the app directly as well.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="option-2-bypassing-proxy-for-chatgpt-and-all-openai-traffic-across-browsers-plugins-apps-and-apis">Option 2: Bypassing Proxy for ChatGPT and All OpenAI Traffic Across Browsers, Plugins, Apps, and APIs</h3>
+<p>To bypass the proxy for the ChatGPT app and all OpenAI-related traffic on macOS, follow these steps:</p>
+<ol>
+<li>
+<p><strong>Open Shadowrocket</strong>:</p>
+<ul>
+<li>Launch the Shadowrocket application on your Mac.</li>
+</ul>
+</li>
+<li>
+<p><strong>Access the Rules Section</strong>:</p>
+<ul>
+<li>Navigate to the rules section. This might be under a tab labeled &ldquo;Rules&rdquo; or &ldquo;Configuration.&rdquo;</li>
+</ul>
+</li>
+<li>
+<p><strong>Add a Domain-Keyword Rule</strong>:</p>
+<ul>
+<li>In the rules section, add a new rule using the <code>DOMAIN-KEYWORD</code> type.</li>
+<li>Enter the keyword <code>openai</code> and set the action to <code>DIRECT</code>. This ensures that any traffic containing the keyword <code>openai</code> will bypass the proxy.</li>
+</ul>
+</li>
+<li>
+<p><strong>Save and Apply the Rule</strong>:</p>
+<ul>
+<li>Save the configuration and make</li>
+</ul>
+</li>
+</ol>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

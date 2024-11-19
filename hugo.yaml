@@ -1,4 +1,223 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
-theme: ["PaperMod"]
+baseURL: "https://amirkiani.info/"
+title: "Amir Kiani's Blog"
+pagination:
+  pagerSize: 5
+theme:
+  - PaperMod
+
+# Site Services
+services:
+  googleAnalytics:
+    ID: "G-J245JZDY52"
+  disqus:
+    shortname: "amirkiani"
+
+# Build Options
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Minification
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# Sitemap Configuration
+sitemap:
+  changefreq: "weekly"
+  priority: 0.5
+  filename: "sitemap.xml"
+
+# RSS Feed Configuration
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+# Taxonomies Configuration
+taxonomies:
+  category: "categories"
+  tag: "tags"
+
+# Privacy Settings
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+    useSessionStorage: false
+    disable: false
+  disqus:
+    disable: false
+
+# Site Parameters
+params:
+  env: "production" # To enable Google Analytics, OpenGraph, Twitter cards, and schema.
+  title: "Amir Kiani"
+  description: "Welcome to my blog"
+  keywords: ["AmirKiani", "Finance", "Blog", "Portfolio", "PaperMod"]
+  author: "Amir Kiani"
+
+  # Multiple authors: ["Me", "You"]
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: "auto" # Options: dark, light
+  disableThemeToggle: false
+  license:
+    text: "All content is licensed under Creative Commons Zero v1.0."
+    link: "https://creativecommons.org/publicdomain/zero/1.0/"
+  ShowFullTextinRSS: true
+
+  # Display Options
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShareButtons: ["linkedin", "twitter", "telegram"]
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+  # Assets
+  assets:
+    # disableHLJS: true # To disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  # Label
+  label:
+    text: "Home"
+    icon: "/apple-touch-icon.png"
+    iconHeight: 35
+
+  # Profile Mode
+  profileMode:
+    enabled: false # Needs to be explicitly set
+    title: "ExampleSite"
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "my image"
+    buttons:
+      - name: "Posts"
+        url: "posts"
+      - name: "Tags"
+        url: "tags"
+
+  # Home Info Mode
+  homeInfoParams:
+    Title: "Hi There \U0001F44B. I'm Amir Kiani"
+    Content: >
+      - I have an MBA in Finance and am currently on the lookout for a PhD position in Quantitative Finance. [CV](https://amirkiani.info/cv/)
+
+      - This blog is my space where I share bits and pieces of my life. You’ll find everything here, from personal journal entries and casual event updates to professional thoughts on finance and computer science.
+
+      - Below are the links to my social media. However, following the blog is surely the best way to stay updated on my latest news.
+
+  # Social Icons
+  socialIcons:
+    - name: "x"
+      url: "https://x.com/iamirkiani"
+    - name: "github"
+      url: "https://github.com/kianiamir"
+    - name: "goodreads"
+      url: ""
+    - name: "instagram"
+      url: "http://instagram.com/amirkianihimself"
+    - name: "kaggle"
+      url: ""
+    # - name: "mastodon"
+    #   url: ""
+    # - name: "steam"
+    #   url: ""
+    # - name: "strava"
+    #   url: ""
+    # - name: "youtube"
+    #   url: ""
+
+  # Analytics
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    # bing:
+    #   SiteVerificationTag: "XYZabc"
+    # yandex:
+    #   SiteVerificationTag: "XYZabc"
+
+  # Cover
+  cover:
+    hidden: true # Hide everywhere but not in structured data
+    hiddenInList: true # Hide on list pages and home
+    hiddenInSingle: true # Hide on single page
+
+  # Edit Post
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # Edit text
+    appendFilePath: true # To append file path to Edit link
+
+  # Fuse.js Options for Search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # Refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+# Menu Configuration
+menu:
+  main:
+    - identifier: "categories"
+      name: "Categories"
+      url: "/categories/"
+      weight: 20
+    # - identifier: "tags"
+    #   name: "Tags"
+    #   url: "/tags/"
+    #   weight: 20
+    # - identifier: "example"
+    #   name: "Example.org"
+    #   url: "https://example.org"
+    #   weight: 30
+    - identifier: "cv"
+      name: "CV"
+      url: "/cv/"
+      weight: 10
+    - identifier: "search"
+      name: "Search"
+      url: "/search/"
+      weight: 40
+    - identifier: "archives"
+      name: "Archives"
+      url: "/archives/"
+      weight: 30
+
+# Syntax Highlighting
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # Uncomment and configure as needed
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: "monokai"
