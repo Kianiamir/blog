@@ -3,9 +3,15 @@ title: "Amir Kiani's CV"
 date: 2024-06-13
 ---
 
-[Download PDF](https://amirkiani.info/cv/AmirKianiCV.pdf)
+[Download PDF](/cv/AmirKianiCV.pdf)
 
-<iframe src="https://amirkiani.info/cv/AmirKianiCV.pdf" width="100%" height="600px" style="border: none;"></iframe>
+<iframe src="/cv/AmirKianiCV.pdf" width="100%" height="800px" style="border: none;"></iframe>
+
+<object data="/cv/AmirKianiCV.pdf" type="application/pdf" width="100%" height="800px">
+  <p>Your browser does not support PDFs. <a href="/cv/AmirKianiCV.pdf">Download the PDF</a>.</p>
+</object>
+
+<embed src="/cv/AmirKianiCV.pdf" width="100%" height="800px" type="application/pdf">
 
 ## Contact Information
 - **Email:** [kianiamir@outlook.com](mailto:kianiamir@outlook.com)
