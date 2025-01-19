@@ -58,6 +58,8 @@ params:
   description: "Welcome to my blog"
   keywords: ["AmirKiani", "Finance", "Blog", "Portfolio", "PaperMod"]
   author: "Amir Kiani"
+  comments: true
+
 
   # Multiple authors: ["Me", "You"]
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -81,7 +83,7 @@ params:
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: true
@@ -122,11 +124,11 @@ params:
   homeInfoParams:
     Title: "Hi There \U0001F44B. I'm Amir Kiani"
     Content: >
-      - I have an MBA in Finance and am currently on the lookout for a PhD position in Quantitative Finance. [CV](https://amirkiani.info/cv/)
+      - I hold an MBA in Finance and am actively pursuing a PhD position in Quantitative Finance. [CV](https://amirkiani.info/cv/)
 
-      - This blog is my space where I share bits and pieces of my life. You’ll find everything here, from personal journal entries and casual event updates to professional thoughts on finance and computer science.
+      - This blog is where I share various aspects of my life—ranging from personal reflections and updates to professional insights on finance and computer science.
 
-      - Below are the links to my social media. However, following the blog is surely the best way to stay updated on my latest news.
+      - Feel free to explore my social media links below, but the best way to stay updated on my latest thoughts and experiences is by following this blog.
 
   # Social Icons
   socialIcons:
@@ -199,8 +201,10 @@ menu:
     #   weight: 30
     - identifier: "cv"
       name: "CV"
-      url: "/cv/"
+      url: "/cv/AmirKianiCV.pdf"
       weight: 10
+      params:
+        target: "_blank" # Opens the link in a new tab, optional
     - identifier: "search"
       name: "Search"
       url: "/search/"
