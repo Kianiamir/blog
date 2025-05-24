@@ -261,3 +261,7 @@ hugo new content/posts/my-first-post.md
 ```
 
 At this point, you have a fully functional site that works fine locally. For the next steps, you can host it on a server to make it accessible to everyone. Happy blogging!
+
+
+## Good References:
+1. https://jessewei.dev/blog/2023/papermod/#single-1

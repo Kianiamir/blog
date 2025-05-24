@@ -9,7 +9,7 @@
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.141.0</generator>
+    <generator>Hugo -- 0.147.5</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" />
@@ -212,6 +212,10 @@
 </span></span></span></code></pre></div><p>Now you are more than ready to create new content:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new content/posts/my-first-post.md
 </span></span></code></pre></div><p>At this point, you have a fully functional site that works fine locally. For the next steps, you can host it on a server to make it accessible to everyone. Happy blogging!</p>
+<h2 id="good-references">Good References:</h2>
+<ol>
+<li><a href="https://jessewei.dev/blog/2023/papermod/#single-1">https://jessewei.dev/blog/2023/papermod/#single-1</a></li>
+</ol>
 ]]></content:encoded>
     </item>
   </channel>
