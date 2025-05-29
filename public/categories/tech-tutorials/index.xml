@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/categories/tech-tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimizing Shadowrocket - Bypass Proxy for Specific Domains and Apps</title>
-      <link>http://localhost:1313/posts/optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</link>
+      <link>http://localhost:1313/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</guid>
+      <guid>http://localhost:1313/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</guid>
       <description>&lt;h3 id=&#34;how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps&#34;&gt;How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps&lt;/h3&gt;
 &lt;p&gt;Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&amp;rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h3 id="how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps">How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps</h3>
@@ -128,9 +128,9 @@
     </item>
     <item>
       <title>Setting Up Hugo - A Personal Guide</title>
-      <link>http://localhost:1313/posts/setting-up-hugo---a-personal-guide/</link>
+      <link>http://localhost:1313/posts/6--setting-up-hugo---a-personal-guide/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/setting-up-hugo---a-personal-guide/</guid>
+      <guid>http://localhost:1313/posts/6--setting-up-hugo---a-personal-guide/</guid>
       <description>&lt;h1 id=&#34;setting-up-hugo-a-personal-guide&#34;&gt;Setting Up Hugo: A Personal Guide&lt;/h1&gt;
 &lt;p&gt;Why am I spending time presenting this instruction? Because using the official wikis of Hugo and your theme of choice (PaperMod in my case) might not be as straightforward for beginners.&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;

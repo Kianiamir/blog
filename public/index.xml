@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BookReview – The 7 Habits of Highly Effective People: A Life-Altering Read</title>
-      <link>http://localhost:1313/posts/bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</link>
+      <link>http://localhost:1313/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</guid>
+      <guid>http://localhost:1313/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m very excited about publishing my thoughts on this book since it was the first book I bought digitally on my Kindle Oasis 2017. &lt;/p&gt;
 &lt;p&gt;I remember I used to take my Kindle to &lt;a href=&#34;https://en.wikipedia.org/wiki/Saeb_Mausoleum&#34;&gt;Saeb Mausoleum&lt;/a&gt; between 4 p.m. to 7 p.m. for two weeks, and I was so enchanted by the book that I almost lived all the other hours talking about it with others.&lt;/p&gt;
 &lt;p&gt;Ever since finishing it, I’ve said this book must be kept beside the holy Quran – In every house and in the closest reach of everybody.&lt;/p&gt;</description>
@@ -61,7 +61,7 @@ Unable to wait day after day for the golden eggs, the farmer decides he will kil
 <p>   Habit 3, then, is the second creation, the physical creation. It’s the fulfillment, the actualization, the natural emergence of Habits 1 and 2.</p>
 <p>   Effective management is putting first things first. While leadership decides what “first things” are, it is management that puts them first, day-by-day, moment-by-moment. Management is discipline, carrying it out.</p>
 <p>Here comes the next outstanding concept in the book. The time management matrix that helps prioritize our daily tasks.</p>
-<p><img alt="Eisenhower Matrix" loading="lazy" src="/posts/bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/The-Eisenhower-Matrix.webp"></p>
+<p><img alt="Eisenhower Matrix" loading="lazy" src="/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/The-Eisenhower-Matrix.webp"></p>
 <p>this Time Management Matrix —also known as the Eisenhower Matrix or Covey’s Time Management Grid**—was popularized by Stephen R. Covey. However, its original concept is often attributed to Dwight D. Eisenhower, the 34th President of the United States.</p>
 <p>After seeing this matrix, having asked about your opinion of the most important quadrant, you most likely will say the first one. Well, it amazingly isn&rsquo;t!</p>
 <p>Effective people stay out of Quadrants III and IV because, urgent or not, they aren’t important. They also shrink Quadrant I down to size by spending more time in Quadrant II. Quadrant II is the heart of effective personal management. It deals with things that are not urgent, but are important. It deals with things like building relationships, writing a personal mission statement, long-range planning, exercising, preventive maintenance, preparation—all those things we know we need to do, but somehow seldom get around to doing, because they aren’t urgent. To paraphrase Peter Drucker, effective people are not problem-minded; they’re opportunity-minded. They feed opportunities and starve problems. They think preventively. They have genuine Quadrant I crises and emergencies that require their immediate attention, but the number is comparatively small. They keep P and PC in balance by focusing on the important, but not urgent, high leverage capacity-building activities of Quadrant II.</p>
@@ -118,9 +118,9 @@ The Daily Private Victory—a minimum of one hour a day in renewal of the physic
     </item>
     <item>
       <title>Optimizing Shadowrocket - Bypass Proxy for Specific Domains and Apps</title>
-      <link>http://localhost:1313/posts/optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</link>
+      <link>http://localhost:1313/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</guid>
+      <guid>http://localhost:1313/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</guid>
       <description>&lt;h3 id=&#34;how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps&#34;&gt;How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps&lt;/h3&gt;
 &lt;p&gt;Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&amp;rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h3 id="how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps">How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps</h3>
@@ -231,9 +231,9 @@ The Daily Private Victory—a minimum of one hour a day in renewal of the physic
     </item>
     <item>
       <title>Setting Up Hugo - A Personal Guide</title>
-      <link>http://localhost:1313/posts/setting-up-hugo---a-personal-guide/</link>
+      <link>http://localhost:1313/posts/6--setting-up-hugo---a-personal-guide/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/setting-up-hugo---a-personal-guide/</guid>
+      <guid>http://localhost:1313/posts/6--setting-up-hugo---a-personal-guide/</guid>
       <description>&lt;h1 id=&#34;setting-up-hugo-a-personal-guide&#34;&gt;Setting Up Hugo: A Personal Guide&lt;/h1&gt;
 &lt;p&gt;Why am I spending time presenting this instruction? Because using the official wikis of Hugo and your theme of choice (PaperMod in my case) might not be as straightforward for beginners.&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
@@ -436,9 +436,9 @@ The Daily Private Victory—a minimum of one hour a day in renewal of the physic
     </item>
     <item>
       <title>Going Far or Fast</title>
-      <link>http://localhost:1313/posts/going-far-or-fast/</link>
+      <link>http://localhost:1313/posts/5--going-far-or-fast/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/going-far-or-fast/</guid>
+      <guid>http://localhost:1313/posts/5--going-far-or-fast/</guid>
       <description>&lt;p&gt;Life, at its core, is founded on interdependency. This concept was beautifully articulated by Stephen Covey in his book, &lt;em&gt;Seven Habits of Highly Effective People&lt;/em&gt;. I still vividly remember the moments spent reading it. Not just for the sheer joy of it, but because it took me months to finish—I was really slow at reading English back then! 😑 Part of why I liked the content was its resonance with my own experiences; it didn&amp;rsquo;t feel like a new strategy to adopt, but something I had already encountered in life. I fondly recall explaining the book, word by word, to my friend Amin while sitting in Saeb mausoleum.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Life, at its core, is founded on interdependency. This concept was beautifully articulated by Stephen Covey in his book, <em>Seven Habits of Highly Effective People</em>. I still vividly remember the moments spent reading it. Not just for the sheer joy of it, but because it took me months to finish—I was really slow at reading English back then! 😑 Part of why I liked the content was its resonance with my own experiences; it didn&rsquo;t feel like a new strategy to adopt, but something I had already encountered in life. I fondly recall explaining the book, word by word, to my friend Amin while sitting in Saeb mausoleum.</p>
 <p>However, I&rsquo;ve realized that the discussion on dependency, independency, and interdependency isn’t always clear or relatable to everyone. It&rsquo;s not about complex mathematics or wizardry, but it seems some fundamental aspects of personality might be necessary to grasp these concepts. That’s why I’m sharing these thoughts here.</p>
@@ -451,9 +451,9 @@ The Daily Private Victory—a minimum of one hour a day in renewal of the physic
     </item>
     <item>
       <title>No Elevation Here - A Review of Robert Glazer’s ‘Elevate’</title>
-      <link>http://localhost:1313/posts/no-elevation-here---a-review-of-robert-glazers-elevate/</link>
+      <link>http://localhost:1313/posts/4--no-elevation-here---a-review-of-robert-glazers-elevate/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/no-elevation-here---a-review-of-robert-glazers-elevate/</guid>
+      <guid>http://localhost:1313/posts/4--no-elevation-here---a-review-of-robert-glazers-elevate/</guid>
       <description>&lt;p&gt;I don&amp;rsquo;t remember exactly how this book entered my to-read shelf. One day, I found it on sale on the Kindle Store and bought it without checking the rating and reviews on Goodreads. I wish I had!&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.robertglazer.com/&#34;&gt;Robert Glazer&lt;/a&gt; is an award-winning CEO and entrepreneur. His interviews in multiple podcasts and magazines piqued my interest, leading me to believe his book would be equally insightful. Unfortunately, like many self-help books written by successful leaders, I found &amp;ldquo;Elevate&amp;rdquo; lacking in novelty and inspiration.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I don&rsquo;t remember exactly how this book entered my to-read shelf. One day, I found it on sale on the Kindle Store and bought it without checking the rating and reviews on Goodreads. I wish I had!</p>
@@ -507,9 +507,9 @@ The Daily Private Victory—a minimum of one hour a day in renewal of the physic
     </item>
     <item>
       <title>From Zero to Git Pro - A Review of Colt Steele’s Bootcamp on Udemy</title>
-      <link>http://localhost:1313/posts/from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</link>
+      <link>http://localhost:1313/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</guid>
+      <guid>http://localhost:1313/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</guid>
       <description>&lt;p&gt;When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing &lt;a href=&#34;https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1&#34;&gt;bootcamp by Colt Steele&lt;/a&gt; turned out to be much more than I ever imagined, and it&amp;rsquo;s the best programming course I&amp;rsquo;ve ever taken.&lt;/p&gt;
 &lt;p&gt;The course consists of 20 chapters, and believe me, you won&amp;rsquo;t reach the last part easily. The course is super rich in content, quite lengthy, and requires proper note-taking and practice. For note-taking, I used Notion, which is my first, second, and third choice for taking notes, including some code snippets. If you&amp;rsquo;re not familiar with Notion, you can find plenty of YouTube channels and playlists to learn the basics in less than an hour. Creating a flash course on Notion has been on my to-do list for a while, so you can subscribe to my YouTube channel and be a bit patient for that to come alive.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing <a href="https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1">bootcamp by Colt Steele</a> turned out to be much more than I ever imagined, and it&rsquo;s the best programming course I&rsquo;ve ever taken.</p>
@@ -534,9 +534,9 @@ The Daily Private Victory—a minimum of one hour a day in renewal of the physic
     </item>
     <item>
       <title>Passion vs. Practicality - My Struggle Between Finance and Programming</title>
-      <link>http://localhost:1313/posts/passion-vs.-practicality---my-struggle-between-finance-and-programming/</link>
+      <link>http://localhost:1313/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/passion-vs.-practicality---my-struggle-between-finance-and-programming/</guid>
+      <guid>http://localhost:1313/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</guid>
       <description>&lt;p&gt;&amp;ldquo;I&amp;rsquo;ve reached the boiling point with the situation.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;This is an idiom we all use from time to time to express feelings of being overwhelmed, often accompanied by anxiety. However, what I&amp;rsquo;ve been experiencing over the last two days is much more intense. To describe it, I thought it might be fitting to draw on my long-forgotten days of studying chemical engineering. While many people think of the boiling point as the hottest state a substance can experience, every thermodynamics reference explains that the &lt;strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Critical_point_(thermodynamics)&#34;&gt;critical point&lt;/a&gt;&lt;/strong&gt; is what we should be looking for. This state is achieved by controlling both pressure and temperature, rendering the substance unidentifiable as a solid, liquid, or gas. In other words, it loses its distinct characteristics.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>&ldquo;I&rsquo;ve reached the boiling point with the situation.&rdquo;</p>
@@ -560,9 +560,9 @@ The Daily Private Victory—a minimum of one hour a day in renewal of the physic
     </item>
     <item>
       <title>Welcoming Nowruz 1401-01-01 | A Time for Renewal and Goals</title>
-      <link>http://localhost:1313/posts/welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</link>
+      <link>http://localhost:1313/posts/1--welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</guid>
+      <guid>http://localhost:1313/posts/1--welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</guid>
       <description>&lt;h3 id=&#34;welcoming-nowruz-14010101-a-time-for-renewal-and-goals&#34;&gt;Welcoming Nowruz 1401/01/01: A Time for Renewal and Goals&lt;/h3&gt;
 &lt;p&gt;Nowruz marks the first day of the first month of the Iranian calendar, and this year is extra special—it’s also the first day of the 15th century on the &lt;a href=&#34;https://www.google.com/search?client=safari&amp;amp;rls=en&amp;amp;sxsrf=APq-WBuKQAw9ZCPm_de--pjE8CNZkx0yuQ:1648742917875&amp;amp;q=Solar+Hijri+calendar&amp;amp;stick=H4sIAAAAAAAAAONgVuLSz9U3yC4zL8grWsQqEpyfk1ik4JGZVZSpkJyYk5qXklgEAHXFr90lAAAA&amp;amp;sa=X&amp;amp;ved=2ahUKEwiIlcj_3fD2AhWRiv0HHSxmCYgQmxMoAXoECCcQAw&#34;&gt;Solar Hijri calendar&lt;/a&gt;. For many, this once-in-a-lifetime opportunity is the perfect moment to set new goals and open new chapters in life. Interestingly, so many parents have scheduled the birth of their child to coincide with this day that the government reports a tripling in birth rates!&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h3 id="welcoming-nowruz-14010101-a-time-for-renewal-and-goals">Welcoming Nowruz 1401/01/01: A Time for Renewal and Goals</h3>

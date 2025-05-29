@@ -12,7 +12,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</loc>
+    <loc>http://localhost:1313/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</loc>
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -57,7 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</loc>
+    <loc>http://localhost:1313/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -87,7 +87,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/setting-up-hugo---a-personal-guide/</loc>
+    <loc>http://localhost:1313/posts/6--setting-up-hugo---a-personal-guide/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -127,7 +127,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/going-far-or-fast/</loc>
+    <loc>http://localhost:1313/posts/5--going-far-or-fast/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -152,7 +152,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/no-elevation-here---a-review-of-robert-glazers-elevate/</loc>
+    <loc>http://localhost:1313/posts/4--no-elevation-here---a-review-of-robert-glazers-elevate/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -177,7 +177,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</loc>
+    <loc>http://localhost:1313/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -207,7 +207,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/passion-vs.-practicality---my-struggle-between-finance-and-programming/</loc>
+    <loc>http://localhost:1313/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -242,7 +242,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</loc>
+    <loc>http://localhost:1313/posts/1--welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

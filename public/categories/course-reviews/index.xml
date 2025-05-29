@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/categories/course-reviews/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Zero to Git Pro - A Review of Colt Steele’s Bootcamp on Udemy</title>
-      <link>http://localhost:1313/posts/from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</link>
+      <link>http://localhost:1313/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</guid>
+      <guid>http://localhost:1313/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</guid>
       <description>&lt;p&gt;When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing &lt;a href=&#34;https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1&#34;&gt;bootcamp by Colt Steele&lt;/a&gt; turned out to be much more than I ever imagined, and it&amp;rsquo;s the best programming course I&amp;rsquo;ve ever taken.&lt;/p&gt;
 &lt;p&gt;The course consists of 20 chapters, and believe me, you won&amp;rsquo;t reach the last part easily. The course is super rich in content, quite lengthy, and requires proper note-taking and practice. For note-taking, I used Notion, which is my first, second, and third choice for taking notes, including some code snippets. If you&amp;rsquo;re not familiar with Notion, you can find plenty of YouTube channels and playlists to learn the basics in less than an hour. Creating a flash course on Notion has been on my to-do list for a while, so you can subscribe to my YouTube channel and be a bit patient for that to come alive.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing <a href="https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1">bootcamp by Colt Steele</a> turned out to be much more than I ever imagined, and it&rsquo;s the best programming course I&rsquo;ve ever taken.</p>
