@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.147.5</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book Reviews</title>
+      <link>http://localhost:1313/categories/book-reviews/</link>
+      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/book-reviews/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>http://localhost:1313/categories/productivity/</link>
+      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/productivity/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tech Tutorials</title>
       <link>http://localhost:1313/categories/tech-tutorials/</link>
@@ -39,13 +53,6 @@
       <link>http://localhost:1313/categories/personal-development/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/personal-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Book Reviews</title>
-      <link>http://localhost:1313/categories/book-reviews/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/book-reviews/</guid>
       <description></description>
     </item>
     <item>

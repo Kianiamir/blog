@@ -9,8 +9,6 @@ theme:
 services:
   googleAnalytics:
     ID: "G-J245JZDY52"
-  disqus:
-    shortname: "amirkiani"
 
 # Build Options
 enableRobotsTXT: true
@@ -48,8 +46,6 @@ privacy:
     respectDoNotTrack: true
     useSessionStorage: false
     disable: false
-  disqus:
-    disable: false
 
 # Site Parameters
 params:
@@ -58,8 +54,7 @@ params:
   description: "Welcome to my blog"
   keywords: ["AmirKiani", "Finance", "Blog", "Portfolio", "PaperMod"]
   author: "Amir Kiani"
-  comments: true
-  
+  disqusShortname: "amirkiani" # For Disqus comments, comment to disable
 
   # Multiple authors: ["Me", "You"]
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -93,11 +88,11 @@ params:
   assets:
     # disableHLJS: true # To disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/images/favicon/favicon.ico"
+    favicon16x16: "/images/favicon/favicon-16x16.png"
+    favicon32x32: "/images/favicon/favicon-32x32.png"
+    apple_touch_icon: "/images/favicon/apple-touch-icon.png"
+    safari_pinned_tab: "/images/favicon/safari-pinned-tab.svg"
 
   # Label
   label:
@@ -107,18 +102,18 @@ params:
 
   # Profile Mode
   profileMode:
-    enabled: false # Needs to be explicitly set
-    title: "ExampleSite"
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
+    enabled: true # Needs to be explicitly set
+    title: "Hi, I'm Amir Kiani"
+    subtitle: "MBA in Finance. Aspiring PhD in Quantitative Finance/Economics"
+    imageUrl: "/images/profile.webp"
+    imageWidth: 240
+    imageHeight: 240
     imageTitle: "my image"
     buttons:
       - name: "Posts"
         url: "posts"
-      - name: "Tags"
-        url: "tags"
+      # - name: "Tags"
+      #   url: "tags"
 
   # Home Info Mode
   homeInfoParams:
@@ -132,24 +127,25 @@ params:
 
   # Social Icons
   socialIcons:
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/iamirkiani/"
     - name: "x"
       url: "https://x.com/iamirkiani"
     - name: "github"
       url: "https://github.com/kianiamir"
     - name: "goodreads"
-      url: ""
+      url: "https://www.goodreads.com/amirkiani"
     - name: "instagram"
       url: "http://instagram.com/amirkianihimself"
     - name: "kaggle"
-      url: ""
-    # - name: "mastodon"
-    #   url: ""
+      url: "https://www.kaggle.com/amirkiani73"
+
     # - name: "steam"
     #   url: ""
     # - name: "strava"
     #   url: ""
-    # - name: "youtube"
-    #   url: ""
+    - name: "LeetCode"
+      url: "https://leetcode.com/u/amirkiani/"
 
   # Analytics
   analytics:
@@ -162,15 +158,15 @@ params:
 
   # Cover
   cover:
-    hidden: true # Hide everywhere but not in structured data
-    hiddenInList: true # Hide on list pages and home
-    hiddenInSingle: true # Hide on single page
+    hidden: false # Hide everywhere but not in structured data
+    hiddenInList: false # Hide on list pages and home
+    hiddenInSingle: false # Hide on single page
 
   # Edit Post
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # Edit text
-    appendFilePath: true # To append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # Edit text
+  #   appendFilePath: true # To append file path to Edit link
 
   # Fuse.js Options for Search
   # https://fusejs.io/api/options.html
@@ -187,6 +183,12 @@ params:
 # Menu Configuration
 menu:
   main:
+    - identifier: "cv"
+      name: "CV"
+      url: "/cv/AmirKianiCV.pdf"
+      weight: 10
+      params:
+        target: "_blank" # Opens the link in a new tab, optional
     - identifier: "categories"
       name: "Categories"
       url: "/categories/"
@@ -199,20 +201,14 @@ menu:
     #   name: "Example.org"
     #   url: "https://example.org"
     #   weight: 30
-    - identifier: "cv"
-      name: "CV"
-      url: "/cv/AmirKianiCV.pdf"
-      weight: 10
-      params:
-        target: "_blank" # Opens the link in a new tab, optional
-    - identifier: "search"
-      name: "Search"
-      url: "/search/"
-      weight: 40
     - identifier: "archives"
       name: "Archives"
       url: "/archives/"
       weight: 30
+    - identifier: "search"
+      name: "Search"
+      url: "/search/"
+      weight: 40
 
 # Syntax Highlighting
 pygmentsUseClasses: true
