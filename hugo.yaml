@@ -18,11 +18,11 @@ languages:
       profileMode:
         enabled: true
         title: "Hi, I'm Amir Kiani"
-        subtitle: "MBA in Finance. Aspiring PhD in Quantitative Finance/Economics"
+        subtitle: "I code technology, I decode people."
         imageUrl: "/images/profile.webp"
-        imageWidth: 240
-        imageHeight: 240
-        imageTitle: "my image"
+        imageWidth: 300
+        imageHeight: 300
+        imageTitle: "Amir Kiani's image"
         buttons:
           - name: "English Blog"
             url: "/en/posts/"
@@ -35,11 +35,7 @@ languages:
       homeInfoParams:
         Title: "Hi There 👋. I'm Amir Kiani"
         Content: >
-          - I hold an MBA in Finance and am actively pursuing a PhD position in Quantitative Finance. [CV](https://amirkiani.info/cv/)
-
-          - This blog is where I share various aspects of my life—ranging from personal reflections and updates to professional insights on finance and computer science.
-
-          - Feel free to explore my social media links below, but the best way to stay updated on my latest thoughts and experiences is by following this blog.
+          - I hold an MBA in Finance.
 
       socialIcons:
         - name: "LinkedIn"
@@ -95,11 +91,11 @@ languages:
       profileMode:
         enabled: true
         title: "سلام، من امیر کیانی هستم"
-        subtitle: "MBA در مالی. دانشجوی دکترای مالی کمی"
+        subtitle: "فناوری رو می‌نویسم، انسان رو می‌خونم."
         imageUrl: "/images/profile.webp"
-        imageWidth: 240
-        imageHeight: 240
-        imageTitle: "تصویر من"
+        imageWidth: 300
+        imageHeight: 300
+        imageTitle: "تصویر امیر کیانی"
         buttons:
           - name: "بلاگ فارسی"
             url: "/fa/posts/"
@@ -112,12 +108,7 @@ languages:
       homeInfoParams:
         Title: "سلام 👋. من امیر کیانی هستم"
         Content: >
-          - من دارای MBA در مالی هستم و در حال پیگیری موقعیت دکترا در مالی کمی. [رزومه](https://amirkiani.info/cv/)
-
-          - این وبلاگ جایی است که جنبه‌های مختلف زندگی‌ام را به اشتراک می‌گذارم، از تفکرات شخصی و به‌روزرسانی‌ها تا دیدگاه‌های حرفه‌ای در مالی و علوم کامپیوتر.
-
-          - می‌توانید شبکه‌های اجتماعی من را در پایین ببینید، ولی بهترین راه دنبال کردن آخرین افکار و تجربیاتم، دنبال کردن همین وبلاگ است.
-
+          - کارشناس ارشد مالی.
       # socialIcons:
       #   - name: "لینکدین"
       #     url: "https://www.linkedin.com/in/iamirkiani/"
@@ -251,37 +242,6 @@ params:
     favicon32x32: "/images/favicon/favicon-32x32.png"
     apple_touch_icon: "/images/favicon/apple-touch-icon.png"
     safari_pinned_tab: "/images/favicon/safari-pinned-tab.svg"
-
-  # Social Icons
-  socialIcons:
-    - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/iamirkiani/"
-    - name: "x"
-      url: "https://x.com/iamirkiani"
-    - name: "github"
-      url: "https://github.com/kianiamir"
-    - name: "goodreads"
-      url: "https://www.goodreads.com/amirkiani"
-    - name: "instagram"
-      url: "http://instagram.com/amirkianihimself"
-    - name: "kaggle"
-      url: "https://www.kaggle.com/amirkiani73"
-
-    # - name: "steam"
-    #   url: ""
-    # - name: "strava"
-    #   url: ""
-    - name: "LeetCode"
-      url: "https://leetcode.com/u/amirkiani/"
-
-  # Analytics
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    # bing:
-    #   SiteVerificationTag: "XYZabc"
-    # yandex:
-    #   SiteVerificationTag: "XYZabc"
 
   # Cover
   cover:

@@ -43,5 +43,33 @@
                 hreflang="fa-ir"
                 href="http://localhost:1313/fa/tags/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/archives/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa-ir"
+                href="http://localhost:1313/archives/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fa/search/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa-ir"
+                href="http://localhost:1313/fa/search/"
+                />
   </url>
 </urlset>
