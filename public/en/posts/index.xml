@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Amir Kiani&#39;s Blog</title>
+    <link>http://localhost:1313/en/posts/</link>
+    <description>Recent content in Posts on Amir Kiani&#39;s Blog</description>
+    <image>
+      <title>Amir Kiani&#39;s Blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimizing Shadowrocket - Bypass Proxy for Specific Domains and Apps</title>
+      <link>http://localhost:1313/en/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</guid>
+      <description>&lt;h3 id=&#34;how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps&#34;&gt;How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps&lt;/h3&gt;
+&lt;p&gt;Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&amp;rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h3 id="how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps">How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps</h3>
+<p>Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.</p>
+<h4 id="understanding-shadowrocket-rules">Understanding Shadowrocket Rules</h4>
+<p>Shadowrocket uses rules to determine how traffic is routed. These rules can be configured to handle different types of traffic in various ways. Understanding the different rule types and how to use them effectively is crucial for managing your network traffic:</p>
+<ul>
+<li>
+<p><strong>DOMAIN</strong>: Matches an exact domain name. Use this rule when you want to target a specific domain without affecting its subdomains. For instance, setting a rule for <code>example.com</code> will not apply to <code>sub.example.com</code>.</p>
+</li>
+<li>
+<p><strong>DOMAIN-SUFFIX</strong>: Matches any domain that ends with the specified suffix. This is useful for applying rules to an entire domain and all its subdomains. For example, <code>DOMAIN-SUFFIX,example.com</code> will match <code>example.com</code>, <code>sub.example.com</code>, and any other subdomains.</p>
+</li>
+<li>
+<p><strong>DOMAIN-KEYWORD</strong>: Matches any domain that contains the specified keyword. This is a more flexible rule that can capture multiple domains containing the keyword, regardless of their exact structure.</p>
+</li>
+<li>
+<p><strong>GEOIP</strong>: Matches traffic based on geographic location. This rule can be used to route traffic from specific countries through the proxy.</p>
+</li>
+</ul>
+<h4 id="practical-examples">Practical Examples</h4>
+<ol>
+<li>
+<p><strong>DOMAIN</strong>:</p>
+<ul>
+<li><strong>Rule</strong>: <code>DOMAIN,openai.com,DIRECT</code></li>
+<li><strong>Applies to</strong>: <code>openai.com</code></li>
+<li><strong>Does not apply to</strong>: <code>api.openai.com</code>, <code>sub.openai.com</code></li>
+</ul>
+</li>
+<li>
+<p><strong>DOMAIN-SUFFIX</strong>:</p>
+<ul>
+<li><strong>Rule</strong>: <code>DOMAIN-SUFFIX,openai.com,PROXY</code></li>
+<li><strong>Applies to</strong>: <code>openai.com</code>, <code>api.openai.com</code>, <code>sub.openai.com</code></li>
+<li><strong>Does not apply to</strong>: <code>openai.com.au</code>, <code>openai.org</code></li>
+</ul>
+</li>
+<li>
+<p><strong>DOMAIN-KEYWORD</strong>:</p>
+<ul>
+<li><strong>Rule</strong>: <code>DOMAIN-KEYWORD,openai,DIRECT</code></li>
+<li><strong>Applies to</strong>: <code>openai.com</code>, <code>api.openai.com</code>, <code>openai.org</code>, <code>anotheropenai.net</code></li>
+<li><strong>Does not apply to</strong>: <code>open-ai.com</code>, <code>example.com</code></li>
+</ul>
+</li>
+</ol>
+<p>Understanding and utilizing these rules effectively allows you to optimize your network performance, enhance security, and ensure that specific types of traffic are handled according to your requirements.</p>
+<h3 id="option-1-setting-rules-for-specific-apps-chatgpt-launcher-in-my-case">Option 1: Setting Rules for Specific Apps (ChatGPT Launcher in My Case)</h3>
+<p>To set a rule for an app and not a website in Shadowrocket on macOS, you’ll need to use the application’s bundle identifier or process name to target the specific app traffic. Shadowrocket allows you to configure rules that apply to specific apps, bypassing or directing their traffic through the proxy as desired. Here’s how you can do it:</p>
+<h4 id="step-by-step-guide">Step-by-Step Guide</h4>
+<ol>
+<li>
+<p><strong>Find the App’s Bundle Identifier</strong>:</p>
+<ul>
+<li>Open the Terminal app on your Mac.</li>
+<li>Use the following command to find the bundle identifier of the app (replace <code>AppName</code> with the actual name of the app):
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">osascript -e <span class="s1">&#39;id of app &#34;AppName&#34;&#39;</span>
+</span></span></code></pre></div></li>
+<li>For example, to find the bundle identifier of the ChatGPT app, you would use:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">osascript -e <span class="s1">&#39;id of app &#34;ChatGPT&#34;&#39;</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Configure Rules for the App</strong>:</p>
+<ul>
+<li>
+<p>Go to the rules section in Shadowrocket. This might be under a tab labeled &ldquo;Rules&rdquo; or &ldquo;Configuration.&rdquo;</p>
+</li>
+<li>
+<p>Add a new rule to apply the custom proxy settings to the app using its bundle identifier.</p>
+<p>Since the bundle identifier for the ChatGPT app includes the keyword <code>openai</code> (e.g., <code>com.openai.chat</code>), the <code>DOMAIN-KEYWORD</code> rule for <code>openai</code> will route the traffic for the app directly as well.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="option-2-bypassing-proxy-for-chatgpt-and-all-openai-traffic-across-browsers-plugins-apps-and-apis">Option 2: Bypassing Proxy for ChatGPT and All OpenAI Traffic Across Browsers, Plugins, Apps, and APIs</h3>
+<p>To bypass the proxy for the ChatGPT app and all OpenAI-related traffic on macOS, follow these steps:</p>
+<ol>
+<li>
+<p><strong>Open Shadowrocket</strong>:</p>
+<ul>
+<li>Launch the Shadowrocket application on your Mac.</li>
+</ul>
+</li>
+<li>
+<p><strong>Access the Rules Section</strong>:</p>
+<ul>
+<li>Navigate to the rules section. This might be under a tab labeled &ldquo;Rules&rdquo; or &ldquo;Configuration.&rdquo;</li>
+</ul>
+</li>
+<li>
+<p><strong>Add a Domain-Keyword Rule</strong>:</p>
+<ul>
+<li>In the rules section, add a new rule using the <code>DOMAIN-KEYWORD</code> type.</li>
+<li>Enter the keyword <code>openai</code> and set the action to <code>DIRECT</code>. This ensures that any traffic containing the keyword <code>openai</code> will bypass the proxy.</li>
+</ul>
+</li>
+<li>
+<p><strong>Save and Apply the Rule</strong>:</p>
+<ul>
+<li>Save the configuration and make</li>
+</ul>
+</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Setting Up Hugo - A Personal Guide</title>
+      <link>http://localhost:1313/en/posts/6--setting-up-hugo---a-personal-guide/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/6--setting-up-hugo---a-personal-guide/</guid>
+      <description>&lt;h1 id=&#34;setting-up-hugo-a-personal-guide&#34;&gt;Setting Up Hugo: A Personal Guide&lt;/h1&gt;
+&lt;p&gt;Why am I spending time presenting this instruction? Because using the official wikis of Hugo and your theme of choice (PaperMod in my case) might not be as straightforward for beginners.&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m using macOS. For installation instructions on other operating systems, check the &lt;a href=&#34;https://gohugo.io/installation/&#34;&gt;Hugo installation page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To install Hugo on macOS, I use Homebrew:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;creating-your-site&#34;&gt;Creating Your Site&lt;/h2&gt;
+&lt;p&gt;I like my site to be stored in a directory called &lt;code&gt;blog&lt;/code&gt;, but feel free to change the name as you wish:&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="setting-up-hugo-a-personal-guide">Setting Up Hugo: A Personal Guide</h1>
+<p>Why am I spending time presenting this instruction? Because using the official wikis of Hugo and your theme of choice (PaperMod in my case) might not be as straightforward for beginners.</p>
+<h2 id="installation">Installation</h2>
+<p>I&rsquo;m using macOS. For installation instructions on other operating systems, check the <a href="https://gohugo.io/installation/">Hugo installation page</a>.</p>
+<p>To install Hugo on macOS, I use Homebrew:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install hugo
+</span></span></code></pre></div><h2 id="creating-your-site">Creating Your Site</h2>
+<p>I like my site to be stored in a directory called <code>blog</code>, but feel free to change the name as you wish:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new site blog
+</span></span></code></pre></div><p>Now that the directory is created, initiate a git repository in it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> blog
+</span></span><span class="line"><span class="cl">git init
+</span></span></code></pre></div><h2 id="choosing-and-installing-a-theme">Choosing and Installing a Theme</h2>
+<p>Hugo is installed, and now you need a theme. Choose one by searching through the web; my choice is PaperMod. You&rsquo;ll need the GitHub link of the theme.</p>
+<p>To create the site with a YAML configuration file (since PaperMod uses YAML):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new site blog --format yaml
+</span></span></code></pre></div><p>Note that if you follow the instructions in Hugo&rsquo;s official GitHub wiki, the config file will be generated as a TOML file instead of YAML. You have to force the usage of YAML because the sample files of the theme are in YAML format and using them is a good starting point.</p>
+<p>To install the theme:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git submodule add --depth<span class="o">=</span><span class="m">1</span> https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git submodule update --init --recursive <span class="c1"># needed when you reclone your repo (submodules may not get cloned automatically)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git submodule update --remote --merge
+</span></span></code></pre></div><p>Finally, set the theme as PaperMod in your site config. In <code>hugo.yml</code> add:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;PaperMod&#34;</span><span class="p">]</span><span class="w">
+</span></span></span></code></pre></div><h2 id="configuration">Configuration</h2>
+<p>Here are the sample configurations to be added to <code>hugo.yml</code> for a quick start:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://examplesite.com/&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">ExampleSite</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">paginate</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l">PaperMod</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">enableRobotsTXT</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">buildDrafts</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">buildFuture</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">buildExpired</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">minify</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableXML</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">minifyOutput</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"> </span><span class="l">production</span><span class="w"> </span><span class="c"># to enable google analytics, opengraph, twitter-cards and schema.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">ExampleSite</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;ExampleSite description&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">keywords</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">Blog, Portfolio, PaperMod]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l">Me</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># author: [&#34;Me&#34;, &#34;You&#34;] # multiple authors</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">images</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;&lt;link or path of image for opengraph, twitter-cards&gt;&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">DateFormat</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;January 2, 2006&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">defaultTheme</span><span class="p">:</span><span class="w"> </span><span class="l">auto</span><span class="w"> </span><span class="c"># dark, light</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableThemeToggle</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ShowReadingTime</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ShowShareButtons</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ShowPostNavLinks</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ShowBreadCrumbs</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ShowCodeCopyButtons</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ShowWordCount</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ShowRssButtonInSectionTermList</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">UseHugoToc</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableSpecial1stPost</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">disableScrollToTop</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">comments</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">hidemeta</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">hideSummary</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">showtoc</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">tocopen</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">assets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># disableHLJS: true # to disable highlight.js</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># disableFingerprinting: true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">favicon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;link / abs url&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">favicon16x16</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;link / abs url&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">favicon32x32</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;link / abs url&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">apple_touch_icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;link / abs url&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">safari_pinned_tab</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;link / abs url&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">label</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Home&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">/apple-touch-icon.png</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">iconHeight</span><span class="p">:</span><span class="w"> </span><span class="m">35</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># profile-mode</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">profileMode</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="c"># needs to be explicitly set</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">ExampleSite</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;This is subtitle&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">imageUrl</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;img location&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">imageWidth</span><span class="p">:</span><span class="w"> </span><span class="m">120</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">imageHeight</span><span class="p">:</span><span class="w"> </span><span class="m">120</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">imageTitle</span><span class="p">:</span><span class="w"> </span><span class="l">my image</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">buttons</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Posts</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">posts</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Tags</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># home-info mode</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">homeInfoParams</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Hi there 👋&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Content</span><span class="p">:</span><span class="w"> </span><span class="l">Welcome to my blog</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">socialIcons</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">x</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://x.com/&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">stackoverflow</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://stackoverflow.com&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">github</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://github.com/&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">analytics</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">google</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">SiteVerificationTag</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;XYZabc&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">bing</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">SiteVerificationTag</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;XYZabc&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">yandex</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">SiteVerificationTag</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;XYZabc&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">cover</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">hidden</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># hide everywhere but not in structured data</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">hiddenInList</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># hide on list pages and home</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">hiddenInSingle</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># hide on single page</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">editPost</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">URL</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://github.com/&lt;path_to_repo&gt;/content&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Text</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Suggest Changes&#34;</span><span class="w"> </span><span class="c"># edit text</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">appendFilePath</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># to append file path to Edit link</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># for search</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># https://fusejs.io/api/options.html</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">fuseOpts</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">isCaseSensitive</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">shouldSort</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">distance</span><span class="p">:</span><span class="w"> </span><span class="m">1000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">threshold</span><span class="p">:</span><span class="w"> </span><span class="m">0.4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">minMatchCharLength</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">limit: 10 # refer</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.fusejs.io/api/methods.html#search</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">keys</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;title&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;permalink&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;summary&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;content&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">menu</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">main</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">/categories/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">/tags/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">example</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">example.org</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.org</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">30</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">pygmentsUseClasses</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">markup</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">highlight</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">noClasses</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># anchorLineNos: true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># codeFences: true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># guessSyntax: true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># lineNos: true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># style: monokai</span><span class="w">
+</span></span></span></code></pre></div><h2 id="running-your-site-locally">Running Your Site Locally</h2>
+<p>Now everything is set up. You can run your website locally and check the blank index page. In the terminal:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></div><p>Then open this link in your browser:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">localhost:1313
+</span></span></code></pre></div><h2 id="adding-content">Adding Content</h2>
+<p>To add posts, you can add <code>.md</code> files to the content directory or simply use this command as suggested by the official Hugo wiki:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new content/posts/my-first-post.md
+</span></span></code></pre></div><p>But before doing so, I highly suggest checking the archetype folder and the <code>default.md</code> file. One issue I noticed is that the default header for new content is in TOML while we forced the site to use YAML universally. This might not necessarily cause problems, but I prefer consistency throughout the files. My <code>default.md</code> file was like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">date</span> <span class="p">=</span> <span class="p">{{</span> <span class="p">.</span><span class="nx">Date</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">draft</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="err">+++</span>
+</span></span></code></pre></div><p>I changed it to this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span>{{<span class="w"> </span><span class="l">.Date }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><p>Now you are more than ready to create new content:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new content/posts/my-first-post.md
+</span></span></code></pre></div><p>At this point, you have a fully functional site that works fine locally. For the next steps, you can host it on a server to make it accessible to everyone. Happy blogging!</p>
+<h2 id="good-references">Good References:</h2>
+<ol>
+<li><a href="https://jessewei.dev/blog/2023/papermod/#single-1">https://jessewei.dev/blog/2023/papermod/#single-1</a></li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Going Far or Fast</title>
+      <link>http://localhost:1313/en/posts/5--going-far-or-fast/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/5--going-far-or-fast/</guid>
+      <description>&lt;p&gt;Life, at its core, is founded on interdependency. This concept was beautifully articulated by Stephen Covey in his book, &lt;em&gt;Seven Habits of Highly Effective People&lt;/em&gt;. I still vividly remember the moments spent reading it. Not just for the sheer joy of it, but because it took me months to finish—I was really slow at reading English back then! 😑 Part of why I liked the content was its resonance with my own experiences; it didn&amp;rsquo;t feel like a new strategy to adopt, but something I had already encountered in life. I fondly recall explaining the book, word by word, to my friend Amin while sitting in Saeb mausoleum.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Life, at its core, is founded on interdependency. This concept was beautifully articulated by Stephen Covey in his book, <em>Seven Habits of Highly Effective People</em>. I still vividly remember the moments spent reading it. Not just for the sheer joy of it, but because it took me months to finish—I was really slow at reading English back then! 😑 Part of why I liked the content was its resonance with my own experiences; it didn&rsquo;t feel like a new strategy to adopt, but something I had already encountered in life. I fondly recall explaining the book, word by word, to my friend Amin while sitting in Saeb mausoleum.</p>
+<p>However, I&rsquo;ve realized that the discussion on dependency, independency, and interdependency isn’t always clear or relatable to everyone. It&rsquo;s not about complex mathematics or wizardry, but it seems some fundamental aspects of personality might be necessary to grasp these concepts. That’s why I’m sharing these thoughts here.</p>
+<p>Over the years, I’ve broached this topic with many people. If this were a scientific study, I could almost conclude that hardly anyone cared or understood. Even those initially interested soon lost pace and gave up.</p>
+<p>This narrative is indeed sad, but the reason behind it is quite clear: such discussions don’t cater to the lower levels of Maslow&rsquo;s hierarchy of needs. Simple, but there’s more to it. I believe as the economy worsens and people’s needs become more immediate, interest in morality-based guidance dwindles. What terrifies me is that as we drift away from moral foundations, achieving high-value individual and societal goals becomes increasingly difficult. We risk trapping our whole community in a detrimental loop. What will happen after two generations? A rich cultural heritage might lose its defining personality traits, and a great nation like Iran could face turmoil similar to what Afghanistan has experienced.</p>
+<p>How many years would it take for Afghans to rebuild their country from scratch? Perhaps indefinitely. And what are the prospects for personal growth for the new generations in such a society? Perhaps negligible.</p>
+<p>I initially thought about tweeting on this topic, but here I am, having written a whole page instead! 😂 This will remain a public draft until I find the time to add a concluding section, further discussing the dynamic between givers and takers, as classified by Adam Grant.</p>
+<p>For now, I highly recommend <a href="https://www.youtube.com/watch?v=U0qveRSr-Zk">this clip</a> (Note: the spoken language is Persian). 😇</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>No Elevation Here - A Review of Robert Glazer’s ‘Elevate’</title>
+      <link>http://localhost:1313/en/posts/4--no-elevation-here---a-review-of-robert-glazers-elevate/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/4--no-elevation-here---a-review-of-robert-glazers-elevate/</guid>
+      <description>&lt;p&gt;I don&amp;rsquo;t remember exactly how this book entered my to-read shelf. One day, I found it on sale on the Kindle Store and bought it without checking the rating and reviews on Goodreads. I wish I had!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.robertglazer.com/&#34;&gt;Robert Glazer&lt;/a&gt; is an award-winning CEO and entrepreneur. His interviews in multiple podcasts and magazines piqued my interest, leading me to believe his book would be equally insightful. Unfortunately, like many self-help books written by successful leaders, I found &amp;ldquo;Elevate&amp;rdquo; lacking in novelty and inspiration.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>I don&rsquo;t remember exactly how this book entered my to-read shelf. One day, I found it on sale on the Kindle Store and bought it without checking the rating and reviews on Goodreads. I wish I had!</p>
+<p><a href="https://www.robertglazer.com/">Robert Glazer</a> is an award-winning CEO and entrepreneur. His interviews in multiple podcasts and magazines piqued my interest, leading me to believe his book would be equally insightful. Unfortunately, like many self-help books written by successful leaders, I found &ldquo;Elevate&rdquo; lacking in novelty and inspiration.</p>
+<p>The book introduces a 4-principle framework for capacity building:</p>
+<ul>
+<li>Spiritual Capacity</li>
+<li>Intellectual Capacity</li>
+<li>Physical Capacity</li>
+<li>Emotional Capacity</li>
+</ul>
+<p>Upon skimming through the book and seeing this list, I had a feeling of déjà vu. Apart from a few quotes from notable figures in capacity building and personal growth, I hardly ever felt the urge to highlight anything noteworthy.</p>
+<p>Here&rsquo;s a brief overview of some key points from the book:</p>
+<h4 id="highlights">Highlights</h4>
+<p><strong>Intro</strong></p>
+<blockquote>
+<p>For everyone who knows deep down they can be more.</p></blockquote>
+<p>This quote initially raised my expectations sky-high. I was ready to add Robert Glazer to my list of personal heroes. He begins with a story about his weekly newsletter, Friday Forward, and its unexpected success, hoping to hook readers for the chapters ahead.</p>
+<p><strong>Chapter 1: What Is Capacity Building?</strong></p>
+<p>Capacity building is defined as:</p>
+<blockquote>
+<p>The method by which individuals seek, acquire, and develop the skills and abilities to consistently perform at a higher level in pursuit of their innate potential.</p></blockquote>
+<p>Glazer emphasizes that capacity building is about doing more of the right things, not just more things. He introduces the four elements of capacity building:</p>
+<ol>
+<li><strong>Spiritual</strong> (understanding who you are)</li>
+<li><strong>Intellectual</strong> (enhancing your ability to think and learn)</li>
+<li><strong>Physical</strong> (improving your physical performance)</li>
+<li><strong>Emotional</strong> (facing challenges and managing relationships)</li>
+</ol>
+<p>Glazer believes our growth is best when all four elements develop in tandem.</p>
+<p><strong>Chapter 2: Build Your Spiritual Capacity</strong></p>
+<blockquote>
+<p>Don’t consider the word “Spiritual” as a religious term in the context of capacity building. It refers to understanding who you are and what you want most in life.</p></blockquote>
+<p>Core values serve as guideposts for navigating life, and understanding them is crucial for growth.</p>
+<p><strong>Chapter 3: Build Your Intellectual Capacity</strong></p>
+<blockquote>
+<p>“Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young.” —Henry Ford</p></blockquote>
+<p>Intellectual capacity involves the ability to learn, plan, and execute with discipline. Improving this capacity starts with the belief that it can be improved.</p>
+<p><strong>Chapter 4: Build Your Physical Capacity</strong></p>
+<p>Glazer discusses the importance of a healthy body on overall life quality, emphasizing good nutrition and sleep.</p>
+<p><strong>Chapter 5: Build Your Emotional Capacity</strong></p>
+<blockquote>
+<p>Think about a race car. If your spiritual, physical, and intellectual capacities are the tools to design, build, and improve the car, your emotional capacity is your ability to drive it amidst other drivers and unexpected obstacles.</p></blockquote>
+<p>He underscores the importance of challenging oneself, gratitude, and maintaining meaningful relationships.</p>
+<p><strong>Chapter 6: Build A Better Path</strong></p>
+<p>Nothing particularly noteworthy was found in this chapter.</p>
+<p>Each chapter ends with an action plan for practical steps in capacity building. You might find these useful if you&rsquo;re curious about specific techniques.</p>
+<h3 id="my-personal-conclusion">My Personal Conclusion:</h3>
+<p>I gave this book a rating of 1 out of 5 because it failed to offer anything new or interesting. However, this might be due to my previous readings and high expectations from an author of Glazer&rsquo;s caliber.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>From Zero to Git Pro - A Review of Colt Steele’s Bootcamp on Udemy</title>
+      <link>http://localhost:1313/en/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</guid>
+      <description>&lt;p&gt;When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing &lt;a href=&#34;https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1&#34;&gt;bootcamp by Colt Steele&lt;/a&gt; turned out to be much more than I ever imagined, and it&amp;rsquo;s the best programming course I&amp;rsquo;ve ever taken.&lt;/p&gt;
+&lt;p&gt;The course consists of 20 chapters, and believe me, you won&amp;rsquo;t reach the last part easily. The course is super rich in content, quite lengthy, and requires proper note-taking and practice. For note-taking, I used Notion, which is my first, second, and third choice for taking notes, including some code snippets. If you&amp;rsquo;re not familiar with Notion, you can find plenty of YouTube channels and playlists to learn the basics in less than an hour. Creating a flash course on Notion has been on my to-do list for a while, so you can subscribe to my YouTube channel and be a bit patient for that to come alive.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing <a href="https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1">bootcamp by Colt Steele</a> turned out to be much more than I ever imagined, and it&rsquo;s the best programming course I&rsquo;ve ever taken.</p>
+<p>The course consists of 20 chapters, and believe me, you won&rsquo;t reach the last part easily. The course is super rich in content, quite lengthy, and requires proper note-taking and practice. For note-taking, I used Notion, which is my first, second, and third choice for taking notes, including some code snippets. If you&rsquo;re not familiar with Notion, you can find plenty of YouTube channels and playlists to learn the basics in less than an hour. Creating a flash course on Notion has been on my to-do list for a while, so you can subscribe to my YouTube channel and be a bit patient for that to come alive.</p>
+<p>In the first 10 chapters, you&rsquo;ll learn almost everything about Git, and by doing the exercises, you&rsquo;ll gain great confidence in your Git knowledge.</p>
+<p>Starting with chapter 11, you&rsquo;ll get familiar with GitHub. Colt illustrates almost every situation you might face in a real collaborative project. These demonstrations are unique to this course and rarely found in other courses. I suggest taking notes on these scenarios to quickly review the instructions when needed.</p>
+<p>If you check out the feedback on Udemy, you&rsquo;ll see that many students agree with my opinion on the course.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<ol>
+<li>I can&rsquo;t express enough gratitude to Colt Steele for his amazing zero-to-mastery course.</li>
+<li>Instead of taking multiple courses on Git, watch this course once patiently, take good notes, and use your notes to master the knowledge.</li>
+</ol>
+<h2 id="follow-the-instructor-colt-steele">Follow the Instructor (Colt Steele)</h2>
+<ul>
+<li>Instagram: <a href="https://www.instagram.com/coltsteele/?hl=en">https://www.instagram.com/coltsteele</a></li>
+<li>GitHub: <a href="https://github.com/Colt">https://github.com/Colt</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/coltsteele/">https://www.linkedin.com/in/coltsteele</a></li>
+<li>Twitter: <a href="https://twitter.com/codecolt">https://twitter.com/codecolt</a></li>
+<li>CodePen: <a href="https://codepen.io/Colt">https://codepen.io/Colt</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Passion vs. Practicality - My Struggle Between Finance and Programming</title>
+      <link>http://localhost:1313/en/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</guid>
+      <description>&lt;p&gt;&amp;ldquo;I&amp;rsquo;ve reached the boiling point with the situation.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;This is an idiom we all use from time to time to express feelings of being overwhelmed, often accompanied by anxiety. However, what I&amp;rsquo;ve been experiencing over the last two days is much more intense. To describe it, I thought it might be fitting to draw on my long-forgotten days of studying chemical engineering. While many people think of the boiling point as the hottest state a substance can experience, every thermodynamics reference explains that the &lt;strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Critical_point_%28thermodynamics%29&#34;&gt;critical point&lt;/a&gt;&lt;/strong&gt; is what we should be looking for. This state is achieved by controlling both pressure and temperature, rendering the substance unidentifiable as a solid, liquid, or gas. In other words, it loses its distinct characteristics.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>&ldquo;I&rsquo;ve reached the boiling point with the situation.&rdquo;</p>
+<p>This is an idiom we all use from time to time to express feelings of being overwhelmed, often accompanied by anxiety. However, what I&rsquo;ve been experiencing over the last two days is much more intense. To describe it, I thought it might be fitting to draw on my long-forgotten days of studying chemical engineering. While many people think of the boiling point as the hottest state a substance can experience, every thermodynamics reference explains that the <strong><a href="https://en.wikipedia.org/wiki/Critical_point_%28thermodynamics%29">critical point</a></strong> is what we should be looking for. This state is achieved by controlling both pressure and temperature, rendering the substance unidentifiable as a solid, liquid, or gas. In other words, it loses its distinct characteristics.</p>
+<p>So, <strong>&ldquo;at my critical point&rdquo;</strong> has been my status for the last two days. I&rsquo;ve been thoroughly reviewing my educational and personal development path since graduating high school. To be honest, not only are the results not in my favor, but I also feel that nowhere along this journey have I felt satisfied, even briefly.</p>
+<p>Everything traces back to when I was about twelve years old, and my father bought us a PC. I was fascinated by this new phenomenon, not for gaming, but for the potential it had to become anything I could imagine. Seeing my passion, my mom enrolled me in a professional course, which I didn&rsquo;t appreciate at the time. Later, I realized it was the MCSE Professional Certification Course by Microsoft. By the time I turned eighteen, my curiosity had given me a solid foundation in the digital world, making computer engineering my priority for undergraduate studies. But then, a turning point occurred: my parents got divorced. My role in the family shifted from needing support and guidance to acting as a mediator, solving problems beyond my mental capacity. Consequently, my priority changed from pursuing my passion to regaining peace of mind and focus.</p>
+<p>&ldquo;I&rsquo;ll put the needle of the compass on the house and find the farthest place from home to live,&rdquo; I told my mom as I revised my university and major preferences.</p>
+<p><img loading="lazy" src="https://amirkiani.info/wp-content/uploads/2022/05/compass-224x300.jpg"></p>
+<p>Three months later, I was a student in a major I knew nothing about, in a city near the southeast border of the country, which didn&rsquo;t even have proper drinking water. I lacked the courage, and had no truthful friend or mentor to tell me about the option of quitting. So, I stuck to the plan, and day by day, the snowball effect increasingly diverged my ideal path from the one I was on.</p>
+<p>Eventually, I got a second chance. I thought changing my major for my master&rsquo;s might help, and due to <a href="https://amirkiani.info/about/">the experiences and achievements</a> during my bachelor&rsquo;s years, I chose an MBA. Again, I could have pursued my interests by selecting a computer-related field, but without anyone to encourage me, I watched my dreams slip away once more.</p>
+<p>Now, I&rsquo;m twenty years old and at the end of <a href="https://amirkiani.info/about/">my MBA journey</a>. My interest and passion for computers and programming are stronger than ever. But I&rsquo;m unsure if it&rsquo;s wise to follow my heart for my last chance. The price could be a two-year compulsory military service to enter the job market officially, plus accepting that a decade of my life—the supposed best decade—is wasted and gone, and I must come to terms with this fact.</p>
+<p>Feeling extremely overwhelmed this morning, I googled &ldquo;software developer vs financial analyst.&rdquo; The first result was <a href="https://medium.com/free-code-camp/why-i-learned-to-code-instead-of-pursuing-a-career-in-finance-d5ef437c6922">an outstanding article by an Iranian on the Medium blog of FreeCodeCamp.org</a>. It&rsquo;s rare to find a specific answer to a buried query, but this was one of those times.</p>
+<p>As Amir explains, he has faced a similar dilemma. In a fair comparison, he might have experienced an even harder situation since his financial studies are more extensive than mine. Yet, he handled it perfectly, following his passion for programming before it was too late. I highly recommend everyone read the entire <a href="https://medium.com/free-code-camp/why-i-learned-to-code-instead-of-pursuing-a-career-in-finance-d5ef437c6922">article</a>. While it&rsquo;s about a finance student turning into a programmer, many people from different fields might resonate with the idea and the aspects discussed regarding programming.</p>
+<p>Amir Ghafouri&rsquo;s contact info:</p>
+<ul>
+<li>Amir&rsquo;s Article on Medium: <a href="https://medium.com/free-code-camp/why-i-learned-to-code-instead-of-pursuing-a-career-in-finance-d5ef437c6922">Click Here</a></li>
+</ul>
+<p>I posted this on my blog firstly to promote Amir&rsquo;s amazing content and secondly as a self-reminder of my mistakes and a catalyst for better future steps.</p>
+<p>Let me know your opinion on my story or share a related story of your own in the comments.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Welcoming Nowruz 1401-01-01 | A Time for Renewal and Goals</title>
+      <link>http://localhost:1313/en/posts/1--welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</link>
+      <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/1--welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</guid>
+      <description>&lt;h3 id=&#34;welcoming-nowruz-14010101-a-time-for-renewal-and-goals&#34;&gt;Welcoming Nowruz 1401/01/01: A Time for Renewal and Goals&lt;/h3&gt;
+&lt;p&gt;Nowruz marks the first day of the first month of the Iranian calendar, and this year is extra special—it’s also the first day of the 15th century on the &lt;a href=&#34;https://www.google.com/search?client=safari&amp;amp;rls=en&amp;amp;sxsrf=APq-WBuKQAw9ZCPm_de--pjE8CNZkx0yuQ:1648742917875&amp;amp;q=Solar&amp;#43;Hijri&amp;#43;calendar&amp;amp;stick=H4sIAAAAAAAAAONgVuLSz9U3yC4zL8grWsQqEpyfk1ik4JGZVZSpkJyYk5qXklgEAHXFr90lAAAA&amp;amp;sa=X&amp;amp;ved=2ahUKEwiIlcj_3fD2AhWRiv0HHSxmCYgQmxMoAXoECCcQAw&#34;&gt;Solar Hijri calendar&lt;/a&gt;. For many, this once-in-a-lifetime opportunity is the perfect moment to set new goals and open new chapters in life. Interestingly, so many parents have scheduled the birth of their child to coincide with this day that the government reports a tripling in birth rates!&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h3 id="welcoming-nowruz-14010101-a-time-for-renewal-and-goals">Welcoming Nowruz 1401/01/01: A Time for Renewal and Goals</h3>
+<p>Nowruz marks the first day of the first month of the Iranian calendar, and this year is extra special—it’s also the first day of the 15th century on the <a href="https://www.google.com/search?client=safari&amp;rls=en&amp;sxsrf=APq-WBuKQAw9ZCPm_de--pjE8CNZkx0yuQ:1648742917875&amp;q=Solar&#43;Hijri&#43;calendar&amp;stick=H4sIAAAAAAAAAONgVuLSz9U3yC4zL8grWsQqEpyfk1ik4JGZVZSpkJyYk5qXklgEAHXFr90lAAAA&amp;sa=X&amp;ved=2ahUKEwiIlcj_3fD2AhWRiv0HHSxmCYgQmxMoAXoECCcQAw">Solar Hijri calendar</a>. For many, this once-in-a-lifetime opportunity is the perfect moment to set new goals and open new chapters in life. Interestingly, so many parents have scheduled the birth of their child to coincide with this day that the government reports a tripling in birth rates!</p>
+<p>Although I’ve always preferred Christmas as my goal-setting point on the calendar for personal reasons, Nowruz has prompted me to revisit my bucket list and reorganize my to-dos.</p>
+<p>Frankly, my current life status is nothing to be proud of. As a twenty-eight-year-old Iranian, I am far from the person I hoped to be both personally and professionally. Various aspects of living in Iran have led me to make wrong decisions over the years, and the <a href="https://en.wikipedia.org/wiki/Snowball_effect">snowball effect</a> has made any possible turnaround increasingly difficult and costly.</p>
+<p>But in 2022, I decided to pay the price and break the cycle. Over the past four months, I’ve taken my first steps on professional and psychological paths that bring energy and joy to my life. While the journey has been challenging, passion has made many of the changes and transitions remarkably smooth.</p>
+<p>On the professional side, I’ve been nurturing my inner programmer for the past four months. For the first time in my life, I don’t feel any pressure pursuing an objective. I have a clear progression plan for the next two to three years, and my energy and thirst for success in this journey will undoubtedly fuel the process.</p>
+<p>I’ve also made significant changes in various aspects of my personal life, which I hope will improve my psychological state in the mid-term. I don’t think there’s much left to lose to OCD, social anxiety, and depression. So, I’m prepared and ambitious to do whatever it takes to help myself out of a life heavily influenced by external factors and not reflective of my true potential.</p>
+<p>If everything goes as planned, by my 32nd birthday, a much different version of me will be living nearly 70% of his dream life, with a substantial list of accomplishments.</p>
+<p>This blog post is more of a personal reminder than an announcement of my goals or wishes for the new year. But if there’s anything you’d like to discuss, I’d love to hear from you in the comments section or my inbox.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BookReview – The 7 Habits of Highly Effective People: A Life-Altering Read</title>
+      <link>http://localhost:1313/en/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m very excited about publishing my thoughts on this book since it was the first book I bought digitally on my Kindle Oasis 2017. &lt;/p&gt;
+&lt;p&gt;I remember I used to take my Kindle to &lt;a href=&#34;https://en.wikipedia.org/wiki/Saeb_Mausoleum&#34;&gt;Saeb Mausoleum&lt;/a&gt; between 4 p.m. to 7 p.m. for two weeks, and I was so enchanted by the book that I almost lived all the other hours talking about it with others.&lt;/p&gt;
+&lt;p&gt;Ever since finishing it, I’ve said this book must be kept beside the holy Quran – In every house and in the closest reach of everybody.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>I&rsquo;m very excited about publishing my thoughts on this book since it was the first book I bought digitally on my Kindle Oasis 2017. </p>
+<p>I remember I used to take my Kindle to <a href="https://en.wikipedia.org/wiki/Saeb_Mausoleum">Saeb Mausoleum</a> between 4 p.m. to 7 p.m. for two weeks, and I was so enchanted by the book that I almost lived all the other hours talking about it with others.</p>
+<p>Ever since finishing it, I’ve said this book must be kept beside the holy Quran – In every house and in the closest reach of everybody.</p>
+<p>When Stephen Covey was asked how he came up with the idea of the book, he mentioned his work as just synthesizing of already known principles of the world for people. </p>
+<p>The main keyword of the book is obviously &ldquo;Effectiveness&rdquo;. We go through the instructions hopefully to become a highly effective person as the title says. The first step the book takes is to teach us what a true character in a person is and what values must drive the character.</p>
+<blockquote>
+<p>There is no effectiveness without discipline, and there is no discipline without character.</p></blockquote>
+<p>So before even going through the main discussion and the seven habits, we are taught to pay attention to our character.</p>
+<p>I very much like the discussion about the sociological shift from this well-desired character ethic to personality ethic after the First World War.</p>
+<p>He says:</p>
+<blockquote>
+<p>The Character Ethic taught that there are basic principles of effective living, and that people can only experience true success and enduring happiness as they learn and integrate these principles into their basic character. But shortly after World War I, the basic view of success shifted from the Character Ethic to what we might call the Personality Ethic. Success became more a function of personality, of public image, of attitudes and behaviors, skills, and techniques that lubricate the processes of human interaction.</p></blockquote>
+<p>Then it goes to define the evergreen principles we need to follow in order to build the character.</p>
+<p>But wait! What are principles? Do you mean values?</p>
+<blockquote>
+<p>Principles are not values. A gang of thieves can share values, but they are in violation of the fundamental principles we’re talking about. Principles are the territory. Values are maps. When we value correct principles, we have truth—a knowledge of things as they are.</p></blockquote>
+<p>Next, he gives us a gauge to measure our real-time effectiveness. This is one of the most outstanding parts of the book: &ldquo;the concept of P/PC balance&rdquo;</p>
+<p>There is a story of a farmer who had a golden-egg goose.
+Unable to wait day after day for the golden eggs, the farmer decides he will kill the goose and get them all at once. But when he opens the goose, he finds it empty. There are no golden eggs—and now there is no way to get any more. The farmer has destroyed the goose that produced them.</p>
+<p>Effectiveness lies in the balance— the P/PC Balance. P stands for production of desired results, the golden eggs. PC stands for production capability, the ability, or asset that produces the golden eggs.</p>
+<p>If you adopt a pattern of life that focuses on golden eggs and neglects the goose, you will soon be without the asset that produces golden eggs. On the other hand, if you only take care of the goose with no aim toward the golden eggs, you soon won’t have the wherewithal to feed yourself or the goose.</p>
+<p>Now that we know what we are looking for (effectiveness) and what is the path to do so (building a character), we can review the essential habits:</p>
+<ol>
+<li>Be Proactive</li>
+</ol>
+<p>  One way of building a character is to become a proactive person, which stands opposed to being reactive. Reactive people are often affected by their physical environment. If the weather is good, they feel good. If it isn’t, it affects their attitude and their performance. Proactive people can carry their own weather with them. Whether it rains or shines makes no difference to them. They are value-driven; and if their value is to produce good-quality work, it isn’t a function of whether the weather is conducive to it or not.</p>
+<ol start="2">
+<li>Begin with the end in mind</li>
+</ol>
+<p>It is based on the principle that all things are created twice. There’s a mental or first creation, and a physical or second creation, to all things.</p>
+<p>  The carpenter’s rule is “measure twice, cut once.” You have to make sure that the blueprint, the first creation, is really what you want, that you’ve thought everything through. Then you put it into bricks and mortar.</p>
+<p>  Habit 2 is based on principles of personal leadership, which means that leadership is the first creation. Leadership is not management. Management is the second creation, which is discussed in the chapter on Habit 3. Leadership has to come first. Management is a bottom-line focus: How can I best accomplish certain things? Leadership deals with the top line: What are the things I want to accomplish? In the words of both Peter Drucker and Warren Bennis, “Management is doing things right; leadership is doing the right things.” Management is efficiency in climbing the ladder of success; leadership determines whether the ladder is leaning against the right wall.</p>
+<p>Effectiveness does not depend solely on how much effort we expend, but on whether or not the effort we expend is in the right jungle.</p>
+<ol start="3">
+<li>Put first things first</li>
+</ol>
+<p>   Habit 2 is the first mental creation. It’s based on imagination—the ability to envision, to see the potential, to create with our minds what we cannot at present see with our eyes.</p>
+<p>   Habit 3, then, is the second creation, the physical creation. It’s the fulfillment, the actualization, the natural emergence of Habits 1 and 2.</p>
+<p>   Effective management is putting first things first. While leadership decides what “first things” are, it is management that puts them first, day-by-day, moment-by-moment. Management is discipline, carrying it out.</p>
+<p>Here comes the next outstanding concept in the book. The time management matrix that helps prioritize our daily tasks.</p>
+<p><img alt="Eisenhower Matrix" loading="lazy" src="/en/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/The-Eisenhower-Matrix.webp"></p>
+<p>this Time Management Matrix —also known as the Eisenhower Matrix or Covey’s Time Management Grid**—was popularized by Stephen R. Covey. However, its original concept is often attributed to Dwight D. Eisenhower, the 34th President of the United States.</p>
+<p>After seeing this matrix, having asked about your opinion of the most important quadrant, you most likely will say the first one. Well, it amazingly isn&rsquo;t!</p>
+<p>Effective people stay out of Quadrants III and IV because, urgent or not, they aren’t important. They also shrink Quadrant I down to size by spending more time in Quadrant II. Quadrant II is the heart of effective personal management. It deals with things that are not urgent, but are important. It deals with things like building relationships, writing a personal mission statement, long-range planning, exercising, preventive maintenance, preparation—all those things we know we need to do, but somehow seldom get around to doing, because they aren’t urgent. To paraphrase Peter Drucker, effective people are not problem-minded; they’re opportunity-minded. They feed opportunities and starve problems. They think preventively. They have genuine Quadrant I crises and emergencies that require their immediate attention, but the number is comparatively small. They keep P and PC in balance by focusing on the important, but not urgent, high leverage capacity-building activities of Quadrant II.</p>
+<p>After that, there is a section on the perks of delegation and how this is a must in the way of becoming more effective in time and task management. It was a good eye-opener, but honestly, I couldn&rsquo;t find anything unique in the discussion.</p>
+<p>But then, in a short section, I encountered something that changed many of my relationships forever:</p>
+<blockquote>
+<p>You simply can’t think efficiency with people. You think effectiveness with people and efficiency with things.</p></blockquote>
+<p>Read that sentence ten times in the row and answer these questions:</p>
+<p>Is it logical to look at the weekend we spend visiting our grandma as inefficient?</p>
+<p>A weekend dinner with your lovely girlfriend takes at least 5 hours of your time and a good chunk of your hard-earned money during the week. Can we look at it having the efficiency of our spent time in view? Will the relationship even survive with this mindset? Are we meant to be super-productivity machines in the end? can we make any satisfactory value for our partner in a such relationship?</p>
+<ol start="4">
+<li>Think win/win</li>
+</ol>
+<p>The first concept discussed here is the EMOTIONAL BANK ACCOUNT. We all know what a financial bank account is. We make deposits into it and build up a reserve from which we can make withdrawals when we need to. An Emotional Bank Account is a metaphor that describes the amount of trust that’s been built up in a relationship. It’s the feeling of safeness you have with another human being. If I make deposits into an Emotional Bank Account with you through courtesy, kindness, honesty, and keeping my commitments to you, I build up a reserve. Your trust toward me becomes higher, and I can call upon that trust many times if I need to. I can even make mistakes and that trust level, that emotional reserve, will compensate for it. My communication may not be clear, but you’ll get my meaning anyway. You won’t make me “an offender for a word.” When the trust account is high, communication is easy, instant, and effective. But if I have a habit of showing discourtesy, disrespect, cutting you off, overreacting, ignoring you, becoming arbitrary, betraying your trust, or threatening you, eventually my Emotional Bank Account is overdrawn. The trust level gets very low. Then what flexibility do I have? None. I’m walking on minefields. I have to be very careful of everything I say.</p>
+<p>Stephen Covey introduces an amazing way of filling the emotional bank:
+P PROBLEMS ARE PC OPPORTUNITIES.
+He suggests that in an interdependent situation, every P problem is a PC opportunity—a chance to build the Emotional Bank Accounts that significantly affect interdependent production.</p>
+<ol start="5">
+<li>Seek first to understand, then to be understood</li>
+</ol>
+<p>This is the habit Stephen Covey told he struggled most with.</p>
+<p>The core to understanding people and having an effective relationship with them is empathetic listening.</p>
+<blockquote>
+<p>Empathy is not sympathy. Sympathy is a form of agreement, a form of judgment. And it is sometimes the more appropriate emotion and response. But people often feed on sympathy. It makes them dependent. The essence of empathic listening is not that you agree with someone; it’s that you fully, deeply, understand that person, emotionally as well as intellectually. Empathic listening involves much more than registering, reflecting, or even understanding the words that are said. Communications experts estimate, in fact, that only 10 percent of our communication is represented by the words we say. Another 30 percent is represented by our sounds, and 60 percent by our body language. In empathic listening, you listen with your ears, but you also, and more importantly, listen with your eyes and with your heart. You listen for feeling, for meaning. You listen for behavior. You use your right brain as well as your left. You sense, you intuit, you feel.</p></blockquote>
+<p>This is a copy of almost a page of the book, which has given a new life to some of my very close relationships since I really didn&rsquo;t know how to be a good listener at times of need.</p>
+<blockquote>
+<p>The skills, the tip of the iceberg of empathic listening, involve four developmental stages. The first and least effective is to mimic content. This is the skill taught in “active” or “reflective” listening. Without the character and relationship base, it is often insulting to people and causes them to close up. It is, however, a first stage skill because it at least causes you to listen to what’s being said. Mimicking content is easy. You just listen to the words that come out of someone’s mouth and you repeat them. You’re hardly even using your brain at all. “Boy, Dad, I’ve had it! School is for the birds!” “You’ve had it. You think school is for the birds.” You have essentially repeated back the content of what was being said. You haven’t evaluated or probed or advised or interpreted. You’ve at least shown you’re paying attention to his words. But to understand, you want to do more. The second stage of empathic listening is to rephrase the content. It’s a little more effective, but it’s still limited to the verbal communication. “Boy, Dad, I’ve had it! School is for the birds!” “You don’t want to go to school anymore.” This time, you’ve put his meaning into your own words. Now you’re thinking about what he said, mostly with the left side, the reasoning, logical side of the brain. The third stage brings your right brain into operation. You reflect feeling. “Boy, Dad, I’ve had it! School is for the birds!” “You’re feeling really frustrated.” Now you’re not paying as much attention to what he’s saying as you are to the way he feels about what he’s saying. The fourth stage includes both the second and the third. You rephrase the content and reflect the feeling. “Boy, Dad, I’ve had it! School is for the birds!” “You’re really frustrated about school.” Frustration is the feeling; school is the content. You’re using both sides of your brain to understand both sides of his communication.</p></blockquote>
+<ol start="6">
+<li>Synergize</li>
+</ol>
+<p>What is synergy? Simply defined, it means that the whole is greater than the sum of its parts. It means that the relationship which the parts have to each other is a part in and of itself. It is not only a part, but the most catalytic, the most empowering, the most unifying, and the most exciting part.</p>
+<p>Many people have not really experienced even a moderate degree of synergy in their family life or in other interactions. They’ve been trained and scripted into defensive and protective communications or into believing that life or other people can’t be trusted. As a result, they are never really open to Habit 6 and to these principles.</p>
+<p>The first lesson from this book that I implemented into my life was to foster the interdependency mindset in myself and try to cultivate the focus on synergy in my relationships. I&rsquo;ve been disappointed so many times by even the closest people who even took advantage of my openness thorough this implementation. But I&rsquo;ve been learning to hard-wire this mindset into my DNA regardless of the feedback I get. I&rsquo;ve made a couple of so powerful relationships recently and have experienced achievements to good to let me get back to the previous life filled with limited resources perspective.</p>
+<ol start="7">
+<li>Sharpen the Saw</li>
+</ol>
+<p>Habit 7 is personal PC. It’s preserving and enhancing the greatest asset you have—you. It’s renewing the four dimensions of your nature—physical, spiritual, mental, and social/emotional.</p>
+<blockquote>
+<p>Exercise is one of those Quadrant II, high-leverage activities that most of us don’t do consistently because it isn’t urgent. And because we don’t do it, sooner or later we find ourselves in Quadrant I, dealing with the health problems and crises that come as a natural result of our neglect.
+The Daily Private Victory—a minimum of one hour a day in renewal of the physical, spiritual, and mental dimensions—is the key to the development of the Seven Habits and it’s completely within your Circle of Influence. It is the Quadrant II focus time necessary to integrate these habits into your life, to become principle-centered.</p></blockquote>
+<p>before reading that paragraph, I used to look at physical exercise as anything but a quadrant 2 task. It really made me re-tag my tasks so that now the second quadrant is the bulkiest part of my list.</p>
+<blockquote>
+<p>Just as junk food and lack of exercise can ruin an athlete’s condition, those things that are obscene, crude, or pornographic can breed an inner darkness that numbs our higher sensibilities and substitutes the social conscience of “Will I be found out?” for the natural or divine conscience of “What is right and wrong?” In the words of Dag Hammarskjöld, You cannot play with the animal in you without becoming wholly animal, play with falsehood without forfeiting your right to truth, play with cruelty without losing your sensitivity of mind. He who wants to keep his garden tidy doesn’t reserve a plot for weeds.</p></blockquote>
+<p>I have so much to say when it comes to spirituality topic and I will surely dedicate so many posts to it. But for now, I guess these words of Teilhard de Chardin suffice for a whole life:</p>
+<blockquote>
+<p>“We are not human beings having a spiritual experience. We are spiritual beings having a human experience.”</p></blockquote>
+<p>Finally, I like to mention some quotes from the book which i liked very much.</p>
+<blockquote>
+<p>Build inner character first—private victory before public victory.</p></blockquote>
+<blockquote>
+<p>We are what we repeatedly do. Excellence, then, is not an act, but a habit. ARISTOTLE</p></blockquote>
+<p>I wrote this review to complement the pleasure of reading it. If you are a fan of this jewel in paper, you&rsquo;re more than welcome to comment or contact me directly so that we can synergically share the joy.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

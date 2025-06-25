@@ -5,6 +5,161 @@ pagination:
 theme:
   - PaperMod
 
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content/en"
+    languageCode: "en-us"
+    languageDirection: ltr
+    params:
+      profileMode:
+        enabled: true
+        title: "Hi, I'm Amir Kiani"
+        subtitle: "MBA in Finance. Aspiring PhD in Quantitative Finance/Economics"
+        imageUrl: "/images/profile.webp"
+        imageWidth: 240
+        imageHeight: 240
+        imageTitle: "my image"
+        buttons:
+          - name: "English Blog"
+            url: "/en/posts/"
+          - name: "بلاگ فارسی"
+            url: "/fa/posts/"
+        # buttons:
+        #   - name: "Blog"
+        #     url: "/posts/"
+
+      homeInfoParams:
+        Title: "Hi There 👋. I'm Amir Kiani"
+        Content: >
+          - I hold an MBA in Finance and am actively pursuing a PhD position in Quantitative Finance. [CV](https://amirkiani.info/cv/)
+
+          - This blog is where I share various aspects of my life—ranging from personal reflections and updates to professional insights on finance and computer science.
+
+          - Feel free to explore my social media links below, but the best way to stay updated on my latest thoughts and experiences is by following this blog.
+
+      socialIcons:
+        - name: "LinkedIn"
+          url: "https://www.linkedin.com/in/iamirkiani/"
+        - name: "x"
+          url: "https://x.com/iamirkiani"
+        - name: "github"
+          url: "https://github.com/kianiamir"
+        - name: "goodreads"
+          url: "https://www.goodreads.com/amirkiani"
+        - name: "instagram"
+          url: "http://instagram.com/amirkianihimself"
+        - name: "kaggle"
+          url: "https://www.kaggle.com/amirkiani73"
+        - name: "LeetCode"
+          url: "https://leetcode.com/u/amirkiani/"
+
+      label:
+        text: "Home"
+        icon: "/apple-touch-icon.png"
+        iconHeight: 35
+
+    menu:
+      main:
+        - identifier: "cv"
+          name: "CV"
+          url: "/cv/amirkianicv.pdf"
+          weight: 10
+          params:
+            target: "_blank"
+        - identifier: "categories"
+          name: "Categories"
+          url: "/categories/"
+          weight: 20
+        - identifier: "archives"
+          name: "Archives"
+          url: "/archives/"
+          weight: 30
+        - identifier: "search"
+          name: "Search"
+          url: "/search/"
+          weight: 40
+
+  fa:
+    languageName: "فارسی"
+    weight: 2
+    contentDir: "content/fa"
+    languageCode: "fa-ir"
+    languageDirection: rtl
+    params:
+      rtl: true
+
+      profileMode:
+        enabled: true
+        title: "سلام، من امیر کیانی هستم"
+        subtitle: "MBA در مالی. دانشجوی دکترای مالی کمی"
+        imageUrl: "/images/profile.webp"
+        imageWidth: 240
+        imageHeight: 240
+        imageTitle: "تصویر من"
+        buttons:
+          - name: "بلاگ فارسی"
+            url: "/fa/posts/"
+          - name: "English Blog"
+            url: "/en/posts/"
+        # buttons:
+        #   - name: "وبلاگ"
+        #     url: "/posts/"
+
+      homeInfoParams:
+        Title: "سلام 👋. من امیر کیانی هستم"
+        Content: >
+          - من دارای MBA در مالی هستم و در حال پیگیری موقعیت دکترا در مالی کمی. [رزومه](https://amirkiani.info/cv/)
+
+          - این وبلاگ جایی است که جنبه‌های مختلف زندگی‌ام را به اشتراک می‌گذارم، از تفکرات شخصی و به‌روزرسانی‌ها تا دیدگاه‌های حرفه‌ای در مالی و علوم کامپیوتر.
+
+          - می‌توانید شبکه‌های اجتماعی من را در پایین ببینید، ولی بهترین راه دنبال کردن آخرین افکار و تجربیاتم، دنبال کردن همین وبلاگ است.
+
+      # socialIcons:
+      #   - name: "لینکدین"
+      #     url: "https://www.linkedin.com/in/iamirkiani/"
+      #   - name: "ایکس"
+      #     url: "https://x.com/iamirkiani"
+      #   - name: "گیت‌هاب"
+      #     url: "https://github.com/kianiamir"
+      #   - name: "گودریدز"
+      #     url: "https://www.goodreads.com/amirkiani"
+      #   - name: "اینستاگرام"
+      #     url: "http://instagram.com/amirkianihimself"
+      #   - name: "کگل"
+      #     url: "https://www.kaggle.com/amirkiani73"
+      #   - name: "لیت‌کد"
+      #     url: "https://leetcode.com/u/amirkiani/"
+
+      label:
+        text: "خانه"
+        icon: "/apple-touch-icon.png"
+        iconHeight: 35
+
+    menu:
+      main:
+        - identifier: "cv"
+          name: "رزومه"
+          url: "/cv/amirkianicv.pdf"
+          weight: 10
+          params:
+            target: "_blank"
+        - identifier: "categories"
+          name: "دسته‌بندی‌ها"
+          url: "/categories/"
+          weight: 20
+        - identifier: "archives"
+          name: "آرشیو"
+          url: "/archives/"
+          weight: 30
+        - identifier: "search"
+          name: "جستجو"
+          url: "/search/"
+          weight: 40
+
 # Site Services
 services:
   googleAnalytics:
@@ -54,7 +209,8 @@ params:
   description: "Welcome to my blog"
   keywords: ["AmirKiani", "Finance", "Blog", "Portfolio", "PaperMod"]
   author: "Amir Kiani"
-  disqusShortname: "amirkiani" # For Disqus comments, comment to disable
+  # disqusShortname: "amirkiani" # For Disqus comments, comment to disable
+  ShowLanguageSwitcher: true
 
   # Multiple authors: ["Me", "You"]
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -86,6 +242,8 @@ params:
 
   # Assets
   assets:
+    css:
+      - css/custom.css
     # disableHLJS: true # To disable highlight.js
     # disableFingerprinting: true
     favicon: "/images/favicon/favicon.ico"
@@ -93,37 +251,6 @@ params:
     favicon32x32: "/images/favicon/favicon-32x32.png"
     apple_touch_icon: "/images/favicon/apple-touch-icon.png"
     safari_pinned_tab: "/images/favicon/safari-pinned-tab.svg"
-
-  # Label
-  label:
-    text: "Home"
-    icon: "/apple-touch-icon.png"
-    iconHeight: 35
-
-  # Profile Mode
-  profileMode:
-    enabled: true # Needs to be explicitly set
-    title: "Hi, I'm Amir Kiani"
-    subtitle: "MBA in Finance. Aspiring PhD in Quantitative Finance/Economics"
-    imageUrl: "/images/profile.webp"
-    imageWidth: 240
-    imageHeight: 240
-    imageTitle: "my image"
-    buttons:
-      - name: "Posts"
-        url: "posts"
-      # - name: "Tags"
-      #   url: "tags"
-
-  # Home Info Mode
-  homeInfoParams:
-    Title: "Hi There \U0001F44B. I'm Amir Kiani"
-    Content: >
-      - I hold an MBA in Finance and am actively pursuing a PhD position in Quantitative Finance. [CV](https://amirkiani.info/cv/)
-
-      - This blog is where I share various aspects of my life—ranging from personal reflections and updates to professional insights on finance and computer science.
-
-      - Feel free to explore my social media links below, but the best way to stay updated on my latest thoughts and experiences is by following this blog.
 
   # Social Icons
   socialIcons:
@@ -179,36 +306,6 @@ params:
     minMatchCharLength: 0
     limit: 10 # Refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
-
-# Menu Configuration
-menu:
-  main:
-    - identifier: "cv"
-      name: "CV"
-      url: "/cv/AmirKianiCV.pdf"
-      weight: 10
-      params:
-        target: "_blank" # Opens the link in a new tab, optional
-    - identifier: "categories"
-      name: "Categories"
-      url: "/categories/"
-      weight: 20
-    # - identifier: "tags"
-    #   name: "Tags"
-    #   url: "/tags/"
-    #   weight: 20
-    # - identifier: "example"
-    #   name: "Example.org"
-    #   url: "https://example.org"
-    #   weight: 30
-    - identifier: "archives"
-      name: "Archives"
-      url: "/archives/"
-      weight: 30
-    - identifier: "search"
-      name: "Search"
-      url: "/search/"
-      weight: 40
 
 # Syntax Highlighting
 pygmentsUseClasses: true

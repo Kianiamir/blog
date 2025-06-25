@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programming on Amir Kiani&#39;s Blog</title>
+    <link>http://localhost:1313/en/tags/programming/</link>
+    <description>Recent content in Programming on Amir Kiani&#39;s Blog</description>
+    <image>
+      <title>Amir Kiani&#39;s Blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 May 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Passion vs. Practicality - My Struggle Between Finance and Programming</title>
+      <link>http://localhost:1313/en/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</guid>
+      <description>&lt;p&gt;&amp;ldquo;I&amp;rsquo;ve reached the boiling point with the situation.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;This is an idiom we all use from time to time to express feelings of being overwhelmed, often accompanied by anxiety. However, what I&amp;rsquo;ve been experiencing over the last two days is much more intense. To describe it, I thought it might be fitting to draw on my long-forgotten days of studying chemical engineering. While many people think of the boiling point as the hottest state a substance can experience, every thermodynamics reference explains that the &lt;strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Critical_point_%28thermodynamics%29&#34;&gt;critical point&lt;/a&gt;&lt;/strong&gt; is what we should be looking for. This state is achieved by controlling both pressure and temperature, rendering the substance unidentifiable as a solid, liquid, or gas. In other words, it loses its distinct characteristics.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>&ldquo;I&rsquo;ve reached the boiling point with the situation.&rdquo;</p>
+<p>This is an idiom we all use from time to time to express feelings of being overwhelmed, often accompanied by anxiety. However, what I&rsquo;ve been experiencing over the last two days is much more intense. To describe it, I thought it might be fitting to draw on my long-forgotten days of studying chemical engineering. While many people think of the boiling point as the hottest state a substance can experience, every thermodynamics reference explains that the <strong><a href="https://en.wikipedia.org/wiki/Critical_point_%28thermodynamics%29">critical point</a></strong> is what we should be looking for. This state is achieved by controlling both pressure and temperature, rendering the substance unidentifiable as a solid, liquid, or gas. In other words, it loses its distinct characteristics.</p>
+<p>So, <strong>&ldquo;at my critical point&rdquo;</strong> has been my status for the last two days. I&rsquo;ve been thoroughly reviewing my educational and personal development path since graduating high school. To be honest, not only are the results not in my favor, but I also feel that nowhere along this journey have I felt satisfied, even briefly.</p>
+<p>Everything traces back to when I was about twelve years old, and my father bought us a PC. I was fascinated by this new phenomenon, not for gaming, but for the potential it had to become anything I could imagine. Seeing my passion, my mom enrolled me in a professional course, which I didn&rsquo;t appreciate at the time. Later, I realized it was the MCSE Professional Certification Course by Microsoft. By the time I turned eighteen, my curiosity had given me a solid foundation in the digital world, making computer engineering my priority for undergraduate studies. But then, a turning point occurred: my parents got divorced. My role in the family shifted from needing support and guidance to acting as a mediator, solving problems beyond my mental capacity. Consequently, my priority changed from pursuing my passion to regaining peace of mind and focus.</p>
+<p>&ldquo;I&rsquo;ll put the needle of the compass on the house and find the farthest place from home to live,&rdquo; I told my mom as I revised my university and major preferences.</p>
+<p><img loading="lazy" src="https://amirkiani.info/wp-content/uploads/2022/05/compass-224x300.jpg"></p>
+<p>Three months later, I was a student in a major I knew nothing about, in a city near the southeast border of the country, which didn&rsquo;t even have proper drinking water. I lacked the courage, and had no truthful friend or mentor to tell me about the option of quitting. So, I stuck to the plan, and day by day, the snowball effect increasingly diverged my ideal path from the one I was on.</p>
+<p>Eventually, I got a second chance. I thought changing my major for my master&rsquo;s might help, and due to <a href="https://amirkiani.info/about/">the experiences and achievements</a> during my bachelor&rsquo;s years, I chose an MBA. Again, I could have pursued my interests by selecting a computer-related field, but without anyone to encourage me, I watched my dreams slip away once more.</p>
+<p>Now, I&rsquo;m twenty years old and at the end of <a href="https://amirkiani.info/about/">my MBA journey</a>. My interest and passion for computers and programming are stronger than ever. But I&rsquo;m unsure if it&rsquo;s wise to follow my heart for my last chance. The price could be a two-year compulsory military service to enter the job market officially, plus accepting that a decade of my life—the supposed best decade—is wasted and gone, and I must come to terms with this fact.</p>
+<p>Feeling extremely overwhelmed this morning, I googled &ldquo;software developer vs financial analyst.&rdquo; The first result was <a href="https://medium.com/free-code-camp/why-i-learned-to-code-instead-of-pursuing-a-career-in-finance-d5ef437c6922">an outstanding article by an Iranian on the Medium blog of FreeCodeCamp.org</a>. It&rsquo;s rare to find a specific answer to a buried query, but this was one of those times.</p>
+<p>As Amir explains, he has faced a similar dilemma. In a fair comparison, he might have experienced an even harder situation since his financial studies are more extensive than mine. Yet, he handled it perfectly, following his passion for programming before it was too late. I highly recommend everyone read the entire <a href="https://medium.com/free-code-camp/why-i-learned-to-code-instead-of-pursuing-a-career-in-finance-d5ef437c6922">article</a>. While it&rsquo;s about a finance student turning into a programmer, many people from different fields might resonate with the idea and the aspects discussed regarding programming.</p>
+<p>Amir Ghafouri&rsquo;s contact info:</p>
+<ul>
+<li>Amir&rsquo;s Article on Medium: <a href="https://medium.com/free-code-camp/why-i-learned-to-code-instead-of-pursuing-a-career-in-finance-d5ef437c6922">Click Here</a></li>
+</ul>
+<p>I posted this on my blog firstly to promote Amir&rsquo;s amazing content and secondly as a self-reminder of my mistakes and a catalyst for better future steps.</p>
+<p>Let me know your opinion on my story or share a related story of your own in the comments.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

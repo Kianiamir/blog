@@ -9,65 +9,8 @@
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.147.5</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Book Reviews</title>
-      <link>http://localhost:1313/categories/book-reviews/</link>
-      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/book-reviews/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Productivity</title>
-      <link>http://localhost:1313/categories/productivity/</link>
-      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/productivity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tech Tutorials</title>
-      <link>http://localhost:1313/categories/tech-tutorials/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/tech-tutorials/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web Development</title>
-      <link>http://localhost:1313/categories/web-development/</link>
-      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/web-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Career Development</title>
-      <link>http://localhost:1313/categories/career-development/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/career-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Personal Development</title>
-      <link>http://localhost:1313/categories/personal-development/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/personal-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Personal Insights</title>
-      <link>http://localhost:1313/categories/personal-insights/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/personal-insights/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Course Reviews</title>
-      <link>http://localhost:1313/categories/course-reviews/</link>
-      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/course-reviews/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

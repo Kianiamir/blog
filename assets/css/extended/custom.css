@@ -1,5 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+html {
+    overflow-y: auto !important;
+    /* only show scrollbar if needed */
+}
 
 body {
     font-family: "Playfair Display", serif;
@@ -15,4 +19,4 @@ h6 {
     font-weight: 700;
     font-style: italic;
     font-variant: normal;
-} */
+}
