@@ -1,5 +1,5 @@
 ---
-title: "سرندیپیتی"
+title: "سرندیپیتی | Serendipity"
 date: 2025-06-26
 draft: false
 lang: "fa"
@@ -7,26 +7,28 @@ translationKey: "serendipity"
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner
   alt: "An example cover image"
-  caption: "This is a caption under the image"
+  #caption: "This is a caption under the image"
 categories: ["توسعه_فردی"]
 tags: ["شبکه_سازی", "موفقیت", "شانس"]
 ---
- # سرندیپیتی | Serendipity
-
 اولین بار که در سالهای بعد از کودکی با این کلمه مواجه شدم موقعی بود که واسه تافل آماده میشدم (یعنی خیر سرم میخواستم بشم 😂). یه ده باری Serendipitous از جلوی چشمم رد شد و اتفاقا با ریزه‌کاری‌های معنایی هم حفظش کرده بودم.
 
 چند روز پیش سه تا پست توی بلاگ طاهره شفیعی دیدم با عنوان [سرندیپیتی](https://tahereshafiei.com/سرندیپیتی/)، [مهندسی سرندیپیتی](https://tahereshafiei.com/مهندسی-سرندیپیتی/) و [سرندیپیتی و قوی سیاه](https://tahereshafiei.com/سرندیپیتی-و-قوی-سیاه/). به خاطر جذابیت موضوع تصمیم گرفتم نسخه‌ی ملی شده‌اش رو از سمت خودم منتشر کنم. ایرانی‌ای که کپی نکنه ایرانی نیست!
 
 اگه تافل ۹۰ مد نظرتون باشه شاید واستون کافی باشه که بگید
-`Serendipitous = luck`
- 
+
+> Serendipitous = luck
+
 که البته ترجمه غلطیه و اگه ۹۰ هم گرفته‌اید شاید علتش این باشه که اصلا با این کلمه مواجه نشده‌اید سر آزمون.
 
 اما اگه تافل ۱۱۰ بخواید، باید اینطوری حفظش کنید:
 
-`Serendipity (Noun) =  The occurrence of events by chance in a happy or beneficial way.`
-`Serendipitous (Adjective) = Occurring or discovered by chance in a happy or beneficial way.`
-`Serendipitous is an adjective that describes accidentally being in the right place at the right time, like bumping into a good friend in some unusual location, or finding a hundred dollar bill on the ground. The root of serendipitous comes from the fairy tale "The Three Princes of Serendip," in which three princes make one lucky and surprising discovery after another. A serendipitous moment happens by accident, usually when you’re doing something completely unrelated, like digging a hole in your yard to bury your hamster and finding a treasure chest of jewels. That’s a sad but serendipitous funeral.`
+>Serendipity (Noun) =  The occurrence of events by chance in a happy or beneficial way.
+
+>Serendipitous (Adjective) = Occurring or discovered by chance in a happy or beneficial way.
+
+>Serendipitous is an adjective that describes accidentally being in the right place at the right time, like bumping into a good friend in some unusual location, or finding a hundred dollar bill on the ground. The root of serendipitous comes from the fairy tale "The Three Princes of Serendip," in which three princes make one lucky and surprising discovery after another. A serendipitous moment happens by accident, usually when you’re doing something completely unrelated, like digging a hole in your yard to bury your hamster and finding a treasure chest of jewels. That’s a sad but serendipitous funeral.‍
+
 
 پس سرندیپیتی (Serendipity) به یافته یا دست‌آوردی اتفاقی و البته مفید و مثبتی گفته می‌شه که جوینده به دنبالش نبوده و به صورت اتفاقی بدست اومده. درست مثل کشف موجود خوب و مفیدی مثل اون هیولای صورتی در جزیره‌ای متروک توسط پسرک قهرمان که دهه شست و هفتادی‌ها یادشون میاد.
 
@@ -58,30 +60,23 @@ tags: ["شبکه_سازی", "موفقیت", "شانس"]
 
 چندتا نقل‌قول جذاب در این باره هم هست که دوست دارم زینت بخش این مطلب باشند:
 
-> **"Nature makes penicillin; I just found it."**  
-> _— Alexander Fleming_  
-> **«طبیعت پنی‌سیلین را می‌سازد؛ من فقط پیدایش کردم.»**
----  
-> **"Serendipity is looking in a haystack for a needle and discovering the farmer’s daughter."**  
-> _— Julius H. Comroe Jr._  
-> **«سرندیپیتی یعنی دنبال سوزنی در انبار کاه بودن و در عوض، دختر کشاورز را پیدا کردن.»**
----
-> **"Serendipity doesn’t happen to you. It happens because of you."**  
-> _— [Unknown Author]*_  
-> **«سرندیپیتی برای شما اتفاق نمی‌افتد، بلکه به خاطرِ شما اتفاق می‌افتد.»**
----
-> **"Chance favors only the prepared mind."**  
-> _— Louis Pasteur_  
-> **«شانس فقط به ذهن آماده التفات دارد.»**
----
-> **"The most exciting phrase to hear in science, the one that heralds new discoveries, is not ‘Eureka!’ but ‘That's funny...’"**  
-> _— Isaac Asimov_  
-> **«هیجان‌انگیزترین جمله در علم "یافتم!" نیست؛ بلکه "عجیبه..." است.»**
----
-> **"I can have oodles of charm when I want to."**  
-> **"Unexpected travel suggestions are dancing lessons from God."**  
-> _— Kurt Vonnegut_  
-> **«پیشنهادهای سفر غیرمنتظره، کلاس‌های رقصی هستند که خدا ترتیب داده.»**
+> «طبیعت پنی‌سیلین را می‌سازد؛ من فقط پیدایش کردم.»  
+> — الکساندر فلمینگ
+
+> «سرندیپیتی یعنی دنبال سوزنی در انبار کاه بودن و در عوض، دختر کشاورز را پیدا کردن.»  
+> — جولیوس کامرو جونیور
+
+> «سرندیپیتی برای شما اتفاق نمی‌افتد؛ بلکه به‌خاطر شما اتفاق می‌افتد.»  
+> — نویسنده ناشناس
+
+> «شانس فقط به ذهن آماده التفات دارد.»  
+> — لویی پاستور
+
+> «هیجان‌انگیزترین جمله در علم “یافتم!” نیست؛ بلکه “عجیبه…” است.»  
+> — آیزاک آسیموف
+
+> «پیشنهادهای سفر غیرمنتظره، کلاس‌های رقصی هستند که خدا ترتیب داده.»  
+> — کرت ونه‌گات
 
 در انتها باورم نمیشه ولی میخوام کتاب Outliers رو بهتون معرفی کنم. باورم نمیشه چون تا جایی که یادم میاد هرگز کتابی به این اندازه بد و خسته کننده ورق نزده‌ام ولی خب موضوعش مرتبطه و شاید شما خوشتون بیاد. توی این کتاب زندگی آدم‌های موفق خیلی زیادی بررسی شده با این هدف که به ما نشون داده بشه که موفقیتشون نتیجه‌ی یه سری پشتوانه‌های واقعی کمتر شناخته شده (مثل بابای پولدار) یا موقعیت‌های شانسی خاص در زمان درست (مثلا شیوع ناگهانی سرمایه‌گذاری توی شرکت‌های فناوری) بوده. همچنین مجددا دعوتتون میکنم کتاب The 7 Habits of Highly Effective People رو از استفن کاوی بخونید و روی ساخت کرکتر تامل کنید. شیرین‌ترین حالت کامیابی به نظر من اینه که مصادیقش رو هدف قرار ندیم ولی به عنوان محصول ثانویه (byproduct) به‌دستشون بیاریم.
 

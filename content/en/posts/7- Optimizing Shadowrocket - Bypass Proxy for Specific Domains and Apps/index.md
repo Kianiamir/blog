@@ -8,7 +8,6 @@ cover:
   caption: "This is a caption under the image"
 categories: ["Tech Tutorials"]
 tags: ["Shadowrocket", "App Settings", "Technical Guide", "Optimization"]
-comments: true
 ---
 ### How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps
 

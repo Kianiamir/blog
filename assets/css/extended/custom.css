@@ -50,3 +50,22 @@ h6 {
     font-weight: 900;
     font-style: normal;
 }
+
+.ltr-block {
+    direction: ltr !important;
+    text-align: left !important;
+    unicode-bidi: embed !important;
+    font-family: monospace;
+    background-color: #f5f5f5;
+    padding: 1em;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    margin: 1.5em 0;
+}
+
+.ltr-block code {
+    display: inline-block !important;
+    direction: ltr !important;
+    text-align: left !important;
+}
