@@ -21,6 +21,16 @@
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fa-ir"
+                href="http://localhost:1313/fa/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/posts/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/tags/app-settings/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
