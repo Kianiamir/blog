@@ -154,7 +154,7 @@ languages:
 # Site Services
 services:
   googleAnalytics:
-    ID: "G-J245JZDY52"
+    ID: "G-G7LGK1L999"
 
 # Build Options
 enableRobotsTXT: true
