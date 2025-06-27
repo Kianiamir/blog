@@ -2,25 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on Amir Kiani&#39;s Blog</title>
-    <link>http://localhost:1313/en/tags/git/</link>
+    <link>https://amirkiani.info/en/tags/git/</link>
     <description>Recent content in Git on Amir Kiani&#39;s Blog</description>
     <image>
       <title>Amir Kiani&#39;s Blog</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Sep 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://amirkiani.info/en/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Zero to Git Pro - A Review of Colt Steele’s Bootcamp on Udemy</title>
-      <link>http://localhost:1313/en/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</link>
+      <link>https://amirkiani.info/en/posts/git-course-review/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</guid>
+      <guid>https://amirkiani.info/en/posts/git-course-review/</guid>
       <description>&lt;p&gt;When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing &lt;a href=&#34;https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1&#34;&gt;bootcamp by Colt Steele&lt;/a&gt; turned out to be much more than I ever imagined, and it&amp;rsquo;s the best programming course I&amp;rsquo;ve ever taken.&lt;/p&gt;
+&lt;h2 id=&#34;course-structure&#34;&gt;Course Structure&lt;/h2&gt;
 &lt;p&gt;The course consists of 20 chapters, and believe me, you won&amp;rsquo;t reach the last part easily. The course is super rich in content, quite lengthy, and requires proper note-taking and practice. For note-taking, I used Notion, which is my first, second, and third choice for taking notes, including some code snippets. If you&amp;rsquo;re not familiar with Notion, you can find plenty of YouTube channels and playlists to learn the basics in less than an hour. Creating a flash course on Notion has been on my to-do list for a while, so you can subscribe to my YouTube channel and be a bit patient for that to come alive.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing <a href="https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1">bootcamp by Colt Steele</a> turned out to be much more than I ever imagined, and it&rsquo;s the best programming course I&rsquo;ve ever taken.</p>
+<h2 id="course-structure">Course Structure</h2>
 <p>The course consists of 20 chapters, and believe me, you won&rsquo;t reach the last part easily. The course is super rich in content, quite lengthy, and requires proper note-taking and practice. For note-taking, I used Notion, which is my first, second, and third choice for taking notes, including some code snippets. If you&rsquo;re not familiar with Notion, you can find plenty of YouTube channels and playlists to learn the basics in less than an hour. Creating a flash course on Notion has been on my to-do list for a while, so you can subscribe to my YouTube channel and be a bit patient for that to come alive.</p>
 <p>In the first 10 chapters, you&rsquo;ll learn almost everything about Git, and by doing the exercises, you&rsquo;ll gain great confidence in your Git knowledge.</p>
 <p>Starting with chapter 11, you&rsquo;ll get familiar with GitHub. Colt illustrates almost every situation you might face in a real collaborative project. These demonstrations are unique to this course and rarely found in other courses. I suggest taking notes on these scenarios to quickly review the instructions when needed.</p>

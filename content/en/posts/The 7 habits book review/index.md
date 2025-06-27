@@ -1,0 +1,154 @@
+---
+title: "BookReview – The 7 Habits of Highly Effective People: A Life-Altering Read"
+date: 2020-03-23
+draft: false
+lang: "en" #fa/en
+translationKey: ""
+cover:
+  image: "thumbnail.webp"   # used as thumbnail/banner
+  alt: "The cover of the post at Amir Kiani's website"
+  #caption: "This is a caption under the image"
+categories:
+  - Book Reviews
+  - Productivity
+tags:
+  - Relationships
+  - Time
+  - Management
+  - Character
+  - Book
+  - Leadership
+---
+I'm very excited about publishing my thoughts on this book since it was the first book I bought digitally on my Kindle Oasis 2017. 
+
+I remember I used to take my Kindle to [Saeb Mausoleum](https://en.wikipedia.org/wiki/Saeb_Mausoleum) between 4 p.m. to 7 p.m. for two weeks, and I was so enchanted by the book that I almost lived all the other hours talking about it with others.
+
+Ever since finishing it, I’ve said this book must be kept beside the holy Quran – In every house and in the closest reach of everybody.
+
+When Stephen Covey was asked how he came up with the idea of the book, he mentioned his work as just synthesizing of already known principles of the world for people. 
+
+The main keyword of the book is obviously "Effectiveness". We go through the instructions hopefully to become a highly effective person as the title says. The first step the book takes is to teach us what a true character in a person is and what values must drive the character.
+
+> There is no effectiveness without discipline, and there is no discipline without character.  
+
+So before even going through the main discussion and the seven habits, we are taught to pay attention to our character.
+
+I very much like the discussion about the sociological shift from this well-desired character ethic to personality ethic after the First World War.
+
+He says:
+> The Character Ethic taught that there are basic principles of effective living, and that people can only experience true success and enduring happiness as they learn and integrate these principles into their basic character. But shortly after World War I, the basic view of success shifted from the Character Ethic to what we might call the Personality Ethic. Success became more a function of personality, of public image, of attitudes and behaviors, skills, and techniques that lubricate the processes of human interaction.
+
+Then it goes to define the evergreen principles we need to follow in order to build the character.
+
+But wait! What are principles? Do you mean values?
+
+> Principles are not values. A gang of thieves can share values, but they are in violation of the fundamental principles we’re talking about. Principles are the territory. Values are maps. When we value correct principles, we have truth—a knowledge of things as they are.
+
+Next, he gives us a gauge to measure our real-time effectiveness. This is one of the most outstanding parts of the book: "the concept of P/PC balance"
+
+There is a story of a farmer who had a golden-egg goose.
+Unable to wait day after day for the golden eggs, the farmer decides he will kill the goose and get them all at once. But when he opens the goose, he finds it empty. There are no golden eggs—and now there is no way to get any more. The farmer has destroyed the goose that produced them.
+
+Effectiveness lies in the balance— the P/PC Balance. P stands for production of desired results, the golden eggs. PC stands for production capability, the ability, or asset that produces the golden eggs.
+
+If you adopt a pattern of life that focuses on golden eggs and neglects the goose, you will soon be without the asset that produces golden eggs. On the other hand, if you only take care of the goose with no aim toward the golden eggs, you soon won’t have the wherewithal to feed yourself or the goose.
+
+Now that we know what we are looking for (effectiveness) and what is the path to do so (building a character), we can review the essential habits:
+
+1. Be Proactive
+
+  One way of building a character is to become a proactive person, which stands opposed to being reactive. Reactive people are often affected by their physical environment. If the weather is good, they feel good. If it isn’t, it affects their attitude and their performance. Proactive people can carry their own weather with them. Whether it rains or shines makes no difference to them. They are value-driven; and if their value is to produce good-quality work, it isn’t a function of whether the weather is conducive to it or not.
+
+2. Begin with the end in mind
+
+It is based on the principle that all things are created twice. There’s a mental or first creation, and a physical or second creation, to all things.
+
+  The carpenter’s rule is “measure twice, cut once.” You have to make sure that the blueprint, the first creation, is really what you want, that you’ve thought everything through. Then you put it into bricks and mortar.
+
+  Habit 2 is based on principles of personal leadership, which means that leadership is the first creation. Leadership is not management. Management is the second creation, which is discussed in the chapter on Habit 3. Leadership has to come first. Management is a bottom-line focus: How can I best accomplish certain things? Leadership deals with the top line: What are the things I want to accomplish? In the words of both Peter Drucker and Warren Bennis, “Management is doing things right; leadership is doing the right things.” Management is efficiency in climbing the ladder of success; leadership determines whether the ladder is leaning against the right wall.
+
+Effectiveness does not depend solely on how much effort we expend, but on whether or not the effort we expend is in the right jungle.
+
+3. Put first things first
+
+   Habit 2 is the first mental creation. It’s based on imagination—the ability to envision, to see the potential, to create with our minds what we cannot at present see with our eyes.
+
+   Habit 3, then, is the second creation, the physical creation. It’s the fulfillment, the actualization, the natural emergence of Habits 1 and 2.
+
+   Effective management is putting first things first. While leadership decides what “first things” are, it is management that puts them first, day-by-day, moment-by-moment. Management is discipline, carrying it out.
+
+Here comes the next outstanding concept in the book. The time management matrix that helps prioritize our daily tasks.
+
+![Eisenhower Matrix](The-Eisenhower-Matrix.webp)
+
+
+this Time Management Matrix —also known as the Eisenhower Matrix or Covey’s Time Management Grid**—was popularized by Stephen R. Covey. However, its original concept is often attributed to Dwight D. Eisenhower, the 34th President of the United States.
+
+After seeing this matrix, having asked about your opinion of the most important quadrant, you most likely will say the first one. Well, it amazingly isn't!
+
+Effective people stay out of Quadrants III and IV because, urgent or not, they aren’t important. They also shrink Quadrant I down to size by spending more time in Quadrant II. Quadrant II is the heart of effective personal management. It deals with things that are not urgent, but are important. It deals with things like building relationships, writing a personal mission statement, long-range planning, exercising, preventive maintenance, preparation—all those things we know we need to do, but somehow seldom get around to doing, because they aren’t urgent. To paraphrase Peter Drucker, effective people are not problem-minded; they’re opportunity-minded. They feed opportunities and starve problems. They think preventively. They have genuine Quadrant I crises and emergencies that require their immediate attention, but the number is comparatively small. They keep P and PC in balance by focusing on the important, but not urgent, high leverage capacity-building activities of Quadrant II.
+
+After that, there is a section on the perks of delegation and how this is a must in the way of becoming more effective in time and task management. It was a good eye-opener, but honestly, I couldn't find anything unique in the discussion.
+
+But then, in a short section, I encountered something that changed many of my relationships forever:
+
+> You simply can’t think efficiency with people. You think effectiveness with people and efficiency with things.
+
+Read that sentence ten times in the row and answer these questions:
+
+Is it logical to look at the weekend we spend visiting our grandma as inefficient?
+
+A weekend dinner with your lovely girlfriend takes at least 5 hours of your time and a good chunk of your hard-earned money during the week. Can we look at it having the efficiency of our spent time in view? Will the relationship even survive with this mindset? Are we meant to be super-productivity machines in the end? can we make any satisfactory value for our partner in a such relationship?
+
+4. Think win/win
+
+The first concept discussed here is the EMOTIONAL BANK ACCOUNT. We all know what a financial bank account is. We make deposits into it and build up a reserve from which we can make withdrawals when we need to. An Emotional Bank Account is a metaphor that describes the amount of trust that’s been built up in a relationship. It’s the feeling of safeness you have with another human being. If I make deposits into an Emotional Bank Account with you through courtesy, kindness, honesty, and keeping my commitments to you, I build up a reserve. Your trust toward me becomes higher, and I can call upon that trust many times if I need to. I can even make mistakes and that trust level, that emotional reserve, will compensate for it. My communication may not be clear, but you’ll get my meaning anyway. You won’t make me “an offender for a word.” When the trust account is high, communication is easy, instant, and effective. But if I have a habit of showing discourtesy, disrespect, cutting you off, overreacting, ignoring you, becoming arbitrary, betraying your trust, or threatening you, eventually my Emotional Bank Account is overdrawn. The trust level gets very low. Then what flexibility do I have? None. I’m walking on minefields. I have to be very careful of everything I say.
+
+Stephen Covey introduces an amazing way of filling the emotional bank: 
+P PROBLEMS ARE PC OPPORTUNITIES. 
+He suggests that in an interdependent situation, every P problem is a PC opportunity—a chance to build the Emotional Bank Accounts that significantly affect interdependent production.
+
+5. Seek first to understand, then to be understood
+
+This is the habit Stephen Covey told he struggled most with.
+
+The core to understanding people and having an effective relationship with them is empathetic listening.
+
+>Empathy is not sympathy. Sympathy is a form of agreement, a form of judgment. And it is sometimes the more appropriate emotion and response. But people often feed on sympathy. It makes them dependent. The essence of empathic listening is not that you agree with someone; it’s that you fully, deeply, understand that person, emotionally as well as intellectually. Empathic listening involves much more than registering, reflecting, or even understanding the words that are said. Communications experts estimate, in fact, that only 10 percent of our communication is represented by the words we say. Another 30 percent is represented by our sounds, and 60 percent by our body language. In empathic listening, you listen with your ears, but you also, and more importantly, listen with your eyes and with your heart. You listen for feeling, for meaning. You listen for behavior. You use your right brain as well as your left. You sense, you intuit, you feel.
+
+
+This is a copy of almost a page of the book, which has given a new life to some of my very close relationships since I really didn't know how to be a good listener at times of need.
+
+>The skills, the tip of the iceberg of empathic listening, involve four developmental stages. The first and least effective is to mimic content. This is the skill taught in “active” or “reflective” listening. Without the character and relationship base, it is often insulting to people and causes them to close up. It is, however, a first stage skill because it at least causes you to listen to what’s being said. Mimicking content is easy. You just listen to the words that come out of someone’s mouth and you repeat them. You’re hardly even using your brain at all. “Boy, Dad, I’ve had it! School is for the birds!” “You’ve had it. You think school is for the birds.” You have essentially repeated back the content of what was being said. You haven’t evaluated or probed or advised or interpreted. You’ve at least shown you’re paying attention to his words. But to understand, you want to do more. The second stage of empathic listening is to rephrase the content. It’s a little more effective, but it’s still limited to the verbal communication. “Boy, Dad, I’ve had it! School is for the birds!” “You don’t want to go to school anymore.” This time, you’ve put his meaning into your own words. Now you’re thinking about what he said, mostly with the left side, the reasoning, logical side of the brain. The third stage brings your right brain into operation. You reflect feeling. “Boy, Dad, I’ve had it! School is for the birds!” “You’re feeling really frustrated.” Now you’re not paying as much attention to what he’s saying as you are to the way he feels about what he’s saying. The fourth stage includes both the second and the third. You rephrase the content and reflect the feeling. “Boy, Dad, I’ve had it! School is for the birds!” “You’re really frustrated about school.” Frustration is the feeling; school is the content. You’re using both sides of your brain to understand both sides of his communication.
+
+6. Synergize
+
+What is synergy? Simply defined, it means that the whole is greater than the sum of its parts. It means that the relationship which the parts have to each other is a part in and of itself. It is not only a part, but the most catalytic, the most empowering, the most unifying, and the most exciting part.
+
+Many people have not really experienced even a moderate degree of synergy in their family life or in other interactions. They’ve been trained and scripted into defensive and protective communications or into believing that life or other people can’t be trusted. As a result, they are never really open to Habit 6 and to these principles.
+
+The first lesson from this book that I implemented into my life was to foster the interdependency mindset in myself and try to cultivate the focus on synergy in my relationships. I've been disappointed so many times by even the closest people who even took advantage of my openness thorough this implementation. But I've been learning to hard-wire this mindset into my DNA regardless of the feedback I get. I've made a couple of so powerful relationships recently and have experienced achievements to good to let me get back to the previous life filled with limited resources perspective.  
+
+7. Sharpen the Saw
+
+Habit 7 is personal PC. It’s preserving and enhancing the greatest asset you have—you. It’s renewing the four dimensions of your nature—physical, spiritual, mental, and social/emotional.
+
+>Exercise is one of those Quadrant II, high-leverage activities that most of us don’t do consistently because it isn’t urgent. And because we don’t do it, sooner or later we find ourselves in Quadrant I, dealing with the health problems and crises that come as a natural result of our neglect.
+The Daily Private Victory—a minimum of one hour a day in renewal of the physical, spiritual, and mental dimensions—is the key to the development of the Seven Habits and it’s completely within your Circle of Influence. It is the Quadrant II focus time necessary to integrate these habits into your life, to become principle-centered.
+
+  before reading that paragraph, I used to look at physical exercise as anything but a quadrant 2 task. It really made me re-tag my tasks so that now the second quadrant is the bulkiest part of my list.
+
+>Just as junk food and lack of exercise can ruin an athlete’s condition, those things that are obscene, crude, or pornographic can breed an inner darkness that numbs our higher sensibilities and substitutes the social conscience of “Will I be found out?” for the natural or divine conscience of “What is right and wrong?” In the words of Dag Hammarskjöld, You cannot play with the animal in you without becoming wholly animal, play with falsehood without forfeiting your right to truth, play with cruelty without losing your sensitivity of mind. He who wants to keep his garden tidy doesn’t reserve a plot for weeds.
+
+I have so much to say when it comes to spirituality topic and I will surely dedicate so many posts to it. But for now, I guess these words of Teilhard de Chardin suffice for a whole life: 
+
+>“We are not human beings having a spiritual experience. We are spiritual beings having a human experience.”
+
+
+Finally, I like to mention some quotes from the book which i liked very much.
+  
+> Build inner character first—private victory before public victory.
+
+>We are what we repeatedly do. Excellence, then, is not an act, but a habit. ARISTOTLE
+
+I wrote this review to complement the pleasure of reading it. If you are a fan of this jewel in paper, you're more than welcome to comment or contact me directly so that we can synergically share the joy.

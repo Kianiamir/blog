@@ -2,34 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Amir Kiani&#39;s Blog</title>
-    <link>http://localhost:1313/en/posts/</link>
+    <link>https://amirkiani.info/en/posts/</link>
     <description>Recent content in Posts on Amir Kiani&#39;s Blog</description>
     <image>
       <title>Amir Kiani&#39;s Blog</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>F-1 Visa Interview in Dubai</title>
-      <link>http://localhost:1313/en/posts/f-1-visa-interview-in-dubai/</link>
-      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/f-1-visa-interview-in-dubai/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://amirkiani.info/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimizing Shadowrocket - Bypass Proxy for Specific Domains and Apps</title>
-      <link>http://localhost:1313/en/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</link>
+      <link>https://amirkiani.info/en/posts/shadowrocket-proxy-bypass/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</guid>
-      <description>&lt;h3 id=&#34;how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps&#34;&gt;How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps&lt;/h3&gt;
-&lt;p&gt;Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&amp;rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h3 id="how-to-make-shadowrocket-bypass-proxy-for-specific-domains-and-apps">How to Make Shadowrocket Bypass Proxy for Specific Domains and Apps</h3>
-<p>Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.</p>
-<h4 id="understanding-shadowrocket-rules">Understanding Shadowrocket Rules</h4>
+      <guid>https://amirkiani.info/en/posts/shadowrocket-proxy-bypass/</guid>
+      <description>&lt;p&gt;Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&amp;rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.&lt;/p&gt;
+&lt;h2 id=&#34;understanding-shadowrocket-rules&#34;&gt;Understanding Shadowrocket Rules&lt;/h2&gt;
+&lt;p&gt;Shadowrocket uses rules to determine how traffic is routed. These rules can be configured to handle different types of traffic in various ways. Understanding the different rule types and how to use them effectively is crucial for managing your network traffic:&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Shadowrocket is a powerful tool that allows you to manage network traffic on your macOS device efficiently. One of its key features is the ability to set up rules that dictate how traffic is handled for specific domains and applications. In this guide, we&rsquo;ll walk you through the process of bypassing the proxy for specific domains and apps, using the ChatGPT app and OpenAI-related traffic as examples.</p>
+<h2 id="understanding-shadowrocket-rules">Understanding Shadowrocket Rules</h2>
 <p>Shadowrocket uses rules to determine how traffic is routed. These rules can be configured to handle different types of traffic in various ways. Understanding the different rule types and how to use them effectively is crucial for managing your network traffic:</p>
 <ul>
 <li>
@@ -45,7 +38,7 @@
 <p><strong>GEOIP</strong>: Matches traffic based on geographic location. This rule can be used to route traffic from specific countries through the proxy.</p>
 </li>
 </ul>
-<h4 id="practical-examples">Practical Examples</h4>
+<h3 id="practical-examples">Practical Examples</h3>
 <ol>
 <li>
 <p><strong>DOMAIN</strong>:</p>
@@ -73,9 +66,9 @@
 </li>
 </ol>
 <p>Understanding and utilizing these rules effectively allows you to optimize your network performance, enhance security, and ensure that specific types of traffic are handled according to your requirements.</p>
-<h3 id="option-1-setting-rules-for-specific-apps-chatgpt-launcher-in-my-case">Option 1: Setting Rules for Specific Apps (ChatGPT Launcher in My Case)</h3>
+<h2 id="option-1-setting-rules-for-specific-apps-chatgpt-launcher-in-my-case">Option 1: Setting Rules for Specific Apps (ChatGPT Launcher in My Case)</h2>
 <p>To set a rule for an app and not a website in Shadowrocket on macOS, you’ll need to use the application’s bundle identifier or process name to target the specific app traffic. Shadowrocket allows you to configure rules that apply to specific apps, bypassing or directing their traffic through the proxy as desired. Here’s how you can do it:</p>
-<h4 id="step-by-step-guide">Step-by-Step Guide</h4>
+<h3 id="step-by-step-guide">Step-by-Step Guide</h3>
 <ol>
 <li>
 <p><strong>Find the App’s Bundle Identifier</strong>:</p>
@@ -102,7 +95,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="option-2-bypassing-proxy-for-chatgpt-and-all-openai-traffic-across-browsers-plugins-apps-and-apis">Option 2: Bypassing Proxy for ChatGPT and All OpenAI Traffic Across Browsers, Plugins, Apps, and APIs</h3>
+<h2 id="option-2-bypassing-proxy-for-chatgpt-and-all-openai-traffic-across-browsers-plugins-apps-and-apis">Option 2: Bypassing Proxy for ChatGPT and All OpenAI Traffic Across Browsers, Plugins, Apps, and APIs</h2>
 <p>To bypass the proxy for the ChatGPT app and all OpenAI-related traffic on macOS, follow these steps:</p>
 <ol>
 <li>
@@ -135,19 +128,17 @@
     </item>
     <item>
       <title>Setting Up Hugo - A Personal Guide</title>
-      <link>http://localhost:1313/en/posts/6--setting-up-hugo---a-personal-guide/</link>
+      <link>https://amirkiani.info/en/posts/hugo-guide/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/6--setting-up-hugo---a-personal-guide/</guid>
-      <description>&lt;h1 id=&#34;setting-up-hugo-a-personal-guide&#34;&gt;Setting Up Hugo: A Personal Guide&lt;/h1&gt;
-&lt;p&gt;Why am I spending time presenting this instruction? Because using the official wikis of Hugo and your theme of choice (PaperMod in my case) might not be as straightforward for beginners.&lt;/p&gt;
+      <guid>https://amirkiani.info/en/posts/hugo-guide/</guid>
+      <description>&lt;p&gt;Why am I spending time presenting this instruction? Because using the official wikis of Hugo and your theme of choice (PaperMod in my case) might not be as straightforward for beginners.&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;m using macOS. For installation instructions on other operating systems, check the &lt;a href=&#34;https://gohugo.io/installation/&#34;&gt;Hugo installation page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To install Hugo on macOS, I use Homebrew:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install hugo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;creating-your-site&#34;&gt;Creating Your Site&lt;/h2&gt;
 &lt;p&gt;I like my site to be stored in a directory called &lt;code&gt;blog&lt;/code&gt;, but feel free to change the name as you wish:&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h1 id="setting-up-hugo-a-personal-guide">Setting Up Hugo: A Personal Guide</h1>
-<p>Why am I spending time presenting this instruction? Because using the official wikis of Hugo and your theme of choice (PaperMod in my case) might not be as straightforward for beginners.</p>
+      <content:encoded><![CDATA[<p>Why am I spending time presenting this instruction? Because using the official wikis of Hugo and your theme of choice (PaperMod in my case) might not be as straightforward for beginners.</p>
 <h2 id="installation">Installation</h2>
 <p>I&rsquo;m using macOS. For installation instructions on other operating systems, check the <a href="https://gohugo.io/installation/">Hugo installation page</a>.</p>
 <p>To install Hugo on macOS, I use Homebrew:</p>
@@ -340,9 +331,9 @@
     </item>
     <item>
       <title>Going Far or Fast</title>
-      <link>http://localhost:1313/en/posts/5--going-far-or-fast/</link>
+      <link>https://amirkiani.info/en/posts/far-or-fast/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/5--going-far-or-fast/</guid>
+      <guid>https://amirkiani.info/en/posts/far-or-fast/</guid>
       <description>&lt;p&gt;Life, at its core, is founded on interdependency. This concept was beautifully articulated by Stephen Covey in his book, &lt;em&gt;Seven Habits of Highly Effective People&lt;/em&gt;. I still vividly remember the moments spent reading it. Not just for the sheer joy of it, but because it took me months to finish—I was really slow at reading English back then! 😑 Part of why I liked the content was its resonance with my own experiences; it didn&amp;rsquo;t feel like a new strategy to adopt, but something I had already encountered in life. I fondly recall explaining the book, word by word, to my friend Amin while sitting in Saeb mausoleum.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Life, at its core, is founded on interdependency. This concept was beautifully articulated by Stephen Covey in his book, <em>Seven Habits of Highly Effective People</em>. I still vividly remember the moments spent reading it. Not just for the sheer joy of it, but because it took me months to finish—I was really slow at reading English back then! 😑 Part of why I liked the content was its resonance with my own experiences; it didn&rsquo;t feel like a new strategy to adopt, but something I had already encountered in life. I fondly recall explaining the book, word by word, to my friend Amin while sitting in Saeb mausoleum.</p>
 <p>However, I&rsquo;ve realized that the discussion on dependency, independency, and interdependency isn’t always clear or relatable to everyone. It&rsquo;s not about complex mathematics or wizardry, but it seems some fundamental aspects of personality might be necessary to grasp these concepts. That’s why I’m sharing these thoughts here.</p>
@@ -355,9 +346,9 @@
     </item>
     <item>
       <title>No Elevation Here - A Review of Robert Glazer’s ‘Elevate’</title>
-      <link>http://localhost:1313/en/posts/4--no-elevation-here---a-review-of-robert-glazers-elevate/</link>
+      <link>https://amirkiani.info/en/posts/elevate-book-review/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/4--no-elevation-here---a-review-of-robert-glazers-elevate/</guid>
+      <guid>https://amirkiani.info/en/posts/elevate-book-review/</guid>
       <description>&lt;p&gt;I don&amp;rsquo;t remember exactly how this book entered my to-read shelf. One day, I found it on sale on the Kindle Store and bought it without checking the rating and reviews on Goodreads. I wish I had!&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.robertglazer.com/&#34;&gt;Robert Glazer&lt;/a&gt; is an award-winning CEO and entrepreneur. His interviews in multiple podcasts and magazines piqued my interest, leading me to believe his book would be equally insightful. Unfortunately, like many self-help books written by successful leaders, I found &amp;ldquo;Elevate&amp;rdquo; lacking in novelty and inspiration.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I don&rsquo;t remember exactly how this book entered my to-read shelf. One day, I found it on sale on the Kindle Store and bought it without checking the rating and reviews on Goodreads. I wish I had!</p>
@@ -371,12 +362,12 @@
 </ul>
 <p>Upon skimming through the book and seeing this list, I had a feeling of déjà vu. Apart from a few quotes from notable figures in capacity building and personal growth, I hardly ever felt the urge to highlight anything noteworthy.</p>
 <p>Here&rsquo;s a brief overview of some key points from the book:</p>
-<h4 id="highlights">Highlights</h4>
-<p><strong>Intro</strong></p>
+<h2 id="highlights">Highlights</h2>
+<h3 id="intro">Intro</h3>
 <blockquote>
 <p>For everyone who knows deep down they can be more.</p></blockquote>
 <p>This quote initially raised my expectations sky-high. I was ready to add Robert Glazer to my list of personal heroes. He begins with a story about his weekly newsletter, Friday Forward, and its unexpected success, hoping to hook readers for the chapters ahead.</p>
-<p><strong>Chapter 1: What Is Capacity Building?</strong></p>
+<h3 id="chapter-1-what-is-capacity-building">Chapter 1: What Is Capacity Building?</h3>
 <p>Capacity building is defined as:</p>
 <blockquote>
 <p>The method by which individuals seek, acquire, and develop the skills and abilities to consistently perform at a higher level in pursuit of their innate potential.</p></blockquote>
@@ -388,35 +379,37 @@
 <li><strong>Emotional</strong> (facing challenges and managing relationships)</li>
 </ol>
 <p>Glazer believes our growth is best when all four elements develop in tandem.</p>
-<p><strong>Chapter 2: Build Your Spiritual Capacity</strong></p>
+<h3 id="chapter-2-build-your-spiritual-capacity">Chapter 2: Build Your Spiritual Capacity</h3>
 <blockquote>
 <p>Don’t consider the word “Spiritual” as a religious term in the context of capacity building. It refers to understanding who you are and what you want most in life.</p></blockquote>
 <p>Core values serve as guideposts for navigating life, and understanding them is crucial for growth.</p>
-<p><strong>Chapter 3: Build Your Intellectual Capacity</strong></p>
+<h3 id="chapter-3-build-your-intellectual-capacity">Chapter 3: Build Your Intellectual Capacity</h3>
 <blockquote>
 <p>“Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young.” —Henry Ford</p></blockquote>
 <p>Intellectual capacity involves the ability to learn, plan, and execute with discipline. Improving this capacity starts with the belief that it can be improved.</p>
-<p><strong>Chapter 4: Build Your Physical Capacity</strong></p>
+<h3 id="chapter-4-build-your-physical-capacity">Chapter 4: Build Your Physical Capacity</h3>
 <p>Glazer discusses the importance of a healthy body on overall life quality, emphasizing good nutrition and sleep.</p>
-<p><strong>Chapter 5: Build Your Emotional Capacity</strong></p>
+<h3 id="chapter-5-build-your-emotional-capacity">Chapter 5: Build Your Emotional Capacity</h3>
 <blockquote>
 <p>Think about a race car. If your spiritual, physical, and intellectual capacities are the tools to design, build, and improve the car, your emotional capacity is your ability to drive it amidst other drivers and unexpected obstacles.</p></blockquote>
 <p>He underscores the importance of challenging oneself, gratitude, and maintaining meaningful relationships.</p>
-<p><strong>Chapter 6: Build A Better Path</strong></p>
+<h3 id="chapter-6-build-a-better-path">Chapter 6: Build A Better Path</h3>
 <p>Nothing particularly noteworthy was found in this chapter.</p>
 <p>Each chapter ends with an action plan for practical steps in capacity building. You might find these useful if you&rsquo;re curious about specific techniques.</p>
-<h3 id="my-personal-conclusion">My Personal Conclusion:</h3>
+<h2 id="my-personal-conclusion">My Personal Conclusion:</h2>
 <p>I gave this book a rating of 1 out of 5 because it failed to offer anything new or interesting. However, this might be due to my previous readings and high expectations from an author of Glazer&rsquo;s caliber.</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>From Zero to Git Pro - A Review of Colt Steele’s Bootcamp on Udemy</title>
-      <link>http://localhost:1313/en/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</link>
+      <link>https://amirkiani.info/en/posts/git-course-review/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</guid>
+      <guid>https://amirkiani.info/en/posts/git-course-review/</guid>
       <description>&lt;p&gt;When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing &lt;a href=&#34;https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1&#34;&gt;bootcamp by Colt Steele&lt;/a&gt; turned out to be much more than I ever imagined, and it&amp;rsquo;s the best programming course I&amp;rsquo;ve ever taken.&lt;/p&gt;
+&lt;h2 id=&#34;course-structure&#34;&gt;Course Structure&lt;/h2&gt;
 &lt;p&gt;The course consists of 20 chapters, and believe me, you won&amp;rsquo;t reach the last part easily. The course is super rich in content, quite lengthy, and requires proper note-taking and practice. For note-taking, I used Notion, which is my first, second, and third choice for taking notes, including some code snippets. If you&amp;rsquo;re not familiar with Notion, you can find plenty of YouTube channels and playlists to learn the basics in less than an hour. Creating a flash course on Notion has been on my to-do list for a while, so you can subscribe to my YouTube channel and be a bit patient for that to come alive.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>When I decided to learn data science, I started my learning path by diving into Git. My primary goal at this stage was to get familiar with the fundamentals. However, the amazing <a href="https://www.udemy.com/course/git-and-github-bootcamp/#instructor-1">bootcamp by Colt Steele</a> turned out to be much more than I ever imagined, and it&rsquo;s the best programming course I&rsquo;ve ever taken.</p>
+<h2 id="course-structure">Course Structure</h2>
 <p>The course consists of 20 chapters, and believe me, you won&rsquo;t reach the last part easily. The course is super rich in content, quite lengthy, and requires proper note-taking and practice. For note-taking, I used Notion, which is my first, second, and third choice for taking notes, including some code snippets. If you&rsquo;re not familiar with Notion, you can find plenty of YouTube channels and playlists to learn the basics in less than an hour. Creating a flash course on Notion has been on my to-do list for a while, so you can subscribe to my YouTube channel and be a bit patient for that to come alive.</p>
 <p>In the first 10 chapters, you&rsquo;ll learn almost everything about Git, and by doing the exercises, you&rsquo;ll gain great confidence in your Git knowledge.</p>
 <p>Starting with chapter 11, you&rsquo;ll get familiar with GitHub. Colt illustrates almost every situation you might face in a real collaborative project. These demonstrations are unique to this course and rarely found in other courses. I suggest taking notes on these scenarios to quickly review the instructions when needed.</p>
@@ -438,17 +431,18 @@
     </item>
     <item>
       <title>Passion vs. Practicality - My Struggle Between Finance and Programming</title>
-      <link>http://localhost:1313/en/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</link>
+      <link>https://amirkiani.info/en/posts/finance-vs-programming/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</guid>
-      <description>&lt;p&gt;&amp;ldquo;I&amp;rsquo;ve reached the boiling point with the situation.&amp;rdquo;&lt;/p&gt;
+      <guid>https://amirkiani.info/en/posts/finance-vs-programming/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I&amp;rsquo;ve reached the boiling point with the situation.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;This is an idiom we all use from time to time to express feelings of being overwhelmed, often accompanied by anxiety. However, what I&amp;rsquo;ve been experiencing over the last two days is much more intense. To describe it, I thought it might be fitting to draw on my long-forgotten days of studying chemical engineering. While many people think of the boiling point as the hottest state a substance can experience, every thermodynamics reference explains that the &lt;strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Critical_point_%28thermodynamics%29&#34;&gt;critical point&lt;/a&gt;&lt;/strong&gt; is what we should be looking for. This state is achieved by controlling both pressure and temperature, rendering the substance unidentifiable as a solid, liquid, or gas. In other words, it loses its distinct characteristics.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>&ldquo;I&rsquo;ve reached the boiling point with the situation.&rdquo;</p>
+      <content:encoded><![CDATA[<blockquote>
+<p>&ldquo;I&rsquo;ve reached the boiling point with the situation.&rdquo;</p></blockquote>
 <p>This is an idiom we all use from time to time to express feelings of being overwhelmed, often accompanied by anxiety. However, what I&rsquo;ve been experiencing over the last two days is much more intense. To describe it, I thought it might be fitting to draw on my long-forgotten days of studying chemical engineering. While many people think of the boiling point as the hottest state a substance can experience, every thermodynamics reference explains that the <strong><a href="https://en.wikipedia.org/wiki/Critical_point_%28thermodynamics%29">critical point</a></strong> is what we should be looking for. This state is achieved by controlling both pressure and temperature, rendering the substance unidentifiable as a solid, liquid, or gas. In other words, it loses its distinct characteristics.</p>
 <p>So, <strong>&ldquo;at my critical point&rdquo;</strong> has been my status for the last two days. I&rsquo;ve been thoroughly reviewing my educational and personal development path since graduating high school. To be honest, not only are the results not in my favor, but I also feel that nowhere along this journey have I felt satisfied, even briefly.</p>
 <p>Everything traces back to when I was about twelve years old, and my father bought us a PC. I was fascinated by this new phenomenon, not for gaming, but for the potential it had to become anything I could imagine. Seeing my passion, my mom enrolled me in a professional course, which I didn&rsquo;t appreciate at the time. Later, I realized it was the MCSE Professional Certification Course by Microsoft. By the time I turned eighteen, my curiosity had given me a solid foundation in the digital world, making computer engineering my priority for undergraduate studies. But then, a turning point occurred: my parents got divorced. My role in the family shifted from needing support and guidance to acting as a mediator, solving problems beyond my mental capacity. Consequently, my priority changed from pursuing my passion to regaining peace of mind and focus.</p>
 <p>&ldquo;I&rsquo;ll put the needle of the compass on the house and find the farthest place from home to live,&rdquo; I told my mom as I revised my university and major preferences.</p>
-<p><img loading="lazy" src="https://amirkiani.info/wp-content/uploads/2022/05/compass-224x300.jpg"></p>
 <p>Three months later, I was a student in a major I knew nothing about, in a city near the southeast border of the country, which didn&rsquo;t even have proper drinking water. I lacked the courage, and had no truthful friend or mentor to tell me about the option of quitting. So, I stuck to the plan, and day by day, the snowball effect increasingly diverged my ideal path from the one I was on.</p>
 <p>Eventually, I got a second chance. I thought changing my major for my master&rsquo;s might help, and due to <a href="https://amirkiani.info/about/">the experiences and achievements</a> during my bachelor&rsquo;s years, I chose an MBA. Again, I could have pursued my interests by selecting a computer-related field, but without anyone to encourage me, I watched my dreams slip away once more.</p>
 <p>Now, I&rsquo;m twenty years old and at the end of <a href="https://amirkiani.info/about/">my MBA journey</a>. My interest and passion for computers and programming are stronger than ever. But I&rsquo;m unsure if it&rsquo;s wise to follow my heart for my last chance. The price could be a two-year compulsory military service to enter the job market officially, plus accepting that a decade of my life—the supposed best decade—is wasted and gone, and I must come to terms with this fact.</p>
@@ -463,14 +457,12 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>Welcoming Nowruz 1401-01-01 | A Time for Renewal and Goals</title>
-      <link>http://localhost:1313/en/posts/1--welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</link>
+      <title>Welcoming Nowruz 1401/01/01: A Time for Renewal and Goals</title>
+      <link>https://amirkiani.info/en/posts/nowruz-1401/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/1--welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</guid>
-      <description>&lt;h3 id=&#34;welcoming-nowruz-14010101-a-time-for-renewal-and-goals&#34;&gt;Welcoming Nowruz 1401/01/01: A Time for Renewal and Goals&lt;/h3&gt;
-&lt;p&gt;Nowruz marks the first day of the first month of the Iranian calendar, and this year is extra special—it’s also the first day of the 15th century on the &lt;a href=&#34;https://www.google.com/search?client=safari&amp;amp;rls=en&amp;amp;sxsrf=APq-WBuKQAw9ZCPm_de--pjE8CNZkx0yuQ:1648742917875&amp;amp;q=Solar&amp;#43;Hijri&amp;#43;calendar&amp;amp;stick=H4sIAAAAAAAAAONgVuLSz9U3yC4zL8grWsQqEpyfk1ik4JGZVZSpkJyYk5qXklgEAHXFr90lAAAA&amp;amp;sa=X&amp;amp;ved=2ahUKEwiIlcj_3fD2AhWRiv0HHSxmCYgQmxMoAXoECCcQAw&#34;&gt;Solar Hijri calendar&lt;/a&gt;. For many, this once-in-a-lifetime opportunity is the perfect moment to set new goals and open new chapters in life. Interestingly, so many parents have scheduled the birth of their child to coincide with this day that the government reports a tripling in birth rates!&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h3 id="welcoming-nowruz-14010101-a-time-for-renewal-and-goals">Welcoming Nowruz 1401/01/01: A Time for Renewal and Goals</h3>
-<p>Nowruz marks the first day of the first month of the Iranian calendar, and this year is extra special—it’s also the first day of the 15th century on the <a href="https://www.google.com/search?client=safari&amp;rls=en&amp;sxsrf=APq-WBuKQAw9ZCPm_de--pjE8CNZkx0yuQ:1648742917875&amp;q=Solar&#43;Hijri&#43;calendar&amp;stick=H4sIAAAAAAAAAONgVuLSz9U3yC4zL8grWsQqEpyfk1ik4JGZVZSpkJyYk5qXklgEAHXFr90lAAAA&amp;sa=X&amp;ved=2ahUKEwiIlcj_3fD2AhWRiv0HHSxmCYgQmxMoAXoECCcQAw">Solar Hijri calendar</a>. For many, this once-in-a-lifetime opportunity is the perfect moment to set new goals and open new chapters in life. Interestingly, so many parents have scheduled the birth of their child to coincide with this day that the government reports a tripling in birth rates!</p>
+      <guid>https://amirkiani.info/en/posts/nowruz-1401/</guid>
+      <description>&lt;p&gt;Nowruz marks the first day of the first month of the Iranian calendar, and this year is extra special—it’s also the first day of the 15th century on the &lt;a href=&#34;https://www.google.com/search?client=safari&amp;amp;rls=en&amp;amp;sxsrf=APq-WBuKQAw9ZCPm_de--pjE8CNZkx0yuQ:1648742917875&amp;amp;q=Solar&amp;#43;Hijri&amp;#43;calendar&amp;amp;stick=H4sIAAAAAAAAAONgVuLSz9U3yC4zL8grWsQqEpyfk1ik4JGZVZSpkJyYk5qXklgEAHXFr90lAAAA&amp;amp;sa=X&amp;amp;ved=2ahUKEwiIlcj_3fD2AhWRiv0HHSxmCYgQmxMoAXoECCcQAw&#34;&gt;Solar Hijri calendar&lt;/a&gt;. For many, this once-in-a-lifetime opportunity is the perfect moment to set new goals and open new chapters in life. Interestingly, so many parents have scheduled the birth of their child to coincide with this day that the government reports a tripling in birth rates!&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Nowruz marks the first day of the first month of the Iranian calendar, and this year is extra special—it’s also the first day of the 15th century on the <a href="https://www.google.com/search?client=safari&amp;rls=en&amp;sxsrf=APq-WBuKQAw9ZCPm_de--pjE8CNZkx0yuQ:1648742917875&amp;q=Solar&#43;Hijri&#43;calendar&amp;stick=H4sIAAAAAAAAAONgVuLSz9U3yC4zL8grWsQqEpyfk1ik4JGZVZSpkJyYk5qXklgEAHXFr90lAAAA&amp;sa=X&amp;ved=2ahUKEwiIlcj_3fD2AhWRiv0HHSxmCYgQmxMoAXoECCcQAw">Solar Hijri calendar</a>. For many, this once-in-a-lifetime opportunity is the perfect moment to set new goals and open new chapters in life. Interestingly, so many parents have scheduled the birth of their child to coincide with this day that the government reports a tripling in birth rates!</p>
 <p>Although I’ve always preferred Christmas as my goal-setting point on the calendar for personal reasons, Nowruz has prompted me to revisit my bucket list and reorganize my to-dos.</p>
 <p>Frankly, my current life status is nothing to be proud of. As a twenty-eight-year-old Iranian, I am far from the person I hoped to be both personally and professionally. Various aspects of living in Iran have led me to make wrong decisions over the years, and the <a href="https://en.wikipedia.org/wiki/Snowball_effect">snowball effect</a> has made any possible turnaround increasingly difficult and costly.</p>
 <p>But in 2022, I decided to pay the price and break the cycle. Over the past four months, I’ve taken my first steps on professional and psychological paths that bring energy and joy to my life. While the journey has been challenging, passion has made many of the changes and transitions remarkably smooth.</p>
@@ -482,9 +474,9 @@
     </item>
     <item>
       <title>BookReview – The 7 Habits of Highly Effective People: A Life-Altering Read</title>
-      <link>http://localhost:1313/en/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</link>
+      <link>https://amirkiani.info/en/posts/the-7-habits-book-review/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</guid>
+      <guid>https://amirkiani.info/en/posts/the-7-habits-book-review/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m very excited about publishing my thoughts on this book since it was the first book I bought digitally on my Kindle Oasis 2017. &lt;/p&gt;
 &lt;p&gt;I remember I used to take my Kindle to &lt;a href=&#34;https://en.wikipedia.org/wiki/Saeb_Mausoleum&#34;&gt;Saeb Mausoleum&lt;/a&gt; between 4 p.m. to 7 p.m. for two weeks, and I was so enchanted by the book that I almost lived all the other hours talking about it with others.&lt;/p&gt;
 &lt;p&gt;Ever since finishing it, I’ve said this book must be kept beside the holy Quran – In every house and in the closest reach of everybody.&lt;/p&gt;</description>
@@ -528,7 +520,7 @@ Unable to wait day after day for the golden eggs, the farmer decides he will kil
 <p>   Habit 3, then, is the second creation, the physical creation. It’s the fulfillment, the actualization, the natural emergence of Habits 1 and 2.</p>
 <p>   Effective management is putting first things first. While leadership decides what “first things” are, it is management that puts them first, day-by-day, moment-by-moment. Management is discipline, carrying it out.</p>
 <p>Here comes the next outstanding concept in the book. The time management matrix that helps prioritize our daily tasks.</p>
-<p><img alt="Eisenhower Matrix" loading="lazy" src="/en/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/The-Eisenhower-Matrix.webp"></p>
+<p><img alt="Eisenhower Matrix" loading="lazy" src="/en/posts/the-7-habits-book-review/The-Eisenhower-Matrix.webp"></p>
 <p>this Time Management Matrix —also known as the Eisenhower Matrix or Covey’s Time Management Grid**—was popularized by Stephen R. Covey. However, its original concept is often attributed to Dwight D. Eisenhower, the 34th President of the United States.</p>
 <p>After seeing this matrix, having asked about your opinion of the most important quadrant, you most likely will say the first one. Well, it amazingly isn&rsquo;t!</p>
 <p>Effective people stay out of Quadrants III and IV because, urgent or not, they aren’t important. They also shrink Quadrant I down to size by spending more time in Quadrant II. Quadrant II is the heart of effective personal management. It deals with things that are not urgent, but are important. It deals with things like building relationships, writing a personal mission statement, long-range planning, exercising, preventive maintenance, preparation—all those things we know we need to do, but somehow seldom get around to doing, because they aren’t urgent. To paraphrase Peter Drucker, effective people are not problem-minded; they’re opportunity-minded. They feed opportunities and starve problems. They think preventively. They have genuine Quadrant I crises and emergencies that require their immediate attention, but the number is comparatively small. They keep P and PC in balance by focusing on the important, but not urgent, high leverage capacity-building activities of Quadrant II.</p>

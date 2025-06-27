@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTimeReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -170,10 +170,23 @@
   },
   "active": "6a67ed0453249fc2",
   "lastOpenFiles": [
+    "en/posts/The 7 habits book review/index.md",
+    "en/posts/Nowruz 1401/index.md",
+    "en/posts/Finance vs Programming/index.md",
+    "en/posts/Git course review/index.md",
+    "en/posts/Elevate-book-review/index.md",
+    "en/posts/Elevate-book-review/thumbnail.webp",
+    "en/posts/Far or Fast/index.md",
+    "en/posts/Shadowrocket Proxy Bypass/index.md",
+    "en/posts/Hugo Guide/index.md",
+    "en/posts/F-1 Visa Interview in Dubai/Index.md",
+    "fa/posts/سرندیپیتی/index.md",
+    "en/fa/پست-جدید/index.md",
+    "en/fa/پست-جدید",
+    "en/fa",
     "Untitled.md",
     "fa/posts/سرندیپیتی/thumbnail.webp",
     "fa/posts/سرندیپیتی/سرندیپیتی.md",
-    "fa/posts/سرندیپیتی/index.md",
     "fa/posts/سرندیپیتی/2thumbnail.webp",
     "fa/posts/سرندیپیتی/Serendipity.webp",
     "fa/posts/سرندیپیتی"

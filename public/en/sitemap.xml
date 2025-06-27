@@ -2,322 +2,269 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+    <loc>https://amirkiani.info/en/</loc>
+    <lastmod>2025-06-25T18:46:38+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/"
+                href="https://amirkiani.info/fa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/"
+                href="https://amirkiani.info/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/posts/f-1-visa-interview-in-dubai/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/posts/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+    <loc>https://amirkiani.info/en/posts/</loc>
+    <lastmod>2025-06-25T11:15:02+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/posts/"
+                href="https://amirkiani.info/fa/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/posts/"
+                href="https://amirkiani.info/en/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/app-settings/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>https://amirkiani.info/en/categories/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/categories/"
+                href="https://amirkiani.info/fa/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/categories/"
+                href="https://amirkiani.info/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/optimization/</loc>
+    <loc>https://amirkiani.info/en/posts/shadowrocket-proxy-bypass/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/7--optimizing-shadowrocket---bypass-proxy-for-specific-domains-and-apps/</loc>
+    <loc>https://amirkiani.info/en/tags/shadowrocket/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/shadowrocket/</loc>
+    <loc>https://amirkiani.info/en/tags/software/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>https://amirkiani.info/en/tags/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/tags/"
+                href="https://amirkiani.info/fa/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/tags/"
+                href="https://amirkiani.info/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/tech-tutorials/</loc>
+    <loc>https://amirkiani.info/en/categories/technology/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/technical-guide/</loc>
+    <loc>https://amirkiani.info/en/tags/vpn/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/hugo/</loc>
+    <loc>https://amirkiani.info/en/tags/hugo/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/personal-guide/</loc>
+    <loc>https://amirkiani.info/en/posts/hugo-guide/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/6--setting-up-hugo---a-personal-guide/</loc>
+    <loc>https://amirkiani.info/en/categories/web-development/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/static-site-generator/</loc>
+    <loc>https://amirkiani.info/en/tags/web-development/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/web-design/</loc>
-    <lastmod>2024-04-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/categories/web-development/</loc>
-    <lastmod>2024-04-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/website-setup/</loc>
-    <lastmod>2024-04-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/categories/career-development/</loc>
+    <loc>https://amirkiani.info/en/tags/character/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/career-path/</loc>
+    <loc>https://amirkiani.info/en/posts/far-or-fast/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/goals/</loc>
+    <loc>https://amirkiani.info/en/tags/interdependency/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/5--going-far-or-fast/</loc>
+    <loc>https://amirkiani.info/en/categories/personal-development/</loc>
     <lastmod>2023-08-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/life-choices/</loc>
-    <lastmod>2023-08-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/categories/personal-development/</loc>
-    <lastmod>2023-08-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/book-review/</loc>
+    <loc>https://amirkiani.info/en/tags/book/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/book-reviews/</loc>
+    <loc>https://amirkiani.info/en/categories/book-reviews/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/leadership/</loc>
+    <loc>https://amirkiani.info/en/tags/leadership/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/4--no-elevation-here---a-review-of-robert-glazers-elevate/</loc>
+    <loc>https://amirkiani.info/en/posts/elevate-book-review/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/personal-insights/</loc>
+    <loc>https://amirkiani.info/en/tags/robert-glazer/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/robert-glazer/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/colt-steele/</loc>
+    <loc>https://amirkiani.info/en/tags/colt/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/course-reviews/</loc>
+    <loc>https://amirkiani.info/en/categories/course-reviews/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/3--from-zero-to-git-pro---a-review-of-colt-steeles-bootcamp-on-udemy/</loc>
+    <loc>https://amirkiani.info/en/posts/git-course-review/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/git/</loc>
+    <loc>https://amirkiani.info/en/tags/git/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/tech-skills/</loc>
+    <loc>https://amirkiani.info/en/tags/steele/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/udemy/</loc>
+    <loc>https://amirkiani.info/en/tags/udemy/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/career-choices/</loc>
+    <loc>https://amirkiani.info/en/tags/finance/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/finance/</loc>
+    <loc>https://amirkiani.info/en/posts/finance-vs-programming/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/2--passion-vs.-practicality---my-struggle-between-finance-and-programming/</loc>
+    <loc>https://amirkiani.info/en/categories/personal/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/programming/</loc>
+    <loc>https://amirkiani.info/en/tags/programming/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/goal-setting/</loc>
+    <loc>https://amirkiani.info/en/tags/nowruz/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/new-year/</loc>
+    <loc>https://amirkiani.info/en/posts/nowruz-1401/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/nowruz/</loc>
-    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/reflection/</loc>
-    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/renewal/</loc>
-    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/posts/1--welcoming-nowruz-1401-01-01--a-time-for-renewal-and-goals/</loc>
-    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/en/posts/8--bookreview--the-7-habits-of-highly-effective-people---a-life-altering-read/</loc>
+    <loc>https://amirkiani.info/en/posts/the-7-habits-book-review/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/productivity/</loc>
+    <loc>https://amirkiani.info/en/tags/management/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/relationships/</loc>
+    <loc>https://amirkiani.info/en/categories/productivity/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/time-management/</loc>
+    <loc>https://amirkiani.info/en/tags/relationships/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://amirkiani.info/en/tags/time/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://amirkiani.info/archives/</loc>
+    <lastmod>2025-06-25T18:27:17+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/archives/"
+                href="https://amirkiani.info/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/archives/"
+                href="https://amirkiani.info/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/search/</loc>
+    <loc>https://amirkiani.info/search/</loc>
+    <lastmod>2025-06-25T18:46:38+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/search/"
+                href="https://amirkiani.info/fa/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/search/"
+                href="https://amirkiani.info/search/"
                 />
   </url>
 </urlset>

@@ -1,28 +1,25 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Hugo output
+/public/
+/resources/
 
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
-go.work.sum
-
-# env file
-.env
-
-# macOS system files
+# macOS
 .DS_Store
+
+# Obsidian files
+.obsidian/
+workspace.json
+Templater-Cache/
+*.cache
+*.bak
+
+# VSCode settings (optional)
+.vscode/
+
+# Optional: Ignore drafts (if you never want to commit drafts)
+content/**/draft: true
+
+# Optional: Hugo archetypes if not version-controlled
+# archetypes/
+
+# Hugo environment
+.env

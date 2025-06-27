@@ -1,15 +1,13 @@
 ---
-date: '{{ .Date }}'
-draft: true
-title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-lang: "en"           # Add this line (change to "fa" in Persian archetype)
-translationKey: '{{ .File.BaseFileName }}'  # Use base filename as translation key
-images:
-  - thumbnail.webp
+title: ""
+date: #YYYY-MM-DD
+draft: false
+lang: "en" #fa/en
+translationKey: ""
 cover:
-  image: "thumbnail.webp"
-  alt: "An example cover image"
-  caption: "This is a caption under the image"
-categories: []  # in " " separated by comma
-tags: []        # in " " separated by comma
+  image: "thumbnail.webp"   # used as thumbnail/banner
+  alt: "The cover of the post at Amir Kiani's website"
+  #caption: "This is a caption under the image"
+categories: [""]
+tags: ["", "", ""]
 ---

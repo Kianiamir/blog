@@ -278,3 +278,6 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: "monokai"
+
+enableGitInfo: true # Enable git info for posts
+canonifyURLs: true

@@ -2,71 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Amir Kiani&#39;s Blog</title>
-    <link>http://localhost:1313/en/categories/</link>
+    <link>https://amirkiani.info/en/categories/</link>
     <description>Recent content in Categories on Amir Kiani&#39;s Blog</description>
     <image>
       <title>Amir Kiani&#39;s Blog</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://amirkiani.info/en/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tech Tutorials</title>
-      <link>http://localhost:1313/en/categories/tech-tutorials/</link>
+      <title>Technology</title>
+      <link>https://amirkiani.info/en/categories/technology/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/tech-tutorials/</guid>
+      <guid>https://amirkiani.info/en/categories/technology/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Development</title>
-      <link>http://localhost:1313/en/categories/web-development/</link>
+      <link>https://amirkiani.info/en/categories/web-development/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/web-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Career Development</title>
-      <link>http://localhost:1313/en/categories/career-development/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/career-development/</guid>
+      <guid>https://amirkiani.info/en/categories/web-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal Development</title>
-      <link>http://localhost:1313/en/categories/personal-development/</link>
+      <link>https://amirkiani.info/en/categories/personal-development/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/personal-development/</guid>
+      <guid>https://amirkiani.info/en/categories/personal-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Book Reviews</title>
-      <link>http://localhost:1313/en/categories/book-reviews/</link>
+      <link>https://amirkiani.info/en/categories/book-reviews/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/book-reviews/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Personal Insights</title>
-      <link>http://localhost:1313/en/categories/personal-insights/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/personal-insights/</guid>
+      <guid>https://amirkiani.info/en/categories/book-reviews/</guid>
       <description></description>
     </item>
     <item>
       <title>Course Reviews</title>
-      <link>http://localhost:1313/en/categories/course-reviews/</link>
+      <link>https://amirkiani.info/en/categories/course-reviews/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/course-reviews/</guid>
+      <guid>https://amirkiani.info/en/categories/course-reviews/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal</title>
+      <link>https://amirkiani.info/en/categories/personal/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://amirkiani.info/en/categories/personal/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>http://localhost:1313/en/categories/productivity/</link>
+      <link>https://amirkiani.info/en/categories/productivity/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/productivity/</guid>
+      <guid>https://amirkiani.info/en/categories/productivity/</guid>
       <description></description>
     </item>
   </channel>
