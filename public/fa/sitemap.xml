@@ -87,19 +87,19 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://amirkiani.info/archives/</loc>
+    <loc>https://amirkiani.info/fa/archives/</loc>
     <lastmod>2025-06-25T18:27:17+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://amirkiani.info/archives/"
+                href="https://amirkiani.info/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="https://amirkiani.info/archives/"
+                href="https://amirkiani.info/fa/archives/"
                 />
   </url><url>
     <loc>https://amirkiani.info/fa/search/</loc>
@@ -109,7 +109,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://amirkiani.info/search/"
+                href="https://amirkiani.info/en/search/"
                 />
     <xhtml:link
                 rel="alternate"
