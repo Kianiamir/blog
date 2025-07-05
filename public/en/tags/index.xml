@@ -2,155 +2,155 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Amir Kiani&#39;s Blog</title>
-    <link>https://amirkiani.info/en/tags/</link>
+    <link>http://localhost:1313/en/tags/</link>
     <description>Recent content in Tags on Amir Kiani&#39;s Blog</description>
     <image>
       <title>Amir Kiani&#39;s Blog</title>
-      <url>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Jun 2025 19:09:22 +0330</lastBuildDate>
-    <atom:link href="https://amirkiani.info/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shadowrocket</title>
-      <link>https://amirkiani.info/en/tags/shadowrocket/</link>
+      <link>http://localhost:1313/en/tags/shadowrocket/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/shadowrocket/</guid>
+      <guid>http://localhost:1313/en/tags/shadowrocket/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>https://amirkiani.info/en/tags/software/</link>
+      <link>http://localhost:1313/en/tags/software/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/software/</guid>
+      <guid>http://localhost:1313/en/tags/software/</guid>
       <description></description>
     </item>
     <item>
       <title>VPN</title>
-      <link>https://amirkiani.info/en/tags/vpn/</link>
+      <link>http://localhost:1313/en/tags/vpn/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/vpn/</guid>
+      <guid>http://localhost:1313/en/tags/vpn/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://amirkiani.info/en/tags/hugo/</link>
+      <link>http://localhost:1313/en/tags/hugo/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/hugo/</guid>
+      <guid>http://localhost:1313/en/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Development</title>
-      <link>https://amirkiani.info/en/tags/web-development/</link>
+      <link>http://localhost:1313/en/tags/web-development/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/web-development/</guid>
+      <guid>http://localhost:1313/en/tags/web-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Character</title>
-      <link>https://amirkiani.info/en/tags/character/</link>
+      <link>http://localhost:1313/en/tags/character/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/character/</guid>
+      <guid>http://localhost:1313/en/tags/character/</guid>
       <description></description>
     </item>
     <item>
       <title>Interdependency</title>
-      <link>https://amirkiani.info/en/tags/interdependency/</link>
+      <link>http://localhost:1313/en/tags/interdependency/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/interdependency/</guid>
+      <guid>http://localhost:1313/en/tags/interdependency/</guid>
       <description></description>
     </item>
     <item>
       <title>Book</title>
-      <link>https://amirkiani.info/en/tags/book/</link>
+      <link>http://localhost:1313/en/tags/book/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/book/</guid>
+      <guid>http://localhost:1313/en/tags/book/</guid>
       <description></description>
     </item>
     <item>
       <title>Leadership</title>
-      <link>https://amirkiani.info/en/tags/leadership/</link>
+      <link>http://localhost:1313/en/tags/leadership/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/leadership/</guid>
+      <guid>http://localhost:1313/en/tags/leadership/</guid>
       <description></description>
     </item>
     <item>
       <title>Robert Glazer</title>
-      <link>https://amirkiani.info/en/tags/robert-glazer/</link>
+      <link>http://localhost:1313/en/tags/robert-glazer/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/robert-glazer/</guid>
+      <guid>http://localhost:1313/en/tags/robert-glazer/</guid>
       <description></description>
     </item>
     <item>
       <title>Colt</title>
-      <link>https://amirkiani.info/en/tags/colt/</link>
+      <link>http://localhost:1313/en/tags/colt/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/colt/</guid>
+      <guid>http://localhost:1313/en/tags/colt/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>https://amirkiani.info/en/tags/git/</link>
+      <link>http://localhost:1313/en/tags/git/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/git/</guid>
+      <guid>http://localhost:1313/en/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Steele</title>
-      <link>https://amirkiani.info/en/tags/steele/</link>
+      <link>http://localhost:1313/en/tags/steele/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/steele/</guid>
+      <guid>http://localhost:1313/en/tags/steele/</guid>
       <description></description>
     </item>
     <item>
       <title>Udemy</title>
-      <link>https://amirkiani.info/en/tags/udemy/</link>
+      <link>http://localhost:1313/en/tags/udemy/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/udemy/</guid>
+      <guid>http://localhost:1313/en/tags/udemy/</guid>
       <description></description>
     </item>
     <item>
       <title>Finance</title>
-      <link>https://amirkiani.info/en/tags/finance/</link>
+      <link>http://localhost:1313/en/tags/finance/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/finance/</guid>
+      <guid>http://localhost:1313/en/tags/finance/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>https://amirkiani.info/en/tags/programming/</link>
+      <link>http://localhost:1313/en/tags/programming/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/programming/</guid>
+      <guid>http://localhost:1313/en/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Nowruz</title>
-      <link>https://amirkiani.info/en/tags/nowruz/</link>
+      <link>http://localhost:1313/en/tags/nowruz/</link>
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/nowruz/</guid>
+      <guid>http://localhost:1313/en/tags/nowruz/</guid>
       <description></description>
     </item>
     <item>
       <title>Management</title>
-      <link>https://amirkiani.info/en/tags/management/</link>
+      <link>http://localhost:1313/en/tags/management/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/management/</guid>
+      <guid>http://localhost:1313/en/tags/management/</guid>
       <description></description>
     </item>
     <item>
       <title>Relationships</title>
-      <link>https://amirkiani.info/en/tags/relationships/</link>
+      <link>http://localhost:1313/en/tags/relationships/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/relationships/</guid>
+      <guid>http://localhost:1313/en/tags/relationships/</guid>
       <description></description>
     </item>
     <item>
       <title>Time</title>
-      <link>https://amirkiani.info/en/tags/time/</link>
+      <link>http://localhost:1313/en/tags/time/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/tags/time/</guid>
+      <guid>http://localhost:1313/en/tags/time/</guid>
       <description></description>
     </item>
   </channel>

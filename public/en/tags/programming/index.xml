@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Programming on Amir Kiani&#39;s Blog</title>
-    <link>https://amirkiani.info/en/tags/programming/</link>
+    <link>http://localhost:1313/en/tags/programming/</link>
     <description>Recent content in Programming on Amir Kiani&#39;s Blog</description>
     <image>
       <title>Amir Kiani&#39;s Blog</title>
-      <url>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://amirkiani.info/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Jun 2025 19:09:22 +0330</lastBuildDate>
-    <atom:link href="https://amirkiani.info/en/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Passion vs. Practicality - My Struggle Between Finance and Programming</title>
-      <link>https://amirkiani.info/en/posts/finance-vs-programming/</link>
+      <link>http://localhost:1313/en/posts/finance-vs-programming/</link>
       <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://amirkiani.info/en/posts/finance-vs-programming/</guid>
+      <guid>http://localhost:1313/en/posts/finance-vs-programming/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;I&amp;rsquo;ve reached the boiling point with the situation.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;This is an idiom we all use from time to time to express feelings of being overwhelmed, often accompanied by anxiety. However, what I&amp;rsquo;ve been experiencing over the last two days is much more intense. To describe it, I thought it might be fitting to draw on my long-forgotten days of studying chemical engineering. While many people think of the boiling point as the hottest state a substance can experience, every thermodynamics reference explains that the &lt;strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Critical_point_%28thermodynamics%29&#34;&gt;critical point&lt;/a&gt;&lt;/strong&gt; is what we should be looking for. This state is achieved by controlling both pressure and temperature, rendering the substance unidentifiable as a solid, liquid, or gas. In other words, it loses its distinct characteristics.&lt;/p&gt;</description>

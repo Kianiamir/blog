@@ -60,12 +60,12 @@ languages:
 
     menu:
       main:
-        - identifier: "cv"
-          name: "CV"
-          url: "/cv/amirkianicv.pdf"
-          weight: 10
-          params:
-            target: "_blank"
+        # - identifier: "cv"
+        #   name: "CV"
+        #   url: "/cv/amirkianicv.pdf"
+        #   weight: 10
+        #   params:
+        #     target: "_blank"
         - identifier: "categories"
           name: "Categories"
           url: "/categories/"
