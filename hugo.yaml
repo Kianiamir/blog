@@ -132,12 +132,12 @@ languages:
 
     menu:
       main:
-        - identifier: "cv"
-          name: "رزومه"
-          url: "/cv/amirkianicv.pdf"
-          weight: 10
-          params:
-            target: "_blank"
+        # - identifier: "cv"
+        #   name: "رزومه"
+        #   url: "/cv/amirkianicv.pdf"
+        #   weight: 10
+        #   params:
+        #     target: "_blank"
         - identifier: "categories"
           name: "دسته‌بندی‌ها"
           url: "/categories/"

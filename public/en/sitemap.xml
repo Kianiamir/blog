@@ -2,269 +2,269 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/</loc>
+    <loc>https://amirkiani.info/en/</loc>
     <lastmod>2025-06-27T19:21:34+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/"
+                href="https://amirkiani.info/fa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/"
+                href="https://amirkiani.info/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/posts/</loc>
+    <loc>https://amirkiani.info/en/posts/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/posts/"
+                href="https://amirkiani.info/fa/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/posts/"
+                href="https://amirkiani.info/en/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>https://amirkiani.info/en/categories/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/categories/"
+                href="https://amirkiani.info/fa/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/categories/"
+                href="https://amirkiani.info/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/posts/shadowrocket-proxy-bypass/</loc>
+    <loc>https://amirkiani.info/en/posts/shadowrocket-proxy-bypass/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/shadowrocket/</loc>
+    <loc>https://amirkiani.info/en/tags/shadowrocket/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/software/</loc>
+    <loc>https://amirkiani.info/en/tags/software/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>https://amirkiani.info/en/tags/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/tags/"
+                href="https://amirkiani.info/fa/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/tags/"
+                href="https://amirkiani.info/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/technology/</loc>
+    <loc>https://amirkiani.info/en/categories/technology/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/vpn/</loc>
+    <loc>https://amirkiani.info/en/tags/vpn/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/hugo/</loc>
+    <loc>https://amirkiani.info/en/tags/hugo/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/hugo-guide/</loc>
+    <loc>https://amirkiani.info/en/posts/hugo-guide/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/web-development/</loc>
+    <loc>https://amirkiani.info/en/categories/web-development/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/web-development/</loc>
+    <loc>https://amirkiani.info/en/tags/web-development/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/character/</loc>
+    <loc>https://amirkiani.info/en/tags/character/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/far-or-fast/</loc>
+    <loc>https://amirkiani.info/en/posts/far-or-fast/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/interdependency/</loc>
+    <loc>https://amirkiani.info/en/tags/interdependency/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/personal-development/</loc>
+    <loc>https://amirkiani.info/en/categories/personal-development/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/book/</loc>
+    <loc>https://amirkiani.info/en/tags/book/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/book-reviews/</loc>
+    <loc>https://amirkiani.info/en/categories/book-reviews/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/leadership/</loc>
+    <loc>https://amirkiani.info/en/tags/leadership/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/elevate-book-review/</loc>
+    <loc>https://amirkiani.info/en/posts/elevate-book-review/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/robert-glazer/</loc>
+    <loc>https://amirkiani.info/en/tags/robert-glazer/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/colt/</loc>
+    <loc>https://amirkiani.info/en/tags/colt/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/course-reviews/</loc>
+    <loc>https://amirkiani.info/en/categories/course-reviews/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/git-course-review/</loc>
+    <loc>https://amirkiani.info/en/posts/git-course-review/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/git/</loc>
+    <loc>https://amirkiani.info/en/tags/git/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/steele/</loc>
+    <loc>https://amirkiani.info/en/tags/steele/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/udemy/</loc>
+    <loc>https://amirkiani.info/en/tags/udemy/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/finance/</loc>
+    <loc>https://amirkiani.info/en/tags/finance/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/finance-vs-programming/</loc>
+    <loc>https://amirkiani.info/en/posts/finance-vs-programming/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/personal/</loc>
+    <loc>https://amirkiani.info/en/categories/personal/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/programming/</loc>
+    <loc>https://amirkiani.info/en/tags/programming/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/nowruz/</loc>
+    <loc>https://amirkiani.info/en/tags/nowruz/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/nowruz-1401/</loc>
+    <loc>https://amirkiani.info/en/posts/nowruz-1401/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/posts/the-7-habits-book-review/</loc>
+    <loc>https://amirkiani.info/en/posts/the-7-habits-book-review/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/management/</loc>
+    <loc>https://amirkiani.info/en/tags/management/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/categories/productivity/</loc>
+    <loc>https://amirkiani.info/en/categories/productivity/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/relationships/</loc>
+    <loc>https://amirkiani.info/en/tags/relationships/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/tags/time/</loc>
+    <loc>https://amirkiani.info/en/tags/time/</loc>
     <lastmod>2025-06-27T19:09:22+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/en/archives/</loc>
+    <loc>https://amirkiani.info/en/archives/</loc>
     <lastmod>2025-06-27T19:21:34+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/archives/"
+                href="https://amirkiani.info/fa/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/archives/"
+                href="https://amirkiani.info/en/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/search/</loc>
+    <loc>https://amirkiani.info/en/search/</loc>
     <lastmod>2025-06-27T19:21:34+03:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fa-ir"
-                href="http://localhost:1313/fa/search/"
+                href="https://amirkiani.info/fa/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/search/"
+                href="https://amirkiani.info/en/search/"
                 />
   </url>
 </urlset>
