@@ -2,8 +2,6 @@
 title: "سرندیپیتی | Serendipity"
 date: 2025-06-26
 draft: false
-lang: "fa"
-translationKey: "serendipity"
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner
   alt: "An example cover image"

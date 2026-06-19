@@ -2,7 +2,6 @@
 title: From Zero to Git Pro - A Review of Colt Steele’s Bootcamp on Udemy
 date: 2022-09-01
 draft: false
-lang: "en" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

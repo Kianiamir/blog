@@ -2,7 +2,6 @@
 title: "مرور کتاب مهارت‌های ارتباطی فور دامیز"
 date: 2025-11-17
 draft: false
-lang: "fa" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

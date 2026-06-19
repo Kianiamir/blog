@@ -2,7 +2,6 @@
 title: "BookReview – The 7 Habits of Highly Effective People: A Life-Altering Read"
 date: 2020-03-23
 draft: false
-lang: "en" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

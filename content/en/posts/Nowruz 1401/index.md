@@ -2,7 +2,6 @@
 title: "Welcoming Nowruz 1401/01/01: A Time for Renewal and Goals"
 date: 2022-03-21
 draft: false
-lang: "en" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

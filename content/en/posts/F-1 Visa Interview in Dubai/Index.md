@@ -2,7 +2,6 @@
 title: "F-1 Visa Interview in Dubai"
 date: 2025-05-29
 draft: true
-lang: "en" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

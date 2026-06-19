@@ -2,7 +2,6 @@
 title: No Elevation Here - A Review of Robert Glazer’s ‘Elevate’
 date: 2023-07-01
 draft: false
-lang: "en" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

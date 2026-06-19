@@ -2,7 +2,6 @@
 title: "آخرین‌ترین جلسه‌ی کلاس"
 date: 2025-10-28
 draft: false
-lang: "fa"
 translationKey: "serendipity"
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

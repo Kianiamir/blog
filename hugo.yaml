@@ -1,4 +1,4 @@
-baseURL: "https://amirkiani.info/"
+baseURL: "https://byamirkiani.ir/"
 title: "Amir Kiani's Blog"
 pagination:
   pagerSize: 5
@@ -9,11 +9,11 @@ defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 languages:
   en:
-    languageName: "English"
+    label: "English"
     weight: 1
     contentDir: "content/en"
-    languageCode: "en-us"
-    languageDirection: ltr
+    locale: "en-us"
+    direction: ltr
     params:
       profileMode:
         enabled: true
@@ -80,11 +80,11 @@ languages:
           weight: 40
 
   fa:
-    languageName: "فارسی"
+    label: "فارسی"
     weight: 2
     contentDir: "content/fa"
-    languageCode: "fa-ir"
-    languageDirection: rtl
+    locale: "fa-ir"
+    direction: rtl
     params:
       rtl: true
 

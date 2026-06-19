@@ -2,7 +2,6 @@
 title: Going Far or Fast
 date: 2023-08-01
 draft: false
-lang: "en" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

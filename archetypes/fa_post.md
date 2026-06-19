@@ -2,7 +2,6 @@
 title: ""
 date: #YYYY-MM-DD
 draft: false
-lang: "fa" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

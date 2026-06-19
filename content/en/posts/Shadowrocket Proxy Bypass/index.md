@@ -2,7 +2,6 @@
 title: Optimizing Shadowrocket - Bypass Proxy for Specific Domains and Apps
 date: 2024-06-01
 draft: false
-lang: "en" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner

@@ -1,0 +1,11 @@
+{{- /* Language redirect script */ -}}
+<script>
+  const userLang = navigator.language || navigator.userLanguage;
+  if (window.location.pathname === "/") {
+    if (userLang.startsWith("fa")) {
+      window.location.href = "/fa/";
+    } else if (userLang.startsWith("en")) {
+      window.location.href = "/en/";
+    }
+  }
+</script>

@@ -2,7 +2,6 @@
 title: Setting Up Hugo - A Personal Guide
 date: 2024-04-01
 draft: false
-lang: "en" #fa/en
 translationKey: ""
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner
