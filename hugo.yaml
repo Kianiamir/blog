@@ -70,6 +70,10 @@ languages:
           name: "Categories"
           url: "/categories/"
           weight: 20
+        - identifier: "library"
+          name: "Library"
+          url: "/library/"
+          weight: 25
         - identifier: "archives"
           name: "Archives"
           url: "/archives/"
@@ -142,6 +146,10 @@ languages:
           name: "دسته‌بندی‌ها"
           url: "/categories/"
           weight: 20
+        - identifier: "library"
+          name: "کتابخانه"
+          url: "/library/"
+          weight: 25
         - identifier: "archives"
           name: "آرشیو"
           url: "/archives/"

@@ -3,6 +3,11 @@ title: "مرور کتاب مهارت‌های ارتباطی فور دامیز"
 date: 2025-11-17
 draft: false
 translationKey: ""
+book:
+  title: "Communicating for Dummies"
+  rating: 3
+  status: read
+  oneLiner: "A scattered collection of practical communication tips — useful, not cohesive."
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner
   alt: "کاور پست در وبسایت امیر کیانی"

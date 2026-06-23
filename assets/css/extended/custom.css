@@ -54,7 +54,7 @@ h6 {
 .ltr-block {
     direction: ltr !important;
     text-align: left !important;
-    unicode-bidi: embed !important;
+    unicode-bidi: isolate !important;
     font-family: monospace;
     background-color: #f5f5f5;
     padding: 1em;
@@ -64,8 +64,235 @@ h6 {
     margin: 1.5em 0;
 }
 
+/* Auto direction per block in mixed RTL/LTR posts */
+[dir="rtl"] .post-content p,
+[dir="rtl"] .post-content li,
+[dir="rtl"] .post-content dd {
+    unicode-bidi: plaintext;
+    text-align: start;
+}
+
+/* English blockquotes: border on the left (inline-start in ltr context) */
+[dir="rtl"] .post-content blockquote.blockquote-ltr,
+[dir="rtl"] .post-content blockquote[dir="ltr"] {
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: start;
+    border-inline-start: 0.3rem solid var(--primary) !important;
+    border-inline-end: none !important;
+    padding-inline-start: 1rem !important;
+    padding-inline-end: 0 !important;
+}
+
+/* Persian blockquotes: border on the right (inline-start in rtl context) */
+[dir="rtl"] .post-content blockquote.blockquote-rtl,
+[dir="rtl"] .post-content blockquote[dir="rtl"] {
+    direction: rtl;
+    unicode-bidi: plaintext;
+    text-align: start;
+    border-inline-start: 0.3rem solid var(--primary) !important;
+    border-inline-end: none !important;
+    padding-inline-start: 1rem !important;
+    padding-inline-end: 0 !important;
+}
+
 .ltr-block code {
     display: inline-block !important;
     direction: ltr !important;
     text-align: left !important;
+}
+
+/* Library page */
+.library-intro {
+    margin-bottom: 1.5rem;
+}
+
+.library-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    font-size: 0.95rem;
+}
+
+.library-section {
+    margin-bottom: 2.5rem;
+}
+
+.library-section-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.library-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--entry);
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.library-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.library-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.library-card-cover {
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+    background: var(--tertiary);
+}
+
+.library-card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.library-card-body {
+    padding: 1rem;
+}
+
+.library-card-title {
+    font-size: 1rem;
+    margin: 0 0 0.35rem;
+    line-height: 1.4;
+}
+
+.library-card-author {
+    margin: 0 0 0.5rem;
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.library-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.library-card-rating-value {
+    color: var(--secondary);
+    font-size: 0.85rem;
+}
+
+.library-card-oneliner {
+    margin: 0;
+    color: var(--content);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.book-stars {
+    display: inline-flex;
+    gap: 0.1rem;
+    letter-spacing: 0.05em;
+}
+
+.book-star {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.book-star-full {
+    color: #f5b301;
+}
+
+.book-star-half {
+    color: #f5b301;
+    opacity: 0.55;
+}
+
+.book-star-empty {
+    color: var(--tertiary);
+}
+
+.book-detail {
+    margin: 1.5rem 0 2rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--entry);
+}
+
+.book-detail-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.book-detail-label {
+    margin: 0 0 0.2rem;
+    color: var(--secondary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.book-detail-value {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.book-detail-book-title {
+    font-weight: 700;
+}
+
+.book-detail-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.book-detail-oneliner {
+    margin: 0 0 1rem;
+    padding: 0.75rem 1rem;
+    border-inline-start: 3px solid var(--primary);
+    color: var(--content);
+    font-style: italic;
+}
+
+.book-detail-goodreads {
+    font-size: 0.9rem;
+}
+
+.book-status {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: var(--tertiary);
+}
+
+.book-status-reading {
+    background: color-mix(in srgb, #3b82f6 20%, var(--tertiary));
+}
+
+.book-status-want-to-read {
+    background: color-mix(in srgb, #a855f7 20%, var(--tertiary));
+}
+
+.library-empty {
+    color: var(--secondary);
+    text-align: center;
+    padding: 2rem;
 }

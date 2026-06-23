@@ -1,0 +1,14 @@
+{{- $plain := strings.TrimSpace (.Text | plainify) -}}
+{{- $ltr := false -}}
+{{- if and (eq .Page.Lang "fa") (findRE `^[A-Za-z0-9"'\(]` $plain) -}}
+  {{- $ltr = true -}}
+{{- end -}}
+{{- if $ltr -}}
+<blockquote dir="ltr" class="blockquote-ltr">
+{{- else if eq .Page.Lang "fa" -}}
+<blockquote dir="rtl" class="blockquote-rtl">
+{{- else -}}
+<blockquote>
+{{- end }}
+  {{ .Text }}
+</blockquote>

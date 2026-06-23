@@ -1,0 +1,31 @@
+{{- $page := . -}}
+{{- $book := $page.Params.book -}}
+{{- $cover := $page.Params.cover.image | default "thumbnail.webp" -}}
+{{- $coverURL := "" -}}
+{{- with $page.Resources.GetMatch $cover -}}
+  {{- $coverURL = .RelPermalink -}}
+{{- else -}}
+  {{- $coverURL = (path.Join $page.RelPermalink $cover) -}}
+{{- end -}}
+<article class="library-card">
+  <a class="library-card-link" href="{{ $page.Permalink }}" aria-label="{{ $page.Title | plainify }}">
+    <div class="library-card-cover">
+      <img src="{{ $coverURL }}" alt="{{ $book.title | default $page.Title | plainify }}" loading="lazy">
+    </div>
+    <div class="library-card-body">
+      <h3 class="library-card-title">{{ $book.title | default $page.Title }}</h3>
+      {{- with $book.author }}
+      <p class="library-card-author">{{ . }}</p>
+      {{- end }}
+      {{- if $book.rating }}
+      <div class="library-card-rating">
+        {{- partial "book-stars.html" (dict "rating" $book.rating) -}}
+        <span class="library-card-rating-value">{{ $book.rating }}</span>
+      </div>
+      {{- end }}
+      {{- with $book.oneLiner }}
+      <p class="library-card-oneliner">{{ . }}</p>
+      {{- end }}
+    </div>
+  </a>
+</article>

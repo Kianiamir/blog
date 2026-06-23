@@ -38,3 +38,45 @@
 
 - id: archive
   translation: "آرشیو"
+
+- id: library
+  translation: "کتابخانه"
+
+- id: library_empty
+  translation: "هنوز کتابی در کتابخانه ثبت نشده."
+
+- id: book_title
+  translation: "کتاب"
+
+- id: book_author
+  translation: "نویسنده"
+
+- id: book_rating
+  translation: "امتیاز من"
+
+- id: book_published
+  translation: "سال انتشار"
+
+- id: book_status
+  translation: "وضعیت"
+
+- id: book_status_read
+  translation: "خوانده‌شده"
+
+- id: book_status_reading
+  translation: "در حال خواندن"
+
+- id: book_status_want-to-read
+  translation: "لیست انتظار"
+
+- id: book_goodreads
+  translation: "مشاهده در گودریدز"
+
+- id: book_count_read
+  translation: "خوانده‌شده"
+
+- id: book_count_reading
+  translation: "در حال خواندن"
+
+- id: book_count_want
+  translation: "در لیست انتظار"

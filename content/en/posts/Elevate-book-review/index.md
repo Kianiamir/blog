@@ -3,6 +3,12 @@ title: No Elevation Here - A Review of Robert Glazer’s ‘Elevate’
 date: 2023-07-01
 draft: false
 translationKey: ""
+book:
+  title: "Elevate"
+  author: "Robert Glazer"
+  rating: 1
+  status: read
+  oneLiner: "A 4-principle capacity framework that failed to offer anything new."
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner
   alt: "The cover of the post at Amir Kiani's website"

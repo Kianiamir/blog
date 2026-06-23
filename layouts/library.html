@@ -1,0 +1,61 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}
+  <div class="post-description">{{ . | markdownify }}</div>
+  {{- end }}
+</header>
+
+{{- $books := where (where site.RegularPages "Params.book" "!=" nil) "Lang" .Lang -}}
+{{- $read := slice -}}
+{{- $reading := slice -}}
+{{- $want := slice -}}
+{{- range $books -}}
+  {{- $status := .Params.book.status | default "read" -}}
+  {{- if eq $status "reading" -}}
+    {{- $reading = $reading | append . -}}
+  {{- else if eq $status "want-to-read" -}}
+    {{- $want = $want | append . -}}
+  {{- else -}}
+    {{- $read = $read | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $books }}
+<div class="library-stats">
+  <span>{{ len $read }} {{ i18n "book_count_read" }}</span>
+  {{- if $reading }}<span>{{ len $reading }} {{ i18n "book_count_reading" }}</span>{{ end }}
+  {{- if $want }}<span>{{ len $want }} {{ i18n "book_count_want" }}</span>{{ end }}
+</div>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content md-content library-intro">
+  {{ .Content }}
+</div>
+{{- end }}
+
+{{- range $section := slice
+  (dict "title" (i18n "book_status_read") "pages" $read)
+  (dict "title" (i18n "book_status_reading") "pages" $reading)
+  (dict "title" (i18n "book_status_want-to-read") "pages" $want)
+}}
+  {{- if $section.pages }}
+  <section class="library-section">
+    <h2 class="library-section-title">{{ $section.title }} <sup class="archive-count">{{ len $section.pages }}</sup></h2>
+    <div class="library-grid">
+      {{- range (sort $section.pages "Date" "desc") }}
+        {{- partial "book-card.html" . -}}
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+{{- end }}
+
+{{- if not $books }}
+<p class="library-empty">{{ i18n "library_empty" }}</p>
+{{- end }}
+
+{{- end }}{{/* end main */}}

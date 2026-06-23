@@ -1,0 +1,41 @@
+{{- $book := .Params.book -}}
+{{- if not $book }}{{ return }}{{ end -}}
+<div class="book-detail">
+  <div class="book-detail-main">
+    <div class="book-detail-info">
+      {{- with $book.title }}
+      <p class="book-detail-label">{{ i18n "book_title" }}</p>
+      <p class="book-detail-value book-detail-book-title">{{ . }}</p>
+      {{- end }}
+      {{- with $book.author }}
+      <p class="book-detail-label">{{ i18n "book_author" }}</p>
+      <p class="book-detail-value">{{ . }}</p>
+      {{- end }}
+      {{- if $book.rating }}
+      <p class="book-detail-label">{{ i18n "book_rating" }}</p>
+      <p class="book-detail-value book-detail-rating">
+        {{- partial "book-stars.html" (dict "rating" $book.rating) -}}
+        <span>{{ $book.rating }} / 5</span>
+      </p>
+      {{- end }}
+      {{- with $book.published }}
+      <p class="book-detail-label">{{ i18n "book_published" }}</p>
+      <p class="book-detail-value">{{ . }}</p>
+      {{- end }}
+      {{- with $book.status }}
+      <p class="book-detail-label">{{ i18n "book_status" }}</p>
+      <p class="book-detail-value">
+        <span class="book-status book-status-{{ . }}">{{ i18n (printf "book_status_%s" .) }}</span>
+      </p>
+      {{- end }}
+    </div>
+    {{- with $book.oneLiner }}
+    <blockquote class="book-detail-oneliner">{{ . }}</blockquote>
+    {{- end }}
+    {{- with $book.goodreads }}
+    <a class="book-detail-goodreads" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+      {{ i18n "book_goodreads" }} →
+    </a>
+    {{- end }}
+  </div>
+</div>

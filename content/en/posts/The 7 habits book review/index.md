@@ -3,6 +3,12 @@ title: "BookReview – The 7 Habits of Highly Effective People: A Life-Altering 
 date: 2020-03-23
 draft: false
 translationKey: ""
+book:
+  title: "The 7 Habits of Highly Effective People"
+  author: "Stephen R. Covey"
+  rating: 5
+  status: read
+  oneLiner: "A life-altering synthesis of timeless principles for character and effectiveness."
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner
   alt: "The cover of the post at Amir Kiani's website"

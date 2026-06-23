@@ -3,6 +3,12 @@ title: "آخرین‌ترین جلسه‌ی کلاس"
 date: 2025-10-28
 draft: false
 translationKey: "serendipity"
+book:
+  title: "آخرین‌ترین جلسه‌ی کلاس"
+  author: "Randy Pausch"
+  rating: 3
+  status: read
+  oneLiner: "آخرین سخنرانی یک استاد در حال مرگ — دو درس ماندگار، بقیه تکراری."
 cover:
   image: "thumbnail.webp"   # used as thumbnail/banner
   alt: "An example cover image"

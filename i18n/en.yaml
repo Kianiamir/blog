@@ -1,0 +1,41 @@
+- id: library
+  translation: "Library"
+
+- id: library_empty
+  translation: "No books in the library yet."
+
+- id: book_title
+  translation: "Book"
+
+- id: book_author
+  translation: "Author"
+
+- id: book_rating
+  translation: "My rating"
+
+- id: book_published
+  translation: "Published"
+
+- id: book_status
+  translation: "Status"
+
+- id: book_status_read
+  translation: "Read"
+
+- id: book_status_reading
+  translation: "Reading"
+
+- id: book_status_want-to-read
+  translation: "Want to read"
+
+- id: book_goodreads
+  translation: "View on Goodreads"
+
+- id: book_count_read
+  translation: "read"
+
+- id: book_count_reading
+  translation: "reading"
+
+- id: book_count_want
+  translation: "on wishlist"
