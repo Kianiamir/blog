@@ -289,3 +289,7 @@ markup:
 
 enableGitInfo: true # Enable git info for posts
 canonifyURLs: true
+
+caches:
+  images:
+    dir: :cacheDir/images

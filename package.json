@@ -1,0 +1,6 @@
+{
+  "name": "byamirkiani-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Amir Kiani's Hugo blog — Cloudflare Workers build cache"
+}
