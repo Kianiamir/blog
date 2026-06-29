@@ -80,3 +80,9 @@
 
 - id: book_count_want
   translation: "در لیست انتظار"
+
+- id: library_swipe_hint
+  translation: "با انگشت بکشید یا از فلش‌ها برای مرور کتاب‌ها استفاده کنید"
+
+- id: library_read_review
+  translation: "مرور کامل"

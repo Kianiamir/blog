@@ -45,10 +45,38 @@
   {{- if $section.pages }}
   <section class="library-section">
     <h2 class="library-section-title">{{ $section.title }} <sup class="archive-count">{{ len $section.pages }}</sup></h2>
-    <div class="library-grid">
-      {{- range (sort $section.pages "Date" "desc") }}
-        {{- partial "book-card.html" . -}}
-      {{- end }}
+    <div class="library-carousel-shell">
+      <p class="library-carousel-hint">{{ i18n "library_swipe_hint" }}</p>
+      <div class="library-carousel" data-library-carousel>
+        <div class="library-carousel-toolbar">
+          <span class="library-carousel-counter" aria-live="polite"></span>
+        </div>
+        <button type="button" class="library-carousel-nav library-carousel-nav--prev" aria-label="{{ i18n "prev_page" }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <div class="library-carousel-viewport-wrap">
+          <div class="library-carousel-viewport">
+            <div class="library-carousel-track">
+              {{- range (sort $section.pages "Date" "desc") }}
+              <div class="library-carousel-item">
+                {{- partial "book-card.html" . -}}
+              </div>
+              {{- end }}
+            </div>
+          </div>
+        </div>
+        <button type="button" class="library-carousel-nav library-carousel-nav--next" aria-label="{{ i18n "next_page" }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        <div class="library-carousel-dots" role="tablist" aria-label="{{ $section.title }}"></div>
+      </div>
+      <div class="library-carousel-spotlight" aria-live="polite">
+        <h3 class="library-carousel-spotlight-title"></h3>
+        <p class="library-carousel-spotlight-author"></p>
+        <div class="library-carousel-spotlight-rating"></div>
+        <p class="library-carousel-spotlight-oneliner"></p>
+        <a class="library-carousel-spotlight-link" href="#">{{ i18n "library_read_review" }}</a>
+      </div>
     </div>
   </section>
   {{- end }}
@@ -57,5 +85,8 @@
 {{- if not $books }}
 <p class="library-empty">{{ i18n "library_empty" }}</p>
 {{- end }}
+
+{{- $libraryJS := resources.Get "js/library-carousel.js" | resources.Minify -}}
+<script defer src="{{ $libraryJS.RelPermalink }}"></script>
 
 {{- end }}{{/* end main */}}
