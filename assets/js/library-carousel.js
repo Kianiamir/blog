@@ -12,7 +12,6 @@
     const nextBtn = carousel.querySelector(".library-carousel-nav--next");
     const dotsRoot = carousel.querySelector(".library-carousel-dots");
     const counter = carousel.querySelector(".library-carousel-counter");
-    const spotlight = shell?.querySelector(".library-carousel-spotlight");
 
     if (!viewport || !items.length) return;
 
@@ -37,53 +36,6 @@
       });
 
       return closestIndex;
-    }
-
-    function readCardData(item) {
-      const card = item.querySelector(".library-card");
-      const link = item.querySelector(".library-card-link");
-      const title = item.querySelector(".library-card-title");
-      const author = item.querySelector(".library-card-author");
-      const rating = item.querySelector(".library-card-rating");
-      const oneliner = item.querySelector(".library-card-oneliner");
-
-      return {
-        href: link?.getAttribute("href") || "#",
-        label: link?.getAttribute("aria-label") || title?.textContent?.trim() || "",
-        title: title?.textContent?.trim() || "",
-        author: author?.textContent?.trim() || "",
-        ratingHTML: rating?.innerHTML || "",
-        oneliner: oneliner?.textContent?.trim() || "",
-      };
-    }
-
-    function updateSpotlight() {
-      if (!spotlight) return;
-
-      const data = readCardData(items[activeIndex]);
-      const titleEl = spotlight.querySelector(".library-carousel-spotlight-title");
-      const authorEl = spotlight.querySelector(".library-carousel-spotlight-author");
-      const ratingEl = spotlight.querySelector(".library-carousel-spotlight-rating");
-      const onelinerEl = spotlight.querySelector(".library-carousel-spotlight-oneliner");
-      const linkEl = spotlight.querySelector(".library-carousel-spotlight-link");
-
-      if (titleEl) titleEl.textContent = data.title;
-      if (authorEl) {
-        authorEl.textContent = data.author;
-        authorEl.hidden = !data.author;
-      }
-      if (ratingEl) {
-        ratingEl.innerHTML = data.ratingHTML;
-        ratingEl.hidden = !data.ratingHTML;
-      }
-      if (onelinerEl) {
-        onelinerEl.textContent = data.oneliner;
-        onelinerEl.hidden = !data.oneliner;
-      }
-      if (linkEl) {
-        linkEl.href = data.href;
-        linkEl.setAttribute("aria-label", data.label);
-      }
     }
 
     function updateDots() {
@@ -117,7 +69,6 @@
 
       updateDots();
       updateCounter();
-      updateSpotlight();
     }
 
     function markInteracted() {

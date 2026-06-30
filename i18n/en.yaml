@@ -42,6 +42,3 @@
 
 - id: library_swipe_hint
   translation: "Swipe or use the arrows to browse books"
-
-- id: library_read_review
-  translation: "Read full review"
